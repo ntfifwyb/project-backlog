@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Checks for the backlog: every brief is valid and the README index is current.
+set -euo pipefail
+backlog check
+backlog index --check
