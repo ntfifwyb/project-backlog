@@ -76,7 +76,8 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 
 ### Not doing
 
-- Accounts or a backend. It's a static site, and progress is kept in the browser.
+- Accounts or a backend. It's a static site.
+- Saving progress. Every visit starts fresh (nothing in localStorage).
 - VR or AR.
 - A mobile-first layout.
 - Paid hosting, until the user decides to pay at launch.
@@ -115,6 +116,11 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - Lessons: ~12, dimension ladder, short steps beside the visual, predict-then-reveal.
 - Look: system sans, wireframe + faint faces, color by w, no decorative animation.
 - Accessibility: basics at MVP (keyboard, contrast, reduced motion).
+- Layout: one main view chosen by the lesson, the other views small beside it, linked.
+- Angles in radians, on sliders and in matrices.
+- No saved progress.
+- The project's first session drafts the 12-lesson outline for the user to approve
+  before any lesson is built.
 
 ## Open questions *
 
@@ -150,8 +156,10 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - [x] WebGL version? → WebGL2.
 - [x] MVP length? → ~12 fine-grained lessons.
 - [x] Sandbox dimension? → 4D only at MVP.
-- [ ] **More refinement wanted.** After the second round (18 more answers, 2026-10-27)
-      the user still asked for another round before `ready`.
+- [x] View layout? → One main view plus small linked views.
+- [x] Angle units? → Radians.
+- [x] Saved progress? → None.
+- [x] Lesson outline? → Drafted in the project's first session, approved by the user.
 
 ## Risks and unknowns
 
@@ -164,6 +172,7 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 
 ## First session
 
+- Decided: draft the ~12-lesson outline (dimension ladder) for the user to approve.
 - Suggested (not decided): a static page with a plain-WebGL renderer that draws a
   tesseract projection with one slider per rotation plane at 60 fps, in the dark,
   minimal style. That proves both the performance goal and the look.
@@ -179,3 +188,5 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - 2026-10-27: kept at idea; user wants more questions before ready.
 - 2026-10-27: second round answered (lessons, look, stack, hosting, accessibility,
   license); still at idea, user wants another round.
+- 2026-10-27: third round answered (layout, radians, no saved progress, outline drafted
+  at start).
