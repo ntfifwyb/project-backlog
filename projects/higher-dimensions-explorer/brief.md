@@ -6,7 +6,7 @@ updated: 2026-10-27
 owner: ntfifwyb
 repo:
 tags: [education, math, visualization, interactive, web]
-stack: [webgl]
+stack: [typescript, vite, webgl2]
 effort:
 priority:
 ---
@@ -56,6 +56,15 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
   views that move together.
 - Coordinates and rotation matrices shown next to the visuals.
 - Rotation controlled by sliders, one per rotation plane (xy, xz, xw, yw, zw, …).
+- About 12 fine-grained lessons, structured as a dimension ladder: each lesson climbs
+  0D → 1D → 2D → 3D → 4D for one idea (build, project, slice, unfold, …).
+- Each lesson is short text steps beside the live view, advanced with a Next button.
+- Predict-then-reveal checks: the learner predicts the next slice or count before it's
+  shown.
+- Nets fold and unfold with a 0–100% slider (no autoplay).
+- The sandbox is the tesseract only (4D); an n picker comes with the generic engine.
+- Basic accessibility: keyboard-operable sliders, readable contrast, reduced motion
+  respected.
 
 ### Later
 
@@ -72,6 +81,9 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - A mobile-first layout.
 - Paid hosting, until the user decides to pay at launch.
 - Mouse-drag rotation. Sliders only.
+- Decorative animation. Motion only where it teaches something.
+- Analytics or tracking of any kind.
+- Languages other than English.
 
 ## Constraints
 
@@ -80,6 +92,10 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
   unnecessary UI.
 - **Look:** dark, like a terminal in color only, *not* a programming or monospace font.
   It should feel like the universe looks: black, spacious, quiet.
+- **Typeface:** the system sans-serif, so no font download.
+- **Drawing:** thin wireframe edges with very faint faces; slices are filled. Edges are
+  tinted cool to warm by their w coordinate, so 4D depth is visible.
+- **No animations** unless they are useful for learning.
 
 ## Decided
 
@@ -93,6 +109,12 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
   The MVP is 4D hypercube lessons with all four views, and the rest comes later.
 - Rotation by sliders only.
 - Learner level: beginner (knows 3D, little linear algebra).
+- Stack: TypeScript + Vite, WebGL2. Math typeset in plain HTML/CSS (no KaTeX).
+- Hosting: GitHub Pages, deployed locally (no Actions).
+- License: MIT. No analytics. English only.
+- Lessons: ~12, dimension ladder, short steps beside the visual, predict-then-reveal.
+- Look: system sans, wireframe + faint faces, color by w, no decorative animation.
+- Accessibility: basics at MVP (keyboard, contrast, reduced motion).
 
 ## Open questions *
 
@@ -111,9 +133,25 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - [x] Success criteria? → The four above.
 - [x] MVP / Later / Not doing? → As in Scope.
 - [x] GitHub owner? → `ntfifwyb`.
-- [ ] **More refinement wanted.** The user said more questions are needed before this is
-      ready (2026-10-27). Next session: ask a new round (e.g. lesson outline, visual
-      style details, hosting, accessibility) before proposing `ready`.
+- [x] Lesson sequence? → Dimension ladder.
+- [x] Lesson format? → Short steps beside the visual, Next button.
+- [x] Understanding checks? → Predict-then-reveal.
+- [x] Hosting? → GitHub Pages.
+- [x] Showing the 4th axis? → Color edges by w.
+- [x] Typeface? → System sans.
+- [x] Accessibility? → Basics at MVP; no animations unless useful for learning.
+- [x] Language? → English only.
+- [x] Tooling? → TypeScript + Vite.
+- [x] Shape rendering? → Wireframe + faint faces, filled slices.
+- [x] Nets? → Unfold slider.
+- [x] License? → MIT.
+- [x] Analytics? → None.
+- [x] Math typesetting? → Plain HTML/CSS.
+- [x] WebGL version? → WebGL2.
+- [x] MVP length? → ~12 fine-grained lessons.
+- [x] Sandbox dimension? → 4D only at MVP.
+- [ ] **More refinement wanted.** After the second round (18 more answers, 2026-10-27)
+      the user still asked for another round before `ready`.
 
 ## Risks and unknowns
 
@@ -139,3 +177,5 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - 2026-10-27: created. Captured roughly; user will answer the open questions later.
 - 2026-10-27: all open questions answered in the same session (scope, MVP, look, stack, owner).
 - 2026-10-27: kept at idea; user wants more questions before ready.
+- 2026-10-27: second round answered (lessons, look, stack, hosting, accessibility,
+  license); still at idea, user wants another round.
