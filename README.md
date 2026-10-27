@@ -33,5 +33,9 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-_No projects yet._
+### Idea (1)
+
+| Project | Summary | Tags | Pri | Effort | Updated |
+|---|---|---|---|---|---|
+| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | An educational project about dimensions and how they work: an interactive viewport (or similar) where the use… | education, math, visualization, interactive |  |  | 2026-10-27 |
 <!-- backlog:index:end -->
