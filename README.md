@@ -37,5 +37,5 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | An educational project about dimensions and how they work: an interactive viewport (or similar) where the use… | education, math, visualization, interactive |  |  | 2026-10-27 |
+| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | education, math, visualization, interactive, web |  |  | 2026-10-27 |
 <!-- backlog:index:end -->
