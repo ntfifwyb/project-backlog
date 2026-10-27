@@ -1,6 +1,6 @@
 ---
 title: Higher Dimensions Explorer
-status: idea
+status: ready
 created: 2026-10-27
 updated: 2026-10-27
 owner: ntfifwyb
@@ -190,3 +190,4 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
   license); still at idea, user wants another round.
 - 2026-10-27: third round answered (layout, radians, no saved progress, outline drafted
   at start).
+- 2026-10-27: idea → ready
