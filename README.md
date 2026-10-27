@@ -33,9 +33,9 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (1)
+### Started (1)
 
-| Project | Summary | Tags | Pri | Effort | Updated |
-|---|---|---|---|---|---|
-| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | education, math, visualization, interactive, web |  |  | 2026-10-27 |
+| Project | Repo | Summary | Updated |
+|---|---|---|---|
+| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | [ntfifwyb/higher-dimensions-explorer](https://github.com/ntfifwyb/higher-dimensions-explorer) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | 2026-10-27 |
 <!-- backlog:index:end -->

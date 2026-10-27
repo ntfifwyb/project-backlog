@@ -1,10 +1,10 @@
 ---
 title: Higher Dimensions Explorer
-status: ready
+status: started
 created: 2026-10-27
 updated: 2026-10-27
 owner: ntfifwyb
-repo:
+repo: ntfifwyb/higher-dimensions-explorer
 tags: [education, math, visualization, interactive, web]
 stack: [typescript, vite, webgl2]
 effort:
@@ -191,3 +191,4 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - 2026-10-27: third round answered (layout, radians, no saved progress, outline drafted
   at start).
 - 2026-10-27: idea → ready
+- 2026-10-27: ready → started, repo ntfifwyb/higher-dimensions-explorer
