@@ -111,6 +111,9 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - [x] Success criteria? → The four above.
 - [x] MVP / Later / Not doing? → As in Scope.
 - [x] GitHub owner? → `ntfifwyb`.
+- [ ] **More refinement wanted.** The user said more questions are needed before this is
+      ready (2026-10-27). Next session: ask a new round (e.g. lesson outline, visual
+      style details, hosting, accessibility) before proposing `ready`.
 
 ## Risks and unknowns
 
@@ -135,3 +138,4 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 
 - 2026-10-27: created. Captured roughly; user will answer the open questions later.
 - 2026-10-27: all open questions answered in the same session (scope, MVP, look, stack, owner).
+- 2026-10-27: kept at idea; user wants more questions before ready.
