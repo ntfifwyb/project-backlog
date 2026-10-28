@@ -16,7 +16,7 @@ priority:
 ## Summary *
 
 A GitHub Pages site where you learn about the quantum Zeno effect. Like
-`higher-dimensions-explorer`, it is just a page for learning the topic, nothing more.
+`higher-dimensions`, it is just a page for learning the topic, nothing more.
 It goes under the user's instructional pages organization (`instructional-pages`).
 
 ## Problem *
@@ -53,7 +53,7 @@ Not yet described. The user will add detail in a later session.
 ## Decided
 
 - Topic: the quantum Zeno effect.
-- Form: a GitHub Pages site for learning about it, like `higher-dimensions-explorer`.
+- Form: a GitHub Pages site for learning about it, like `higher-dimensions`.
 - GitHub owner: the `instructional-pages` organization. Its shared rules
   (`~/projects/instructional-pages/CLAUDE.md`) apply: guided lessons then a sandbox,
   predict-then-reveal, dark minimal look, TypeScript + Vite, MIT, no analytics, English.
@@ -78,7 +78,7 @@ Not yet described. The user will add detail in a later session.
 
 ## References
 
-- `instructional-pages/higher-dimensions-explorer`: the model this project follows (a learning page
+- `instructional-pages/higher-dimensions`: the model this project follows (a learning page
   on GitHub Pages).
 
 ## Log

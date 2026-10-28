@@ -4,7 +4,7 @@ status: started
 created: 2026-10-27
 updated: 2026-10-28
 owner: ntfifwyb
-repo: instructional-pages/higher-dimensions-explorer
+repo: instructional-pages/higher-dimensions
 tags: [education, math, visualization, interactive, web]
 stack: [typescript, vite, webgl2]
 effort:
@@ -193,3 +193,4 @@ learner rotate, slice and unfold a shape while the numbers update alongside.
 - 2026-10-27: idea → ready
 - 2026-10-27: ready → started, repo ntfifwyb/higher-dimensions-explorer
 - 2026-10-28: repo moved to instructional-pages/higher-dimensions-explorer (new organization for public courses)
+- 2026-10-28: repo renamed to instructional-pages/higher-dimensions
