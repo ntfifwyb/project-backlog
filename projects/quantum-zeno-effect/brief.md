@@ -44,6 +44,7 @@ Not yet described. The user will add detail in a later session.
 ### Not doing
 
 - Anything beyond a learning page ("That's it").
+- Everything in the org's Not doing list (`~/projects/instructional-pages/CLAUDE.md`).
 
 ## Constraints
 
@@ -53,22 +54,19 @@ Not yet described. The user will add detail in a later session.
 
 - Topic: the quantum Zeno effect.
 - Form: a GitHub Pages site for learning about it, like `higher-dimensions-explorer`.
-- GitHub owner: the `instructional-pages` organization.
+- GitHub owner: the `instructional-pages` organization. Its shared rules
+  (`~/projects/instructional-pages/CLAUDE.md`) apply: guided lessons then a sandbox,
+  predict-then-reveal, dark minimal look, TypeScript + Vite, MIT, no analytics, English.
 
 ## Open questions *
 
 - [ ] Repo name? `quantum-zeno-effect` (suggested) or another full name.
 - [ ] Learner level? Beginner with no quantum background, or assumes some quantum basics.
-- [ ] Intuition or math? Visuals first with the math alongside (as in
-      higher-dimensions-explorer), or mostly conceptual.
-- [ ] Interactive simulations, or text and static figures?
-- [ ] Guided lessons, a single long page, or lessons plus a sandbox?
+- [ ] Interactive simulation of what? (e.g. state on the Bloch sphere, survival
+      probability vs. measurement rate)
 - [ ] Related topics in scope? (anti-Zeno effect, measurement and decoherence, experiments)
 - [ ] Success criteria?
 - [ ] MVP / Later / Not doing in detail?
-- [ ] Look and feel? Same dark, minimal style as higher-dimensions-explorer, or its own.
-- [ ] Stack? (e.g. TypeScript + Vite like higher-dimensions-explorer, or plain HTML)
-- [ ] License, analytics, languages, accessibility?
 
 ## Risks and unknowns
 
@@ -80,7 +78,7 @@ Not yet described. The user will add detail in a later session.
 
 ## References
 
-- `ntfifwyb/higher-dimensions-explorer`: the model this project follows (a learning page
+- `instructional-pages/higher-dimensions-explorer`: the model this project follows (a learning page
   on GitHub Pages).
 
 ## Log
