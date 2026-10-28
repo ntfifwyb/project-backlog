@@ -38,10 +38,4 @@ Rebuilt by `backlog index`; don't edit by hand.
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
 | [quantum-zeno-effect](projects/quantum-zeno-effect/brief.md) | A GitHub Pages site where you learn about the quantum Zeno effect. | education, physics, quantum, web |  |  | 2026-10-28 |
-
-### Started (1)
-
-| Project | Repo | Summary | Updated |
-|---|---|---|---|
-| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | [instructional-pages/higher-dimensions](https://github.com/instructional-pages/higher-dimensions) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | 2026-10-28 |
 <!-- backlog:index:end -->
