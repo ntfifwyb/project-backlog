@@ -10,11 +10,11 @@ starting the project later takes one sentence: "start <name> from the backlog".
 2. **Refine**: fill in the brief until `backlog check` accepts it as `ready` (success
    criteria, an MVP, every open question answered).
 3. **Start**: `/start-project <name>` creates the repo, copies the brief in as its spec,
-   records the decisions, writes the first handoff, and marks the brief `started`.
+   records the decisions, writes the first handoff, and removes the brief from here.
 4. **Archive**: ideas I drop stay here as `archived`, with the reason in their Log.
 5. **Triage**: `/triage-backlog` now and then: stale ideas, gaps, overlaps, what to start next.
 
-Statuses: `idea` → `ready` → `started`, or `archived` from any of them.
+Statuses: `idea` → `ready`, or `archived` from either. Started projects leave the backlog.
 
 ## Layout
 
