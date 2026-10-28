@@ -43,5 +43,5 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Repo | Summary | Updated |
 |---|---|---|---|
-| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | [ntfifwyb/higher-dimensions-explorer](https://github.com/ntfifwyb/higher-dimensions-explorer) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | 2026-10-27 |
+| [higher-dimensions-explorer](projects/higher-dimensions-explorer/brief.md) | [instructional-pages/higher-dimensions-explorer](https://github.com/instructional-pages/higher-dimensions-explorer) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | 2026-10-28 |
 <!-- backlog:index:end -->
