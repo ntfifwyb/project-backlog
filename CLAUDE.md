@@ -22,7 +22,7 @@ input to new projects, not their home. The workspace rules (`~/projects/CLAUDE.m
 - After any change, run `backlog index` (rebuilds the README table) and `backlog check`,
   and commit both. `.local-ci` runs the same check.
 - No secrets, passwords, personal documents or other people's private data in briefs or
-  refs: the repo is read into many sessions. Link to where they live instead.
+  refs: the repo is public and read into many sessions. Link to where they live instead.
 - Started projects keep only their `started/<name>.md` record here (title, repo, dates,
   one-line summary), as a history of what came out of the backlog. Their own repo is the
   source of truth; don't add more to the record.
