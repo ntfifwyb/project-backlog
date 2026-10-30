@@ -33,9 +33,5 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (1)
-
-| Project | Summary | Tags | Pri | Effort | Updated |
-|---|---|---|---|---|---|
-| [nfsh](projects/nfsh/brief.md) | nfsh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019), in the same spirit… | game, engine, performance |  |  | 2026-10-30 |
+_No projects yet._
 <!-- backlog:index:end -->
