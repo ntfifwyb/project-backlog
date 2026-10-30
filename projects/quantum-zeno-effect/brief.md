@@ -6,7 +6,7 @@ updated: 2026-10-30
 owner: instructional-pages
 repo:
 tags: [education, physics, quantum, web]
-stack: []
+stack: [typescript, vite, webgl2]
 effort:
 priority:
 ---
@@ -50,6 +50,9 @@ course is the way to learn it.
 - 5–7 lessons, about an hour. Lesson 1 shows the effect in the simulation before explaining
   it (paradox first); later lessons build the basics that explain it.
 - Ideal, instantaneous measurements only.
+- The state is drawn on a 3D Bloch sphere (WebGL2); the course teaches what the sphere means.
+- Sandbox controls: rotation speed, number of measurements, total time. A "run once"
+  button gives a random outcome; many runs build up the probability curve.
 
 ### Later
 
@@ -66,6 +69,7 @@ course is the way to learn it.
 ## Constraints
 
 - Development costs $0 (workspace rule). Free static hosting only.
+- Bundle budget: 50 KB gzipped, enforced by `.local-ci`.
 
 ## Decided
 
@@ -88,6 +92,10 @@ course is the way to learn it.
 - Length: 5–7 lessons, about an hour. Opening: paradox first.
 - Experiment: Itano et al. 1990.
 - Weak measurements: Later; MVP uses ideal measurements.
+- State view: 3D Bloch sphere (WebGL2), not a 2D circle.
+- Sandbox: rotation speed, measurement count, total time; single random runs plus the
+  averaged curve.
+- Bundle budget: 50 KB gzipped.
 
 ## Open questions *
 
@@ -107,10 +115,14 @@ course is the way to learn it.
 - [x] Opening? → Paradox first.
 - [x] Which experiment? → Itano et al. 1990.
 - [x] Weak measurements? → Later.
+- [x] State view? → 3D Bloch sphere.
+- [x] Sandbox controls? → Rate, count and time; random single runs and the averaged curve.
+- [x] Bundle budget? → 50 KB gzipped.
 
 ## Risks and unknowns
 
-- 
+- A 3D Bloch sphere is more to teach a learner with no quantum background, and must fit
+  the 50 KB budget.
 
 ## First session
 
@@ -128,3 +140,4 @@ course is the way to learn it.
 - 2026-10-30: round 2: repo name, success criterion, decoherence note, math shown.
 - 2026-10-30: round 3: problem (curiosity), MVP confirmed, interpretations out, QC uses Later.
 - 2026-10-30: round 4: length, paradox-first opening, Itano 1990, weak measurements Later.
+- 2026-10-30: round 5: Bloch sphere, sandbox controls, random runs, 50 KB budget.
