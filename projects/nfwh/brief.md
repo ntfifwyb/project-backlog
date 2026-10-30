@@ -6,7 +6,7 @@ updated: 2026-10-30
 owner: cmprssd
 repo: cmprssd/nfwh
 tags: [game, engine, performance]
-stack: []
+stack: [rust, vulkan, ash]
 effort:
 priority:
 ---
@@ -31,7 +31,12 @@ play it today.
 
 ## Success criteria *
 
-- [ ] 
+- [ ] When nfwh's Palm City viewer and the original Heat play the same recorded camera
+      path on the same PC, nfwh's average and 1%-low frame times are lower.
+- [ ] On that path, nfwh's frames match the original's look by automated screenshot
+      comparison (as in swjkja).
+- [ ] Load time to the first frame of Palm City is lower than the original's, and the
+      numbers are recorded in `docs/BASELINE.md`.
 
 ## Scope *
 
@@ -40,6 +45,7 @@ play it today.
 - Palm City viewer: reads the map from the owner's Heat install and flies through it,
   showing frame rate and frame time.
 - Benchmarks against the original on the same camera path and PC.
+- Progress GitHub page and `docs/OVERVIEW.md`, as in swjkja.
 
 ### Later
 
@@ -64,6 +70,10 @@ play it today.
 - Same nature as `cmprssd/swjkja` (a new, much faster engine for an existing game).
 - Clean-room engine reading the owner's installed Heat data (no source to port).
 - Speed and size are measured against the original on the same scene and PC.
+- Stack: Rust, Vulkan 1.3 via `ash` (as swjkja). Platforms: Windows and Linux.
+- Public repo from day one, GPLv3.
+- A progress page on GitHub Pages and a `docs/OVERVIEW.md` explaining how the project
+  works, both just like swjkja's.
 
 ## Open questions *
 
@@ -76,10 +86,14 @@ play it today.
 - [x] How is "faster" proven? → Same scene, same PC: frame time and load time on a
       recorded camera path vs. the original, plus install size on disk (as swjkja's
       BASELINE.md).
-- [ ] Success thresholds: how much faster/smaller counts as done for the MVP?
-- [ ] Target platform and minimum hardware.
-- [ ] Stack: Rust like swjkja, or something else?
-- [ ] License and repo visibility.
+- [x] Success thresholds? → Beat the original on the same path and PC, with the same
+      look (screenshot comparison); no fixed multiplier.
+- [x] Platforms? → Windows and Linux.
+- [x] Stack? → Rust + Vulkan 1.3 via `ash`, as swjkja.
+- [x] License and visibility? → Public from day one, GPLv3. Plus a progress GitHub page
+      and a `docs/OVERVIEW.md`, both like swjkja's.
+- [ ] Minimum hardware to target (e.g. integrated GPUs, Steam Deck, or Heat's own
+      minimum spec)?
 
 ## Risks and unknowns
 
@@ -105,3 +119,4 @@ play it today.
 
 - 2026-10-30: created.
 - 2026-10-30: round 1: clean-room engine, Palm City viewer MVP, single-player first, measured benchmarks.
+- 2026-10-30: round 2: Rust + ash, Windows and Linux, beat original with same look, public GPLv3, progress page and OVERVIEW.md.
