@@ -37,6 +37,8 @@ play it today.
       comparison (as in swjkja).
 - [ ] Load time to the first frame of Palm City is lower than the original's, and the
       numbers are recorded in `docs/BASELINE.md`.
+- [ ] nfwh's converted copy of the data the viewer needs is smaller on disk than the
+      same data in the original install.
 
 ## Scope *
 
@@ -60,6 +62,9 @@ play it today.
 ## Constraints
 
 - Development costs $0 (workspace rule); checks run locally with `local-ci`.
+- Testing happens only on the owner's PC; integrated-GPU performance is a goal, not
+  something tested on real low-end hardware.
+- It must not crash: robustness is a coding priority even without a dedicated check.
 
 ## Decided
 
@@ -72,6 +77,9 @@ play it today.
 - Speed and size are measured against the original on the same scene and PC.
 - Stack: Rust, Vulkan 1.3 via `ash` (as swjkja). Platforms: Windows and Linux.
 - Public repo from day one, GPLv3.
+- Minimum hardware target: integrated GPUs (Intel HD 630 / Steam Deck class), if possible.
+- "Smaller": an import step converts the install into nfwh's own compact format.
+- Reverse engineering covers data files and the game executable.
 - A progress page on GitHub Pages and a `docs/OVERVIEW.md` explaining how the project
   works, both just like swjkja's.
 
@@ -92,8 +100,15 @@ play it today.
 - [x] Stack? → Rust + Vulkan 1.3 via `ash`, as swjkja.
 - [x] License and visibility? → Public from day one, GPLv3. Plus a progress GitHub page
       and a `docs/OVERVIEW.md`, both like swjkja's.
-- [ ] Minimum hardware to target (e.g. integrated GPUs, Steam Deck, or Heat's own
-      minimum spec)?
+- [x] Minimum hardware? → Integrated GPUs (Intel HD 630 / Steam Deck class), if
+      possible; testing is limited to the owner's PC.
+- [x] How is "smaller" achieved? → An import step converts Heat's data into nfwh's own
+      compact format; the original install can then be removed. Size is measured against
+      the original install.
+- [x] How is "more reliable" checked? → No dedicated check, but it must not crash: keep
+      that in mind when coding.
+- [x] How far may reverse engineering go? → Data files and the game executable
+      (disassembly allowed, to match physics and logic).
 
 ## Risks and unknowns
 
@@ -101,8 +116,10 @@ play it today.
   reverse engineered or reimplemented. Far larger than swjkja, which had a source port.
 - Frostbite's data formats (superbundles, casc catalogs, EBX/RES) are undocumented
   officially; community tools exist but may be incomplete for Heat.
-- Legal: EA's EULA and anti-tamper (if the install uses it) constrain reverse
-  engineering; the project must ship no EA code or data.
+- Legal: the repo is public and the executable is disassembled. EA's EULA and the
+  anti-tamper on the executable constrain this; decompiled EA code, game data and
+  anything that bypasses protection must never be committed. Only the project's own
+  descriptions of formats and behaviour go in the repo.
 - Scale of the original: a large open world with modern Frostbite rendering, so "same
   look" may be out of reach; matching would need to be measured, as in swjkja.
 
@@ -120,3 +137,4 @@ play it today.
 - 2026-10-30: created.
 - 2026-10-30: round 1: clean-room engine, Palm City viewer MVP, single-player first, measured benchmarks.
 - 2026-10-30: round 2: Rust + ash, Windows and Linux, beat original with same look, public GPLv3, progress page and OVERVIEW.md.
+- 2026-10-30: round 3: integrated-GPU target, compact converted data, no-crash priority, executable RE allowed.
