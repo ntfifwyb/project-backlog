@@ -21,7 +21,8 @@ It goes under the user's instructional pages organization (`instructional-pages`
 
 ## Problem *
 
-Not yet described. The user will add detail in a later session.
+Personal curiosity: the user wants to understand the quantum Zeno effect properly, and a
+course is the way to learn it.
 
 ## Users and context
 
@@ -49,10 +50,12 @@ Not yet described. The user will add detail in a later session.
 ### Later
 
 - The anti-Zeno effect (frequent measurement speeding up decay).
+- Quantum computing uses (Zeno-based error suppression, dynamical decoupling).
 
 ### Not doing
 
 - Anything beyond a learning page ("That's it").
+- Quantum interpretations (Copenhagen, many-worlds, what "collapse" really is).
 - Everything in the org's Not doing list (`~/projects/instructional-pages/CLAUDE.md`).
 
 ## Constraints
@@ -75,6 +78,8 @@ Not yet described. The user will add detail in a later session.
 - Success: the learner predicts the effect and can say why.
 - Decoherence: a short side note only.
 - Math: shown beside the pictures (org rule), not picture-only.
+- Problem: personal curiosity.
+- MVP is complete as listed; interpretations Not doing; QC applications Later.
 
 ## Open questions *
 
@@ -87,7 +92,9 @@ Not yet described. The user will add detail in a later session.
 - [x] Measurement vs. decoherence? → A short side note, no density matrices.
 - [x] Math or picture-only? → Math beside the pictures.
 - [x] Success criteria? → Learner predicts the effect and can say why.
-- [ ] MVP / Later / Not doing in detail?
+- [x] MVP complete as listed? → Yes.
+- [x] Interpretations? → Not doing.
+- [x] Quantum computing applications? → Later.
 
 ## Risks and unknowns
 
@@ -107,3 +114,4 @@ Not yet described. The user will add detail in a later session.
 - 2026-10-28: created. Captured roughly; user will answer the open questions later.
 - 2026-10-30: round 1: learner level, simulation, anti-Zeno (Later), one experiment lesson.
 - 2026-10-30: round 2: repo name, success criterion, decoherence note, math shown.
+- 2026-10-30: round 3: problem (curiosity), MVP confirmed, interpretations out, QC uses Later.
