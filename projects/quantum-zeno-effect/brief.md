@@ -45,12 +45,17 @@ course is the way to learn it.
 - A short side note that "measurement" can be any strong interaction with the
   environment (decoherence); no density matrices.
 - Math beside the pictures (amplitudes, the cos² survival formula), teaching the trig it uses.
-- One lesson walks through a real experiment (e.g. Itano et al. 1990, trapped ions) and its data.
+- One lesson walks through a real experiment, Itano et al. 1990 (trapped beryllium ions,
+  laser pulses as measurements), and its data.
+- 5–7 lessons, about an hour. Lesson 1 shows the effect in the simulation before explaining
+  it (paradox first); later lessons build the basics that explain it.
+- Ideal, instantaneous measurements only.
 
 ### Later
 
 - The anti-Zeno effect (frequent measurement speeding up decay).
 - Quantum computing uses (Zeno-based error suppression, dynamical decoupling).
+- Imperfect (weak) measurements, e.g. a measurement-strength slider.
 
 ### Not doing
 
@@ -80,6 +85,9 @@ course is the way to learn it.
 - Math: shown beside the pictures (org rule), not picture-only.
 - Problem: personal curiosity.
 - MVP is complete as listed; interpretations Not doing; QC applications Later.
+- Length: 5–7 lessons, about an hour. Opening: paradox first.
+- Experiment: Itano et al. 1990.
+- Weak measurements: Later; MVP uses ideal measurements.
 
 ## Open questions *
 
@@ -95,6 +103,10 @@ course is the way to learn it.
 - [x] MVP complete as listed? → Yes.
 - [x] Interpretations? → Not doing.
 - [x] Quantum computing applications? → Later.
+- [x] Course length? → 5–7 lessons, about an hour.
+- [x] Opening? → Paradox first.
+- [x] Which experiment? → Itano et al. 1990.
+- [x] Weak measurements? → Later.
 
 ## Risks and unknowns
 
@@ -115,3 +127,4 @@ course is the way to learn it.
 - 2026-10-30: round 1: learner level, simulation, anti-Zeno (Later), one experiment lesson.
 - 2026-10-30: round 2: repo name, success criterion, decoherence note, math shown.
 - 2026-10-30: round 3: problem (curiosity), MVP confirmed, interpretations out, QC uses Later.
+- 2026-10-30: round 4: length, paradox-first opening, Itano 1990, weak measurements Later.
