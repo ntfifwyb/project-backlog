@@ -1,6 +1,6 @@
 ---
 title: nfsh
-status: idea
+status: ready
 created: 2026-10-30
 updated: 2026-10-30
 owner: cmprssd
@@ -175,3 +175,4 @@ play it today.
 - 2026-10-30: round 4: day and night in MVP, data inventory first, Steam install, copy-and-adapt from swjkja.
 - 2026-10-30: round 5: renamed nfwh → nfsh (owner's correction); drivable car next, customization and asset mods later, keyboard + gamepad.
 - 2026-10-30: round 6: no audio in MVP, original look first (shader-mod research much later), upscaling setting, import original saves.
+- 2026-10-30: idea → ready: all open questions answered over six rounds
