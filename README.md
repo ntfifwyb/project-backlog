@@ -33,7 +33,7 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Idea (1)
+### Ready (1)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 ---
 title: Quantum Zeno Effect
-status: idea
+status: ready
 created: 2026-10-28
 updated: 2026-10-30
 owner: instructional-pages
@@ -158,3 +158,4 @@ course is the way to learn it.
 - 2026-10-30: round 5: Bloch sphere, sandbox controls, random runs, 50 KB budget.
 - 2026-10-30: learner clarified: a complete beginner, even in physics.
 - 2026-10-30: round 6: arithmetic-only math, no phases, up to ~10 lessons, flagged analogies.
+- 2026-10-30: idea → ready
