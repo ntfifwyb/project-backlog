@@ -30,7 +30,9 @@ Not yet described. The user will add detail in a later session.
 
 ## Success criteria *
 
-- [ ] Not yet decided (see Open questions).
+- [ ] After the course, a learner with no quantum background correctly predicts that
+      measuring more often keeps the state from changing, and can say why (at short
+      times the change grows quadratically, so frequent resets keep it near zero).
 
 ## Scope *
 
@@ -39,6 +41,9 @@ Not yet described. The user will add detail in a later session.
 - A GitHub Pages site that teaches the quantum Zeno effect.
 - Main interactive view: a two-level state rotating (Rabi oscillation), interrupted by
   measurements the learner sets, beside a plot of survival probability vs. measurement rate.
+- A short side note that "measurement" can be any strong interaction with the
+  environment (decoherence); no density matrices.
+- Math beside the pictures (amplitudes, the cos² survival formula), teaching the trig it uses.
 - One lesson walks through a real experiment (e.g. Itano et al. 1990, trapped ions) and its data.
 
 ### Later
@@ -66,17 +71,22 @@ Not yet described. The user will add detail in a later session.
   probability vs. measurement rate plot.
 - Anti-Zeno effect: Later, not MVP.
 - Experiments: one lesson on a real experiment.
+- Repo name: `quantum-zeno-effect`.
+- Success: the learner predicts the effect and can say why.
+- Decoherence: a short side note only.
+- Math: shown beside the pictures (org rule), not picture-only.
 
 ## Open questions *
 
-- [ ] Repo name? `quantum-zeno-effect` (suggested) or another full name.
+- [x] Repo name? → `quantum-zeno-effect`.
 - [x] Learner level? → No quantum background.
 - [x] Interactive simulation of what? → Rotating two-level state interrupted by
       measurements, beside a survival probability vs. measurement rate plot.
 - [x] Anti-Zeno effect in MVP? → Later.
 - [x] Real experiments? → Yes, one lesson.
-- [ ] Measurement vs. decoherence: covered, and how deeply?
-- [ ] Success criteria?
+- [x] Measurement vs. decoherence? → A short side note, no density matrices.
+- [x] Math or picture-only? → Math beside the pictures.
+- [x] Success criteria? → Learner predicts the effect and can say why.
 - [ ] MVP / Later / Not doing in detail?
 
 ## Risks and unknowns
@@ -96,3 +106,4 @@ Not yet described. The user will add detail in a later session.
 
 - 2026-10-28: created. Captured roughly; user will answer the open questions later.
 - 2026-10-30: round 1: learner level, simulation, anti-Zeno (Later), one experiment lesson.
+- 2026-10-30: round 2: repo name, success criterion, decoherence note, math shown.
