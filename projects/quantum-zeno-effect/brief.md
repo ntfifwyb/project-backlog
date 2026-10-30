@@ -2,7 +2,7 @@
 title: Quantum Zeno Effect
 status: idea
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-10-30
 owner: instructional-pages
 repo:
 tags: [education, physics, quantum, web]
@@ -25,7 +25,8 @@ Not yet described. The user will add detail in a later session.
 
 ## Users and context
 
-- A learner using a web browser (GitHub Pages). Details still open.
+- A learner with no quantum background, in a desktop web browser (GitHub Pages). The
+  course teaches every quantum idea it uses (state, probability, measurement, evolution).
 
 ## Success criteria *
 
@@ -36,10 +37,13 @@ Not yet described. The user will add detail in a later session.
 ### Must (MVP)
 
 - A GitHub Pages site that teaches the quantum Zeno effect.
+- Main interactive view: a two-level state rotating (Rabi oscillation), interrupted by
+  measurements the learner sets, beside a plot of survival probability vs. measurement rate.
+- One lesson walks through a real experiment (e.g. Itano et al. 1990, trapped ions) and its data.
 
 ### Later
 
-- Not yet decided.
+- The anti-Zeno effect (frequent measurement speeding up decay).
 
 ### Not doing
 
@@ -57,14 +61,21 @@ Not yet described. The user will add detail in a later session.
 - GitHub owner: the `instructional-pages` organization. Its shared rules
   (`~/projects/instructional-pages/CLAUDE.md`) apply: guided lessons then a sandbox,
   predict-then-reveal, dark minimal look, TypeScript + Vite, MIT, no analytics, English.
+- Learner: no quantum background; the course teaches the basics it needs.
+- Simulation: rotating two-level state with learner-set measurements, plus a survival
+  probability vs. measurement rate plot.
+- Anti-Zeno effect: Later, not MVP.
+- Experiments: one lesson on a real experiment.
 
 ## Open questions *
 
 - [ ] Repo name? `quantum-zeno-effect` (suggested) or another full name.
-- [ ] Learner level? Beginner with no quantum background, or assumes some quantum basics.
-- [ ] Interactive simulation of what? (e.g. state on the Bloch sphere, survival
-      probability vs. measurement rate)
-- [ ] Related topics in scope? (anti-Zeno effect, measurement and decoherence, experiments)
+- [x] Learner level? → No quantum background.
+- [x] Interactive simulation of what? → Rotating two-level state interrupted by
+      measurements, beside a survival probability vs. measurement rate plot.
+- [x] Anti-Zeno effect in MVP? → Later.
+- [x] Real experiments? → Yes, one lesson.
+- [ ] Measurement vs. decoherence: covered, and how deeply?
 - [ ] Success criteria?
 - [ ] MVP / Later / Not doing in detail?
 
@@ -84,3 +95,4 @@ Not yet described. The user will add detail in a later session.
 ## Log
 
 - 2026-10-28: created. Captured roughly; user will answer the open questions later.
+- 2026-10-30: round 1: learner level, simulation, anti-Zeno (Later), one experiment lesson.

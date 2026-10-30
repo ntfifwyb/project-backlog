@@ -37,5 +37,5 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [quantum-zeno-effect](projects/quantum-zeno-effect/brief.md) | A GitHub Pages site where you learn about the quantum Zeno effect. | education, physics, quantum, web |  |  | 2026-10-28 |
+| [quantum-zeno-effect](projects/quantum-zeno-effect/brief.md) | A GitHub Pages site where you learn about the quantum Zeno effect. | education, physics, quantum, web |  |  | 2026-10-30 |
 <!-- backlog:index:end -->
