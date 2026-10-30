@@ -45,7 +45,7 @@ play it today.
 ### Must (MVP)
 
 - Palm City viewer: reads the map from the owner's Heat install and flies through it,
-  showing frame rate and frame time.
+  showing frame rate and frame time, with a day/night toggle (both in the MVP).
 - Benchmarks against the original on the same camera path and PC.
 - Progress GitHub page and `docs/OVERVIEW.md`, as in swjkja.
 
@@ -80,6 +80,8 @@ play it today.
 - Minimum hardware target: integrated GPUs (Intel HD 630 / Steam Deck class), if possible.
 - "Smaller": an import step converts the install into nfwh's own compact format.
 - Reverse engineering covers data files and the game executable.
+- The owner's Heat is the Steam version.
+- Pieces of swjkja are copied and adapted, not shared as a library.
 - A progress page on GitHub Pages and a `docs/OVERVIEW.md` explaining how the project
   works, both just like swjkja's.
 
@@ -109,6 +111,12 @@ play it today.
       that in mind when coding.
 - [x] How far may reverse engineering go? → Data files and the game executable
       (disassembly allowed, to match physics and logic).
+- [x] Day and night in the MVP viewer? → Both, toggleable, from the start.
+- [x] First session? → A data inventory tool (see First session).
+- [x] Where is the install? → Steam (the owner's Steam library; exact path to confirm at
+      start).
+- [x] Reuse swjkja? → Copy and adapt the useful pieces (bench scripts, progress page,
+      `.local-ci`, renderer setup); the repos then evolve independently.
 
 ## Risks and unknowns
 
@@ -125,7 +133,9 @@ play it today.
 
 ## First session
 
-- 
+- A data inventory tool: a command that opens the owner's Heat install, lists its
+  bundles and assets with sizes, and records what's there in the docs, measured against
+  the install size. The foundation for the import step and the viewer.
 
 ## References
 
@@ -138,3 +148,4 @@ play it today.
 - 2026-10-30: round 1: clean-room engine, Palm City viewer MVP, single-player first, measured benchmarks.
 - 2026-10-30: round 2: Rust + ash, Windows and Linux, beat original with same look, public GPLv3, progress page and OVERVIEW.md.
 - 2026-10-30: round 3: integrated-GPU target, compact converted data, no-crash priority, executable RE allowed.
+- 2026-10-30: round 4: day and night in MVP, data inventory first, Steam install, copy-and-adapt from swjkja.
