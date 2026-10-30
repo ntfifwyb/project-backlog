@@ -57,6 +57,14 @@ play it today.
 - Asset mods (custom cars, wraps, maps) once the engine is playable; no code-mod
   interface for now.
 - Multiplayer of the project's own (not EA's servers).
+- Import the owner's original Heat save games (cars, money, progress) once the campaign
+  exists.
+- Audio: none in the viewer; engine and ambient sound arrive with the drivable car.
+- Render-scale/upscaler setting for weak GPUs (benchmarks vs the original stay at native
+  resolution).
+- Much later, when the project is basically finished: research Heat's graphics/shader
+  mods (the owner remembers one that made it look much better) and consider visual
+  extras like it, as optional settings.
 
 ### Not doing
 
@@ -87,6 +95,8 @@ play it today.
 - The owner's Heat is the Steam version.
 - Pieces of swjkja are copied and adapted, not shared as a library.
 - Input: keyboard and mouse plus gamepad.
+- The default look is the original's; no visual extras until the project is basically
+  finished.
 - A progress page on GitHub Pages and a `docs/OVERVIEW.md` explaining how the project
   works, both just like swjkja's.
 
@@ -126,6 +136,11 @@ play it today.
 - [x] Customization? → Later, after driving.
 - [x] Mods? → Later, asset mods only.
 - [x] Input? → Keyboard/mouse for the viewer, gamepad from the first drivable car.
+- [x] Audio in the MVP? → No.
+- [x] Visual extras? → Original look first. Much later, research graphics/shader mods for
+      Heat and consider extras then.
+- [x] Upscaling? → Yes, as a setting.
+- [x] Original save games? → Import them, once the campaign exists.
 
 ## Risks and unknowns
 
@@ -159,3 +174,4 @@ play it today.
 - 2026-10-30: round 3: integrated-GPU target, compact converted data, no-crash priority, executable RE allowed.
 - 2026-10-30: round 4: day and night in MVP, data inventory first, Steam install, copy-and-adapt from swjkja.
 - 2026-10-30: round 5: renamed nfwh → nfsh (owner's correction); drivable car next, customization and asset mods later, keyboard + gamepad.
+- 2026-10-30: round 6: no audio in MVP, original look first (shader-mod research much later), upscaling setting, import original saves.
