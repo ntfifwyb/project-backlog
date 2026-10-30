@@ -26,12 +26,13 @@ course is the way to learn it.
 
 ## Users and context
 
-- A learner with no quantum background, in a desktop web browser (GitHub Pages). The
-  course teaches every quantum idea it uses (state, probability, measurement, evolution).
+- A complete beginner: no physics background at all, let alone quantum ("even in
+  physics. Even in quantum."), in a desktop web browser (GitHub Pages). The course teaches
+  every physics and quantum idea it uses (state, probability, measurement, evolution).
 
 ## Success criteria *
 
-- [ ] After the course, a learner with no quantum background correctly predicts that
+- [ ] After the course, a complete beginner (no physics or quantum background) correctly predicts that
       measuring more often keeps the state from changing, and can say why (at short
       times the change grows quadratically, so frequent resets keep it near zero).
 
@@ -78,7 +79,8 @@ course is the way to learn it.
 - GitHub owner: the `instructional-pages` organization. Its shared rules
   (`~/projects/instructional-pages/CLAUDE.md`) apply: guided lessons then a sandbox,
   predict-then-reveal, dark minimal look, TypeScript + Vite, MIT, no analytics, English.
-- Learner: no quantum background; the course teaches the basics it needs.
+- Learner: a complete beginner, with no physics or quantum background; the course teaches
+  every idea it needs.
 - Simulation: rotating two-level state with learner-set measurements, plus a survival
   probability vs. measurement rate plot.
 - Anti-Zeno effect: Later, not MVP.
@@ -100,7 +102,7 @@ course is the way to learn it.
 ## Open questions *
 
 - [x] Repo name? → `quantum-zeno-effect`.
-- [x] Learner level? → No quantum background.
+- [x] Learner level? → Complete beginner, even in physics and quantum.
 - [x] Interactive simulation of what? → Rotating two-level state interrupted by
       measurements, beside a survival probability vs. measurement rate plot.
 - [x] Anti-Zeno effect in MVP? → Later.
@@ -121,8 +123,9 @@ course is the way to learn it.
 
 ## Risks and unknowns
 
-- A 3D Bloch sphere is more to teach a learner with no quantum background, and must fit
+- A 3D Bloch sphere is more to teach a complete beginner, and must fit
   the 50 KB budget.
+- 2026-10-30: learner clarified: a complete beginner, even in physics.
 
 ## First session
 
@@ -141,3 +144,4 @@ course is the way to learn it.
 - 2026-10-30: round 3: problem (curiosity), MVP confirmed, interpretations out, QC uses Later.
 - 2026-10-30: round 4: length, paradox-first opening, Itano 1990, weak measurements Later.
 - 2026-10-30: round 5: Bloch sphere, sandbox controls, random runs, 50 KB budget.
+- 2026-10-30: learner clarified: a complete beginner, even in physics.
