@@ -1,21 +1,21 @@
 ---
-title: nfwh
+title: nfsh
 status: idea
 created: 2026-10-30
 updated: 2026-10-30
 owner: cmprssd
-repo: cmprssd/nfwh
+repo: cmprssd/nfsh
 tags: [game, engine, performance]
 stack: [rust, vulkan, ash]
 effort:
 priority:
 ---
 
-# nfwh
+# nfsh
 
 ## Summary *
 
-nfwh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019),
+nfsh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019),
 in the same spirit as `cmprssd/swjkja`: the same game, but a smaller footprint on disk,
 much faster, and more reliable. Built on the fastest tech stack possible.
 
@@ -31,13 +31,13 @@ play it today.
 
 ## Success criteria *
 
-- [ ] When nfwh's Palm City viewer and the original Heat play the same recorded camera
-      path on the same PC, nfwh's average and 1%-low frame times are lower.
-- [ ] On that path, nfwh's frames match the original's look by automated screenshot
+- [ ] When nfsh's Palm City viewer and the original Heat play the same recorded camera
+      path on the same PC, nfsh's average and 1%-low frame times are lower.
+- [ ] On that path, nfsh's frames match the original's look by automated screenshot
       comparison (as in swjkja).
 - [ ] Load time to the first frame of Palm City is lower than the original's, and the
       numbers are recorded in `docs/BASELINE.md`.
-- [ ] nfwh's converted copy of the data the viewer needs is smaller on disk than the
+- [ ] nfsh's converted copy of the data the viewer needs is smaller on disk than the
       same data in the original install.
 
 ## Scope *
@@ -51,7 +51,11 @@ play it today.
 
 ### Later
 
-- Driving, races, campaign and free roam (single-player).
+- Next after the viewer: one drivable car in free roam, handling and physics measured
+  against the original's feel; then races, police, campaign.
+- Garage and visual customization (parts, wraps), after driving and races work.
+- Asset mods (custom cars, wraps, maps) once the engine is playable; no code-mod
+  interface for now.
 - Multiplayer of the project's own (not EA's servers).
 
 ### Not doing
@@ -68,8 +72,8 @@ play it today.
 
 ## Decided
 
-- Name `nfwh`, under the `cmprssd` org (`cmprssd/nfwh`). The org uses abbreviated repo
-  names, an exception to the full-name rule.
+- Name `nfsh` (Need for Speed: Heat), under the `cmprssd` org (`cmprssd/nfsh`). The org
+  uses abbreviated repo names, an exception to the full-name rule.
 - Goals, in the owner's words: smaller file size, faster game, more reliable; "heavily
   optimized, extremely quick, using the fastest tech stack possible".
 - Same nature as `cmprssd/swjkja` (a new, much faster engine for an existing game).
@@ -78,10 +82,11 @@ play it today.
 - Stack: Rust, Vulkan 1.3 via `ash` (as swjkja). Platforms: Windows and Linux.
 - Public repo from day one, GPLv3.
 - Minimum hardware target: integrated GPUs (Intel HD 630 / Steam Deck class), if possible.
-- "Smaller": an import step converts the install into nfwh's own compact format.
+- "Smaller": an import step converts the install into nfsh's own compact format.
 - Reverse engineering covers data files and the game executable.
 - The owner's Heat is the Steam version.
 - Pieces of swjkja are copied and adapted, not shared as a library.
+- Input: keyboard and mouse plus gamepad.
 - A progress page on GitHub Pages and a `docs/OVERVIEW.md` explaining how the project
   works, both just like swjkja's.
 
@@ -104,7 +109,7 @@ play it today.
       and a `docs/OVERVIEW.md`, both like swjkja's.
 - [x] Minimum hardware? → Integrated GPUs (Intel HD 630 / Steam Deck class), if
       possible; testing is limited to the owner's PC.
-- [x] How is "smaller" achieved? → An import step converts Heat's data into nfwh's own
+- [x] How is "smaller" achieved? → An import step converts Heat's data into nfsh's own
       compact format; the original install can then be removed. Size is measured against
       the original install.
 - [x] How is "more reliable" checked? → No dedicated check, but it must not crash: keep
@@ -117,6 +122,10 @@ play it today.
       start).
 - [x] Reuse swjkja? → Copy and adapt the useful pieces (bench scripts, progress page,
       `.local-ci`, renderer setup); the repos then evolve independently.
+- [x] What comes after the viewer? → A drivable car, then races, police, campaign.
+- [x] Customization? → Later, after driving.
+- [x] Mods? → Later, asset mods only.
+- [x] Input? → Keyboard/mouse for the viewer, gamepad from the first drivable car.
 
 ## Risks and unknowns
 
@@ -149,3 +158,4 @@ play it today.
 - 2026-10-30: round 2: Rust + ash, Windows and Linux, beat original with same look, public GPLv3, progress page and OVERVIEW.md.
 - 2026-10-30: round 3: integrated-GPU target, compact converted data, no-crash priority, executable RE allowed.
 - 2026-10-30: round 4: day and night in MVP, data inventory first, Steam install, copy-and-adapt from swjkja.
+- 2026-10-30: round 5: renamed nfwh → nfsh (owner's correction); drivable car next, customization and asset mods later, keyboard + gamepad.

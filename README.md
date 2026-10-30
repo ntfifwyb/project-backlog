@@ -37,5 +37,5 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [nfwh](projects/nfwh/brief.md) | nfwh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019), in the same spirit… | game, engine, performance |  |  | 2026-10-30 |
+| [nfsh](projects/nfsh/brief.md) | nfsh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019), in the same spirit… | game, engine, performance |  |  | 2026-10-30 |
 <!-- backlog:index:end -->
