@@ -16,13 +16,16 @@ input to new projects, not their home. The workspace rules (`~/projects/CLAUDE.m
   questions as options, never under Decided.
 - Keep `updated:` current and add a dated line to the brief's Log on every status change.
 - Never delete a brief, with one exception: when a project starts, **start-project** moves
-  its brief into the new repo (`docs/BRIEF.md`) and removes it here. A dropped idea becomes
+  its brief into the new repo (`docs/BRIEF.md`) and `backlog start` replaces it here with
+  `started/<name>.md`, a few lines saying where it went. A dropped idea becomes
   `status: archived` with the reason in its Log.
 - After any change, run `backlog index` (rebuilds the README table) and `backlog check`,
   and commit both. `.local-ci` runs the same check.
 - No secrets, passwords, personal documents or other people's private data in briefs or
   refs: the repo is read into many sessions. Link to where they live instead.
-- Started projects aren't kept here: their own repo is the source of truth.
+- Started projects keep only their `started/<name>.md` record here (title, repo, dates,
+  one-line summary), as a history of what came out of the backlog. Their own repo is the
+  source of truth; don't add more to the record.
 
 ## Commits
 
