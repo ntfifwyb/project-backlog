@@ -37,15 +37,19 @@ play it today.
 
 ### Must (MVP)
 
-- 
+- Palm City viewer: reads the map from the owner's Heat install and flies through it,
+  showing frame rate and frame time.
+- Benchmarks against the original on the same camera path and PC.
 
 ### Later
 
-- 
+- Driving, races, campaign and free roam (single-player).
+- Multiplayer of the project's own (not EA's servers).
 
 ### Not doing
 
-- 
+- Shipping any EA code or game data: the owner's install supplies the assets.
+- Connecting to EA's online services.
 
 ## Constraints
 
@@ -58,20 +62,21 @@ play it today.
 - Goals, in the owner's words: smaller file size, faster game, more reliable; "heavily
   optimized, extremely quick, using the fastest tech stack possible".
 - Same nature as `cmprssd/swjkja` (a new, much faster engine for an existing game).
+- Clean-room engine reading the owner's installed Heat data (no source to port).
+- Speed and size are measured against the original on the same scene and PC.
 
 ## Open questions *
 
-- [ ] How does this differ from swjkja's starting point? swjkja ports released GPL source
-      (OpenJK) and reads the owner's game data. Heat's Frostbite engine and code were
-      never released, so there is nothing to port. Options: (a) clean-room engine that
-      reads the owner's installed Heat data (like OpenMW for Morrowind), needing reverse
-      engineering of Frostbite file formats; (b) optimize the original install itself
-      (repack/compression, config, mods) without a new engine.
-- [ ] What does the MVP run? (e.g. a map/free-roam viewer of Palm City, one drivable car,
-      one race.)
-- [ ] Single-player only? Heat's online/multiplayer depends on EA servers.
-- [ ] How is "faster/smaller/more reliable" measured against the original (same scene,
-      same hardware), and which numbers count?
+- [x] Approach, given there is no Heat source to port? → Clean-room engine that reads
+      the owner's installed Heat data (like OpenMW), reverse engineering Frostbite's
+      formats.
+- [x] What does the MVP run? → A Palm City viewer: load and fly through the open-world
+      map from the install, frame time shown.
+- [x] Online? → Single-player first; the project's own multiplayer later.
+- [x] How is "faster" proven? → Same scene, same PC: frame time and load time on a
+      recorded camera path vs. the original, plus install size on disk (as swjkja's
+      BASELINE.md).
+- [ ] Success thresholds: how much faster/smaller counts as done for the MVP?
 - [ ] Target platform and minimum hardware.
 - [ ] Stack: Rust like swjkja, or something else?
 - [ ] License and repo visibility.
@@ -99,3 +104,4 @@ play it today.
 ## Log
 
 - 2026-10-30: created.
+- 2026-10-30: round 1: clean-room engine, Palm City viewer MVP, single-player first, measured benchmarks.
