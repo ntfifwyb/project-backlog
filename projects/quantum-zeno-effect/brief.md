@@ -45,13 +45,17 @@ course is the way to learn it.
   measurements the learner sets, beside a plot of survival probability vs. measurement rate.
 - A short side note that "measurement" can be any strong interaction with the
   environment (decoherence); no density matrices.
-- Math beside the pictures (amplitudes, the cos² survival formula), teaching the trig it uses.
+- Math beside the pictures (amplitudes, the cos² survival formula). Assumes school
+  arithmetic only: the course teaches angles, squaring, probability and cosine itself.
+- Everyday analogies (coin, spinning top, watched pot) give the intuition before each idea,
+  each flagged as an analogy and followed by where it breaks down.
 - One lesson walks through a real experiment, Itano et al. 1990 (trapped beryllium ions,
   laser pulses as measurements), and its data.
-- 5–7 lessons, about an hour. Lesson 1 shows the effect in the simulation before explaining
+- Up to about 10 lessons, so the basics are built from zero without rushing. Lesson 1 shows the effect in the simulation before explaining
   it (paradox first); later lessons build the basics that explain it.
 - Ideal, instantaneous measurements only.
 - The state is drawn on a 3D Bloch sphere (WebGL2); the course teaches what the sphere means.
+  The rotation stays in one plane, so amplitudes are real and no complex numbers are needed.
 - Sandbox controls: rotation speed, number of measurements, total time. A "run once"
   button gives a random outcome; many runs build up the probability curve.
 
@@ -60,6 +64,7 @@ course is the way to learn it.
 - The anti-Zeno effect (frequent measurement speeding up decay).
 - Quantum computing uses (Zeno-based error suppression, dynamical decoupling).
 - Imperfect (weak) measurements, e.g. a measurement-strength slider.
+- Complex numbers and phase (the rest of the Bloch sphere).
 
 ### Not doing
 
@@ -91,7 +96,10 @@ course is the way to learn it.
 - Math: shown beside the pictures (org rule), not picture-only.
 - Problem: personal curiosity.
 - MVP is complete as listed; interpretations Not doing; QC applications Later.
-- Length: 5–7 lessons, about an hour. Opening: paradox first.
+- Length: up to about 10 lessons (was 5–7, raised for a complete beginner). Opening: paradox first.
+- Math: school arithmetic only; the course teaches the rest.
+- Phases: avoided; rotation in one plane with real amplitudes. Complex numbers Later.
+- Analogies: yes, flagged as analogies, with where each breaks down.
 - Experiment: Itano et al. 1990.
 - Weak measurements: Later; MVP uses ideal measurements.
 - State view: 3D Bloch sphere (WebGL2), not a 2D circle.
@@ -113,7 +121,10 @@ course is the way to learn it.
 - [x] MVP complete as listed? → Yes.
 - [x] Interpretations? → Not doing.
 - [x] Quantum computing applications? → Later.
-- [x] Course length? → 5–7 lessons, about an hour.
+- [x] Course length? → Up to about 10 lessons.
+- [x] Math assumed? → School arithmetic only.
+- [x] Complex numbers / phases? → Avoided; Later.
+- [x] Analogies? → Yes, flagged, with where they break down.
 - [x] Opening? → Paradox first.
 - [x] Which experiment? → Itano et al. 1990.
 - [x] Weak measurements? → Later.
@@ -126,6 +137,7 @@ course is the way to learn it.
 - A 3D Bloch sphere is more to teach a complete beginner, and must fit
   the 50 KB budget.
 - 2026-10-30: learner clarified: a complete beginner, even in physics.
+- 2026-10-30: round 6: arithmetic-only math, no phases, up to ~10 lessons, flagged analogies.
 
 ## First session
 
@@ -145,3 +157,4 @@ course is the way to learn it.
 - 2026-10-30: round 4: length, paradox-first opening, Itano 1990, weak measurements Later.
 - 2026-10-30: round 5: Bloch sphere, sandbox controls, random runs, 50 KB budget.
 - 2026-10-30: learner clarified: a complete beginner, even in physics.
+- 2026-10-30: round 6: arithmetic-only math, no phases, up to ~10 lessons, flagged analogies.
