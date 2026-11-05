@@ -47,6 +47,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 ### Not doing
 
+- Country flags or colours in the app.
 - Separate logins for members in the first release.
 - Connecting to anyone's bank. Proof-of-payment research covers only a statement file the person exports.
 - Real receipts during the research phase.
@@ -75,6 +76,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - The first release is for Windows, with one operator on one PC.
 - Clean receipts are approved in bulk by a person, with a log; flagged ones are opened individually.
 - Updates come from a signed public feed and install only after approval.
+- The app is called DIVAR and looks like a calm office tool, the same for every mission, opening on a to-do list.
 - The model test may spend up to $10 of API credit.
 - Only DIVAR's `docs/RULES.md` and rule tests carry over, as reference.
 - Each mission approves the AI company before any of its real receipts are uploaded.
@@ -121,6 +123,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] How are clean receipts reviewed? → A person approves them in bulk with one logged action and opens only flagged ones.
 - [x] How does the app receive updates? → It checks a signed public release feed and installs only after approval.
 
+- [x] What is the app called? → DIVAR.
+- [x] What does the app look like? → A calm office tool: neutral colours, clear tables and plain type.
+- [x] Does the app show the mission's country? → No: the same look for every mission.
+- [x] How is the main screen organised? → A to-do list first (flagged receipts, missing proofs, deadlines), with the ledger one click away.
+
 ## Risks and unknowns
 
 - The prototype's own list of unverified points: country-specific reciprocity terms; Auswärtiges Amt Rundnoten 14/2018, 39/2020, 01/2022 and 3/2024, which aren't public; whether BZSt applies the €100 minimum to the invoice total or to the refundable part.
@@ -147,3 +154,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: sixth round: local app, Tauri with TypeScript and SQLite, each mission's own AI key, three languages.
 - 2026-11-05: seventh round: pre-fill all pages, keep phone upload, password encryption, free at first.
 - 2026-11-05: eighth round: Windows first, one operator, bulk approval of clean receipts, signed update feed.
+- 2026-11-05: ninth round: keep the DIVAR name, calm office look, same look for everyone, to-do list first.
