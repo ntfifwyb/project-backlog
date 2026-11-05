@@ -53,13 +53,19 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 ## Decided
 
 - Research and data come before the build.
+- This is a rebuild from the research. DIVAR is reference material, not the starting code.
+- The research focuses first on rules and process.
+- The research starts with public sources and synthetic receipts only.
+- The user wants the DeepSeek API, but only if its OCR reading and understanding are good enough; the model should stay fairly cheap.
 
 ## Open questions *
 
-- [ ] Is this a continuation of the existing prototype, or a new build that only reuses its findings?
-- [ ] What does the research cover, and what does it produce?
-- [ ] What data is gathered, and may it include real receipts?
-- [ ] How far does automation go on proof of payment?
+- [x] Is this a continuation of the existing prototype, or a new build that only reuses its findings? → A rebuild from the research; DIVAR is reference material.
+- [x] What does the research cover first? → Rules and process.
+- [x] What data is gathered at the start? → Public sources and synthetic receipts, no real receipts.
+- [x] How far does automation go on proof of payment? → Research matching invoices against a statement file the person exports, with no connection to the bank.
+- [ ] Which AI model reads the receipts? The user prefers the DeepSeek API if it is good enough, and wants it fairly cheap.
+- [ ] What does the research deliver, and how do we know it's finished?
 
 ## Risks and unknowns
 
@@ -76,3 +82,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 ## Log
 
 - 2026-11-05: created.
+- 2026-11-05: first round: rebuild from research, rules and process first, public and synthetic data, research statement matching, DeepSeek preferred if good enough.
