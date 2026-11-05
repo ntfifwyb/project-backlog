@@ -37,7 +37,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 ### Must (MVP)
 
 - Research and data first; the build follows from them.
-- Deliver a cited rulebook, a labelled synthetic receipt set, model test results and a statement-matching study.
+- Deliver a cited rulebook, a labelled synthetic receipt set, model test results and a statement-matching study, and an automation map of the refund process.
 
 ### Later
 
@@ -65,6 +65,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - The repo starts private.
 - The rulebook covers the general rules and the first mission's country terms, in English with German legal quotes.
 - Test tools are written in Python.
+- The model test may spend up to $10 of API credit.
 - Only DIVAR's `docs/RULES.md` and rule tests carry over, as reference.
 - Each mission approves the AI company before any of its real receipts are uploaded.
 - A blind test chooses the model: the cheapest that reaches 98% on total, VAT, rate, date and supplier.
@@ -75,10 +76,10 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] What does the research cover first? → Rules and process.
 - [x] What data is gathered at the start? → Public sources and synthetic receipts, no real receipts.
 - [x] How far does automation go on proof of payment? → Research matching invoices against a statement file the person exports, with no connection to the bank.
-- [x] How is the receipt-reading model chosen? → A blind test of DeepSeek Flash, Claude Haiku 5.5, one EU-hosted option and Claude Sonnet 5.5 as a reference; the cheapest that passes wins. Evidence: `refs/model-advice-2026-11.md`.
+- [x] How is the receipt-reading model chosen? → A blind test of DeepSeek Flash, Claude Haiku 5.5, Gemini on a Vertex EU region and Claude Sonnet 5.5 as a reference; the cheapest that passes wins. Evidence: `refs/model-advice-2026-11.md`.
 - [x] What is the model's pass mark? → 98% correct on total, VAT, rate, date and supplier.
 - [x] Where may real receipts be sent? → Only to an AI company the mission has approved before any upload; the app names where receipts go. DeepSeek stays possible.
-- [x] What does the research deliver? → A cited rulebook, a labelled synthetic receipt set, model test results and a statement-matching study.
+- [x] What does the research deliver? → A cited rulebook, a labelled synthetic receipt set, model test results and a statement-matching study, and an automation map of the refund process.
 
 - [x] When is the rulebook research finished? → When every rule cites a primary source or is marked unverified.
 - [x] How large is the model test set? → 200 labelled synthetic receipts, including faded, crumpled and long-receipt variants.
@@ -89,6 +90,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] What language is the rulebook in? → English, with legal wording quoted in the original German.
 - [x] What are the test tools written in? → Python.
 - [x] What carries over from DIVAR? → `docs/RULES.md` and the rule tests as reference only; no app code, executable or access token.
+
+- [x] Which country's terms are researched? → The user has chosen; the name goes in the private repo's first handoff, not this public brief.
+- [x] What is the model test budget? → Up to $10 of API credit; the user supplies a key for each provider.
+- [x] Which EU-hosted candidate is tested? → Gemini on a Vertex EU region. Its price and EU hosting still need checking against official pages.
+- [x] Does the research map the process? → Yes: each step of the refund process is marked automatic, assisted or manual.
 
 ## Risks and unknowns
 
@@ -110,5 +116,6 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: added desk research on the receipt-reading model.
 - 2026-11-05: second round: blind test, 98% pass mark, research deliverables; real-receipt destination still open.
 - 2026-11-05: each mission approves the AI company that receives its real receipts.
-- 2026-11-05: fourth round: one country's reciprocity terms, English with German quotes, Python tools, rules and tests carried over from DIVAR.
 - 2026-11-05: third round: rulebook finish line, 200 test receipts, local statement matching, private repo.
+- 2026-11-05: fourth round: one country's reciprocity terms, English with German quotes, Python tools, rules and tests carried over from DIVAR.
+- 2026-11-05: fifth round: country chosen, $10 test budget, Gemini as the EU candidate, automation map added.

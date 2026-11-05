@@ -45,7 +45,7 @@ DIVAR's README estimates EUR 0.05-0.12 per receipt on Claude Opus 5.
 
 - DeepSeek Flash, the user's preference.
 - Claude Haiku 5.5, the same price range.
-- An option with EU processing: Gemini on a Vertex EU region, or Mistral OCR. Their prices and EU hosting come from secondary sources and need checking.
+- An option with EU processing: Gemini on a Vertex EU region (chosen over Mistral OCR). Its price and EU hosting come from secondary sources and need checking.
 - Claude Sonnet 5.5, as a quality reference.
 
 ## Sources
