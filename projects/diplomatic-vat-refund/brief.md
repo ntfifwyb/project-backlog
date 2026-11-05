@@ -64,7 +64,8 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] What does the research cover first? → Rules and process.
 - [x] What data is gathered at the start? → Public sources and synthetic receipts, no real receipts.
 - [x] How far does automation go on proof of payment? → Research matching invoices against a statement file the person exports, with no connection to the bank.
-- [ ] Which AI model reads the receipts? The user prefers the DeepSeek API if it is good enough, and wants it fairly cheap.
+- [ ] Which AI model reads the receipts? The user prefers the DeepSeek API if it is good enough, and wants it fairly cheap. Options and evidence: `refs/model-advice-2026-11.md`.
+- [ ] Where may real receipts be sent? DeepSeek's policy says it stores data in China, and Claude's own API has no EU-only option.
 - [ ] What does the research deliver, and how do we know it's finished?
 
 ## Risks and unknowns
@@ -73,6 +74,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 ## References
 
+- `refs/model-advice-2026-11.md`: desk research on prices, image limits and privacy for the receipt-reading model; no model tested yet.
 - Prototype, local only and not a git repo: `C:\Users\tb\Desktop\projects\PCATR` (app name DIVAR, internal name PCATR, v2.3.0). A local web app that reads receipts with Claude, checks them against rules R01–R30 and pre-fills page 3 of the forms; pages 1–2 stay manual. Its `docs/RULES.md` is the ruleset with sources. On 2026-11-05 `node tests/test_rules.js` passed 31 of 31; the app itself wasn't run.
 - UStErstV: https://www.gesetze-im-internet.de/usterstvo/BJNR003160970.html
 - BZSt procedure: https://www.bzst.de/DE/Behoerden/Botschaft_Konsulat/Botschaften/botschaften.html
@@ -83,3 +85,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 - 2026-11-05: created.
 - 2026-11-05: first round: rebuild from research, rules and process first, public and synthetic data, research statement matching, DeepSeek preferred if good enough.
+- 2026-11-05: added desk research on the receipt-reading model.
