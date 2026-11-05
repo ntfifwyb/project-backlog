@@ -6,7 +6,7 @@ updated: 2026-11-05
 owner: ntfifwyb
 repo:
 tags: [germany, diplomacy, vat, automation, research]
-stack: [python]
+stack: [tauri, typescript, sqlite, python]
 effort:
 priority:
 ---
@@ -41,7 +41,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 ### Later
 
-- The project itself, built on the research.
+- The app, built on the research: a Tauri, TypeScript and SQLite app on the mission's PC, in English, German and Spanish, using each mission's own AI key.
 
 ### Not doing
 
@@ -64,7 +64,9 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - Exported bank statements are matched locally by plain code and never go to an AI.
 - The repo starts private.
 - The rulebook covers the general rules and the first mission's country terms, in English with German legal quotes.
-- Test tools are written in Python.
+- Test tools are written in Python; the app is built with Tauri, TypeScript and SQLite.
+- The app runs on the mission's PC and uses the mission's own AI key.
+- The app ships in English, German and Spanish.
 - The model test may spend up to $10 of API credit.
 - Only DIVAR's `docs/RULES.md` and rule tests carry over, as reference.
 - Each mission approves the AI company before any of its real receipts are uploaded.
@@ -96,6 +98,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] Which EU-hosted candidate is tested? → Gemini on a Vertex EU region. Its price and EU hosting still need checking against official pages.
 - [x] Does the research map the process? → Yes: each step of the refund process is marked automatic, assisted or manual.
 
+- [x] Where does the app run? → On the mission's PC, with records stored locally.
+- [x] What is the app built with? → Tauri, TypeScript and SQLite. The research tools stay in Python, so their logic is rewritten for the app.
+- [x] Who pays for and connects to the AI model? → Each mission, with its own API key for its approved provider.
+- [x] Which languages does the app ship with? → English, German and Spanish.
+
 ## Risks and unknowns
 
 - The prototype's own list of unverified points: country-specific reciprocity terms; Auswärtiges Amt Rundnoten 14/2018, 39/2020, 01/2022 and 3/2024, which aren't public; whether BZSt applies the €100 minimum to the invoice total or to the refundable part.
@@ -119,3 +126,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: third round: rulebook finish line, 200 test receipts, local statement matching, private repo.
 - 2026-11-05: fourth round: one country's reciprocity terms, English with German quotes, Python tools, rules and tests carried over from DIVAR.
 - 2026-11-05: fifth round: country chosen, $10 test budget, Gemini as the EU candidate, automation map added.
+- 2026-11-05: sixth round: local app, Tauri with TypeScript and SQLite, each mission's own AI key, three languages.
