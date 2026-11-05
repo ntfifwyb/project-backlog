@@ -35,16 +35,11 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (1)
-
-| Project | Summary | Tags | Pri | Effort | Updated |
-|---|---|---|---|---|---|
-| [diplomatic-vat-refund](projects/diplomatic-vat-refund/brief.md) | Automate as much as possible of the VAT reimbursement process for diplomatic entities in Germany (missions an… | germany, diplomacy, vat, automation, research |  |  | 2026-11-05 |
-
-### Started (3)
+### Started (4)
 
 | Project | Repo | Summary | Started |
 |---|---|---|---|
+| [diplomatic-vat-refund](started/diplomatic-vat-refund.md) | [ntfifwyb/diplomatic-vat-refund](https://github.com/ntfifwyb/diplomatic-vat-refund) | Automate as much as possible of the VAT reimbursement process for diplomatic entities in Germany (missions and their members, who reclaim VAT from the Bundeszentralamt für Steuern, BZSt). | 2026-11-05 |
 | [higher-dimensions](started/higher-dimensions.md) | [instructional-pages/higher-dimensions](https://github.com/instructional-pages/higher-dimensions) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | 2026-10-27 |
 | [nfsh](started/nfsh.md) | [cmprssd/nfsh](https://github.com/cmprssd/nfsh) | nfsh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019), in the same spirit as `cmprssd/swjkja`: the same game, but a smaller footprint on disk, much faster, and more reliable. | 2026-10-30 |
 | [quantum-zeno-effect](started/quantum-zeno-effect.md) | [instructional-pages/quantum-zeno-effect](https://github.com/instructional-pages/quantum-zeno-effect) | A GitHub Pages site where you learn about the quantum Zeno effect. | 2026-10-30 |
