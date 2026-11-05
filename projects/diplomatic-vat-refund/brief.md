@@ -44,7 +44,8 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 ### Not doing
 
-- (Not settled yet; see the proof-of-payment question.)
+- Connecting to anyone's bank. Proof-of-payment research covers only a statement file the person exports.
+- Real receipts during the research phase.
 
 ## Constraints
 
