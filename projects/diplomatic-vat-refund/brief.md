@@ -29,7 +29,8 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 ## Success criteria *
 
-- [ ] When the model test runs on the labelled synthetic receipt set, the chosen model reads total, VAT, rate, date and supplier with at least 98% accuracy.
+- [ ] Every rule in the rulebook cites a primary source or is marked unverified.
+- [ ] When the model test runs on the 200 labelled synthetic receipts, the chosen model reads total, VAT, rate, date and supplier with at least 98% accuracy.
 
 ## Scope *
 
@@ -46,6 +47,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 - Connecting to anyone's bank. Proof-of-payment research covers only a statement file the person exports.
 - Real receipts during the research phase.
+- Sending bank statements to an AI.
 
 ## Constraints
 
@@ -59,6 +61,8 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - The research focuses first on rules and process.
 - The research starts with public sources and synthetic receipts only.
 - The user wants the DeepSeek API, but only if its OCR reading and understanding are good enough; the model should stay fairly cheap.
+- Exported bank statements are matched locally by plain code and never go to an AI.
+- The repo starts private.
 - Each mission approves the AI company before any of its real receipts are uploaded.
 - A blind test chooses the model: the cheapest that reaches 98% on total, VAT, rate, date and supplier.
 
@@ -72,6 +76,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] What is the model's pass mark? → 98% correct on total, VAT, rate, date and supplier.
 - [x] Where may real receipts be sent? → Only to an AI company the mission has approved before any upload; the app names where receipts go. DeepSeek stays possible.
 - [x] What does the research deliver? → A cited rulebook, a labelled synthetic receipt set, model test results and a statement-matching study.
+
+- [x] When is the rulebook research finished? → When every rule cites a primary source or is marked unverified.
+- [x] How large is the model test set? → 200 labelled synthetic receipts, including faded, crumpled and long-receipt variants.
+- [x] How is an exported bank statement handled? → Matched on the PC by plain code; no statement goes to an AI.
+- [x] Is the repo private or public? → Private for now.
 
 ## Risks and unknowns
 
@@ -93,3 +102,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: added desk research on the receipt-reading model.
 - 2026-11-05: second round: blind test, 98% pass mark, research deliverables; real-receipt destination still open.
 - 2026-11-05: each mission approves the AI company that receives its real receipts.
+- 2026-11-05: third round: rulebook finish line, 200 test receipts, local statement matching, private repo.
