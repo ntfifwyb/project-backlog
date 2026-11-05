@@ -35,7 +35,9 @@ DIVAR's README estimates EUR 0.05-0.12 per receipt on Claude Opus 5.
 
 ## Privacy evidence
 
-- DeepSeek's policy (updated 2026-02-10) says it stores personal data in China and lists model training as a purpose, with an opt-out. It excludes end users of apps built on its developer platform, so its API terms need reading.
+- DeepSeek's policy (updated 2026-02-10) says it stores personal data in China and lists model training as a purpose, with an opt-out. It excludes end users of apps built on its developer platform.
+- DeepSeek's open platform terms (effective 2026-04-29) don't say how long API inputs are kept, where, or whether they train models. They are governed by mainland Chinese law.
+- Anthropic says API data isn't used for training without express permission. Its privacy article says commercial API inputs and outputs are deleted within 30 days, while its retention docs say conversation content isn't retained by default on most models; this needs clarifying. Zero data retention is available by arrangement with sales.
 - In 2025 the Berlin data protection commissioner called DeepSeek's transfers of German users' data to China unlawful. That action concerned the app, not the API, and no later status was found.
 - Claude's first-party API offers no EU-only processing either: inference is global or US only.
 
@@ -51,7 +53,10 @@ DIVAR's README estimates EUR 0.05-0.12 per receipt on Claude Opus 5.
 - https://api-docs.deepseek.com/quick_start/pricing
 - https://api-docs.deepseek.com/guides/vision
 - https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html
+- https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html
 - https://platform.claude.com/docs/en/about-claude/pricing
+- https://platform.claude.com/docs/en/manage-claude/api-and-data-retention
+- https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data
 - https://platform.claude.com/docs/en/build-with-claude/vision
 - https://platform.claude.com/docs/en/manage-claude/data-residency
 - https://betterstack.com/community/guides/ai/deepseek-vision-api/
