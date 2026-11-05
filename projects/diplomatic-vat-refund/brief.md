@@ -6,7 +6,7 @@ updated: 2026-11-05
 owner: ntfifwyb
 repo:
 tags: [germany, diplomacy, vat, automation, research]
-stack: []
+stack: [python]
 effort:
 priority:
 ---
@@ -63,6 +63,9 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - The user wants the DeepSeek API, but only if its OCR reading and understanding are good enough; the model should stay fairly cheap.
 - Exported bank statements are matched locally by plain code and never go to an AI.
 - The repo starts private.
+- The rulebook covers the general rules and the first mission's country terms, in English with German legal quotes.
+- Test tools are written in Python.
+- Only DIVAR's `docs/RULES.md` and rule tests carry over, as reference.
 - Each mission approves the AI company before any of its real receipts are uploaded.
 - A blind test chooses the model: the cheapest that reaches 98% on total, VAT, rate, date and supplier.
 
@@ -81,6 +84,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] How large is the model test set? → 200 labelled synthetic receipts, including faded, crumpled and long-receipt variants.
 - [x] How is an exported bank statement handled? → Matched on the PC by plain code; no statement goes to an AI.
 - [x] Is the repo private or public? → Private for now.
+
+- [x] Does the rulebook cover country-specific reciprocity terms? → Yes: the general rules plus one country's terms, that of the first mission. The country and its terms stay out of this public brief; they go in the private repo.
+- [x] What language is the rulebook in? → English, with legal wording quoted in the original German.
+- [x] What are the test tools written in? → Python.
+- [x] What carries over from DIVAR? → `docs/RULES.md` and the rule tests as reference only; no app code, executable or access token.
 
 ## Risks and unknowns
 
@@ -102,4 +110,5 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: added desk research on the receipt-reading model.
 - 2026-11-05: second round: blind test, 98% pass mark, research deliverables; real-receipt destination still open.
 - 2026-11-05: each mission approves the AI company that receives its real receipts.
+- 2026-11-05: fourth round: one country's reciprocity terms, English with German quotes, Python tools, rules and tests carried over from DIVAR.
 - 2026-11-05: third round: rulebook finish line, 200 test receipts, local statement matching, private repo.
