@@ -43,9 +43,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 - The app, built on the research: a Tauri, TypeScript and SQLite app on the mission's PC, in English, German and Spanish, using each mission's own AI key. It pre-fills all form pages, keeps phone upload over local Wi-Fi and encrypts records with a password.
 - Pricing, after a free start.
+- Mac support, if a mission needs it.
 
 ### Not doing
 
+- Separate logins for members in the first release.
 - Connecting to anyone's bank. Proof-of-payment research covers only a statement file the person exports.
 - Real receipts during the research phase.
 - Sending bank statements to an AI.
@@ -70,6 +72,9 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - The app ships in English, German and Spanish.
 - The app pre-fills all form pages, keeps phone upload over local Wi-Fi and encrypts its records with a password.
 - The app is free at first.
+- The first release is for Windows, with one operator on one PC.
+- Clean receipts are approved in bulk by a person, with a log; flagged ones are opened individually.
+- Updates come from a signed public feed and install only after approval.
 - The model test may spend up to $10 of API credit.
 - Only DIVAR's `docs/RULES.md` and rule tests carry over, as reference.
 - Each mission approves the AI company before any of its real receipts are uploaded.
@@ -111,6 +116,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] How are local records protected? → Encrypted with a password; a recovery key guards against a forgotten one.
 - [x] How is the app offered? → Free at first; pricing can come later.
 
+- [x] Which computers does the first release support? → Windows first; Mac later if a mission needs it.
+- [x] How do several people use the app? → One operator on one PC handles the mission and all members.
+- [x] How are clean receipts reviewed? → A person approves them in bulk with one logged action and opens only flagged ones.
+- [x] How does the app receive updates? → It checks a signed public release feed and installs only after approval.
+
 ## Risks and unknowns
 
 - The prototype's own list of unverified points: country-specific reciprocity terms; Auswärtiges Amt Rundnoten 14/2018, 39/2020, 01/2022 and 3/2024, which aren't public; whether BZSt applies the €100 minimum to the invoice total or to the refundable part.
@@ -136,3 +146,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: fifth round: country chosen, $10 test budget, Gemini as the EU candidate, automation map added.
 - 2026-11-05: sixth round: local app, Tauri with TypeScript and SQLite, each mission's own AI key, three languages.
 - 2026-11-05: seventh round: pre-fill all pages, keep phone upload, password encryption, free at first.
+- 2026-11-05: eighth round: Windows first, one operator, bulk approval of clean receipts, signed update feed.
