@@ -29,13 +29,14 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 ## Success criteria *
 
-- [ ] (Not defined yet.)
+- [ ] When the model test runs on the labelled synthetic receipt set, the chosen model reads total, VAT, rate, date and supplier with at least 98% accuracy.
 
 ## Scope *
 
 ### Must (MVP)
 
 - Research and data first; the build follows from them.
+- Deliver a cited rulebook, a labelled synthetic receipt set, model test results and a statement-matching study.
 
 ### Later
 
@@ -57,6 +58,7 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - The research focuses first on rules and process.
 - The research starts with public sources and synthetic receipts only.
 - The user wants the DeepSeek API, but only if its OCR reading and understanding are good enough; the model should stay fairly cheap.
+- A blind test chooses the model: the cheapest that reaches 98% on total, VAT, rate, date and supplier.
 
 ## Open questions *
 
@@ -64,9 +66,10 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] What does the research cover first? → Rules and process.
 - [x] What data is gathered at the start? → Public sources and synthetic receipts, no real receipts.
 - [x] How far does automation go on proof of payment? → Research matching invoices against a statement file the person exports, with no connection to the bank.
-- [ ] Which AI model reads the receipts? The user prefers the DeepSeek API if it is good enough, and wants it fairly cheap. Options and evidence: `refs/model-advice-2026-11.md`.
+- [x] How is the receipt-reading model chosen? → A blind test of DeepSeek Flash, Claude Haiku 5.5, one EU-hosted option and Claude Sonnet 5.5 as a reference; the cheapest that passes wins. Evidence: `refs/model-advice-2026-11.md`.
+- [x] What is the model's pass mark? → 98% correct on total, VAT, rate, date and supplier.
 - [ ] Where may real receipts be sent? DeepSeek's policy says it stores data in China, and Claude's own API has no EU-only option.
-- [ ] What does the research deliver, and how do we know it's finished?
+- [x] What does the research deliver? → A cited rulebook, a labelled synthetic receipt set, model test results and a statement-matching study.
 
 ## Risks and unknowns
 
@@ -86,3 +89,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: created.
 - 2026-11-05: first round: rebuild from research, rules and process first, public and synthetic data, research statement matching, DeepSeek preferred if good enough.
 - 2026-11-05: added desk research on the receipt-reading model.
+- 2026-11-05: second round: blind test, 98% pass mark, research deliverables; real-receipt destination still open.
