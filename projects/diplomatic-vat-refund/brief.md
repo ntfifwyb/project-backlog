@@ -1,6 +1,6 @@
 ---
 title: Diplomatic VAT Refund
-status: idea
+status: ready
 created: 2026-11-05
 updated: 2026-11-05
 owner: ntfifwyb
@@ -155,3 +155,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: seventh round: pre-fill all pages, keep phone upload, password encryption, free at first.
 - 2026-11-05: eighth round: Windows first, one operator, bulk approval of clean receipts, signed update feed.
 - 2026-11-05: ninth round: keep the DIVAR name, calm office look, same look for everyone, to-do list first.
+- 2026-11-05: idea → ready
