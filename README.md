@@ -35,6 +35,12 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
+### Idea (1)
+
+| Project | Summary | Tags | Pri | Effort | Updated |
+|---|---|---|---|---|---|
+| [diplomatic-vat-refund](projects/diplomatic-vat-refund/brief.md) | Automate as much as possible of the VAT reimbursement process for diplomatic entities in Germany (missions an… | germany, diplomacy, vat, automation, research |  |  | 2026-11-05 |
+
 ### Started (3)
 
 | Project | Repo | Summary | Started |
