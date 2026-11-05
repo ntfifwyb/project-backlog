@@ -41,7 +41,8 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 
 ### Later
 
-- The app, built on the research: a Tauri, TypeScript and SQLite app on the mission's PC, in English, German and Spanish, using each mission's own AI key.
+- The app, built on the research: a Tauri, TypeScript and SQLite app on the mission's PC, in English, German and Spanish, using each mission's own AI key. It pre-fills all form pages, keeps phone upload over local Wi-Fi and encrypts records with a password.
+- Pricing, after a free start.
 
 ### Not doing
 
@@ -67,6 +68,8 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - Test tools are written in Python; the app is built with Tauri, TypeScript and SQLite.
 - The app runs on the mission's PC and uses the mission's own AI key.
 - The app ships in English, German and Spanish.
+- The app pre-fills all form pages, keeps phone upload over local Wi-Fi and encrypts its records with a password.
+- The app is free at first.
 - The model test may spend up to $10 of API credit.
 - Only DIVAR's `docs/RULES.md` and rule tests carry over, as reference.
 - Each mission approves the AI company before any of its real receipts are uploaded.
@@ -103,6 +106,11 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - [x] Who pays for and connects to the AI model? → Each mission, with its own API key for its approved provider.
 - [x] Which languages does the app ship with? → English, German and Spanish.
 
+- [x] How much of the BZSt forms does the app fill in? → Pre-fills all pages from saved mission and member details; people still check, sign and certify on paper.
+- [x] Does the app keep phone upload? → Yes: QR code and upload over local Wi-Fi, through a small protected server.
+- [x] How are local records protected? → Encrypted with a password; a recovery key guards against a forgotten one.
+- [x] How is the app offered? → Free at first; pricing can come later.
+
 ## Risks and unknowns
 
 - The prototype's own list of unverified points: country-specific reciprocity terms; Auswärtiges Amt Rundnoten 14/2018, 39/2020, 01/2022 and 3/2024, which aren't public; whether BZSt applies the €100 minimum to the invoice total or to the refundable part.
@@ -127,3 +135,4 @@ Diplomatic entities in Germany: the mission itself (form 010160) and its members
 - 2026-11-05: fourth round: one country's reciprocity terms, English with German quotes, Python tools, rules and tests carried over from DIVAR.
 - 2026-11-05: fifth round: country chosen, $10 test budget, Gemini as the EU candidate, automation map added.
 - 2026-11-05: sixth round: local app, Tauri with TypeScript and SQLite, each mission's own AI key, three languages.
+- 2026-11-05: seventh round: pre-fill all pages, keep phone upload, password encryption, free at first.
