@@ -44,6 +44,11 @@ work today.
   (ituzaingostudio), pedagogy / autodidacticism tools (adaptive-instructional-method,
   instructional-pages), Cybersecurity ("definitely"), Math ("maybe, in the future"),
   "and so on".
+- A Tools group for the Windows/desktop tools (screen-lighting-control,
+  deep-uninstall-engine, local-engine-for-notes-and-search,
+  networked-encrypted-storage-terminal).
+- Also included, at the user's request: relationship-evidence-toolkit,
+  diplomatic-vat-refund, cmprssd/nfsh, cmprssd/swjkja.
 - A Mermaid diagram of the web (AI at the centre), followed by a short section per group
   with the actual links.
 - Private projects are named in their group with no repo link.
@@ -52,8 +57,8 @@ work today.
 
 ### Later
 
-- Each private project gets a dedicated public GitHub page explaining what it is; the
-  README then links to that page instead of a repo.
+- Each private project gets a dedicated GitHub Pages site explaining what it is; the
+  README then links to that site instead of a repo.
 
 ### Not doing
 
@@ -72,7 +77,9 @@ work today.
 - The web is a Mermaid diagram, with linked group sections below it.
 - Private projects are listed by name, unlinked until their dedicated page exists.
 - Empty groups are shown as "coming soon".
-- Intro: one line plus contact links.
+- Intro: one line plus contact links: email and LinkedIn.
+- Private projects' dedicated pages are GitHub Pages sites (Later).
+- Every project the user has is shown, including the personal tools and the cmprssd repos.
 - Repo is `ntfifwyb/ntfifwyb`: GitHub only shows a profile README from a public repo named
   exactly after the account. This is why the name isn't a kebab-case full name.
 
@@ -86,14 +93,22 @@ work today.
 - [x] Private projects? → Named, unlinked; later linked to a dedicated public page each.
 - [x] Empty groups? → Shown as "coming soon".
 - [x] What's above the web? → One-line intro plus contact links.
-- [ ] Which contact links, and the wording of the intro line?
-- [ ] What form does a private project's "dedicated GitHub page" take (a GitHub Pages
-      site, or a small public showcase repo)?
+- [x] Where do the Windows tools go? → A new Tools group.
+- [x] Leave out personal/sensitive repos? → No: include all of them.
+- [x] Which contact links? → Email and LinkedIn.
+- [x] Private project page format? → A GitHub Pages site each.
+- [ ] Exact public email address and LinkedIn URL, and the wording of the intro line.
+- [ ] Which group do relationship-evidence-toolkit, diplomatic-vat-refund, nfsh and swjkja
+      go in?
 - [ ] Final list of groups and which repos go in each (only public repos can be linked).
 
 ## Risks and unknowns
 
 - The profile repo must be public; audit its content before the first push.
+- On a free GitHub plan, a Pages site needs a public repo, so each private project's page
+  lives in its own public repo (or a shared one), separate from the private code.
+- Naming private repos publicly reveals that they exist; their descriptions should be
+  checked for anything the user doesn't want public.
 
 ## First session
 
@@ -108,3 +123,4 @@ work today.
 - 2026-11-08: created.
 - 2026-11-08: round 1 answers (groups around AI, no widgets, hand-edited, 10-second criterion).
 - 2026-11-08: round 2 answers (Mermaid web, private projects unlinked, "coming soon" groups, intro + contacts).
+- 2026-11-08: round 3 answers (Tools group, include all repos, email + LinkedIn, Pages sites).
