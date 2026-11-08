@@ -44,10 +44,16 @@ work today.
   (ituzaingostudio), pedagogy / autodidacticism tools (adaptive-instructional-method,
   instructional-pages), Cybersecurity ("definitely"), Math ("maybe, in the future"),
   "and so on".
+- A Mermaid diagram of the web (AI at the centre), followed by a short section per group
+  with the actual links.
+- Private projects are named in their group with no repo link.
+- Groups with no project yet (e.g. Cybersecurity, Math) appear marked "coming soon".
+- Above the web: a one-line intro plus contact links.
 
 ### Later
 
-- 
+- Each private project gets a dedicated public GitHub page explaining what it is; the
+  README then links to that page instead of a repo.
 
 ### Not doing
 
@@ -63,6 +69,10 @@ work today.
 
 - Plain Markdown, no third-party widgets.
 - The project list is edited by hand.
+- The web is a Mermaid diagram, with linked group sections below it.
+- Private projects are listed by name, unlinked until their dedicated page exists.
+- Empty groups are shown as "coming soon".
+- Intro: one line plus contact links.
 - Repo is `ntfifwyb/ntfifwyb`: GitHub only shows a profile README from a public repo named
   exactly after the account. This is why the name isn't a kebab-case full name.
 
@@ -71,10 +81,14 @@ work today.
 - [x] Widgets? → None: plain Markdown only.
 - [x] How does the list stay current? → Edited by hand.
 - [x] Success criterion? → Readable in about 10 seconds, on about one screen.
-- [ ] How to draw the "spider's web"? Claude's suggestion: a diagram (Mermaid, rendered
-      natively by GitHub, or a committed SVG) with AI at the centre, plus a short section
-      per group with the actual links, since links inside diagrams aren't reliably
-      clickable on GitHub.
+- [x] How to draw the "spider's web"? → Mermaid diagram with AI at the centre, plus a
+      linked section per group below it.
+- [x] Private projects? → Named, unlinked; later linked to a dedicated public page each.
+- [x] Empty groups? → Shown as "coming soon".
+- [x] What's above the web? → One-line intro plus contact links.
+- [ ] Which contact links, and the wording of the intro line?
+- [ ] What form does a private project's "dedicated GitHub page" take (a GitHub Pages
+      site, or a small public showcase repo)?
 - [ ] Final list of groups and which repos go in each (only public repos can be linked).
 
 ## Risks and unknowns
@@ -93,3 +107,4 @@ work today.
 
 - 2026-11-08: created.
 - 2026-11-08: round 1 answers (groups around AI, no widgets, hand-edited, 10-second criterion).
+- 2026-11-08: round 2 answers (Mermaid web, private projects unlinked, "coming soon" groups, intro + contacts).
