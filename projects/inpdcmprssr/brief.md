@@ -1,9 +1,9 @@
 ---
-title: In-place decompressor
+title: inpdcmprssr (in-place decompressor)
 status: idea
 created: 2026-11-11
 updated: 2026-11-11
-owner: ntfifwyb
+owner: cmprssd
 repo:
 tags: [cli, filesystem, compression]
 stack: [rust]
@@ -11,7 +11,7 @@ effort:
 priority:
 ---
 
-# In-place decompressor
+# inpdcmprssr (in-place decompressor)
 
 ## Summary *
 
@@ -36,7 +36,15 @@ elsewhere or extract to another drive.
 
 ## Success criteria *
 
-- [ ] 
+- [ ] When a 20 GB `.tar.zst` is extracted on NTFS, the disk space used by the archive and
+  output together never exceeds the final output size plus 1% of the archive size
+  (measured during the run).
+- [ ] When the process is killed at any step, rerunning it resumes, and the result matches
+  a normal extraction byte for byte.
+- [ ] For every supported format, the extracted files' hashes match those from a normal
+  extractor (zstd, gzip, 7-Zip).
+- [ ] When the filesystem can't free space (FAT32, exFAT) or the archive can't be freed as
+  it's read, it refuses before touching the archive and says why.
 
 ## Scope *
 
@@ -47,6 +55,8 @@ elsewhere or extract to another drive.
 - A Rust library crate that the cmprssd engines depend on, plus a small CLI for any archive.
 - Formats: zstd (`.tar.zst`, `.zst`), gzip (`.tar.gz`, `.gz`) and ZIP.
 - Windows NTFS first, freeing space with sparse-file hole punching (`FSCTL_SET_ZERO_DATA`).
+- When the archive and the output are on different drives, extract normally without
+  freeing anything, and say so.
 - Crash-safe from the start: a journal, output flushed before every free, resume after an
   interrupted run, and tests that kill the process at each step.
 
@@ -66,6 +76,8 @@ elsewhere or extract to another drive.
 
 - **Build our own engine**, not one based on HatchZip (user's choice, 2026-11-11, made
   knowing HatchZip exists).
+- Name and owner: `cmprssd/inpdcmprssr`. Abbreviated, like the other cmprssd repos (the
+  workspace naming rule's cmprssd exception).
 - Form: a Rust crate plus a CLI, in its own repo.
 - First version: zstd, gzip and ZIP; Windows NTFS first; crash-safe with resume.
 - Used by cmprssd to install a game from a compressed package or disc copy.
@@ -82,6 +94,12 @@ elsewhere or extract to another drive.
 - [x] First formats? → zstd, gzip and ZIP (not zstd only).
 - [x] First platform? → Windows NTFS, then Linux.
 - [x] Crash safety in the first version? → Yes: journal, resume, kill tests.
+- [x] Owner and name? → `cmprssd/inpdcmprssr`.
+- [x] Archive and output on different drives? → Extract normally without freeing, and
+  say so.
+- [ ] cmprssd's org rules (`~/projects/cmprssd/CLAUDE.md`) assume each repo is a game
+  engine, with a progress page and a disc build. Which apply to a library? Options: none
+  except shared tooling, or a progress page too.
 
 ## Risks and unknowns
 
@@ -131,3 +149,5 @@ elsewhere or extract to another drive.
 - 2026-11-11: decided to build our own; the cmprssd use is installing from a package or disc.
 - 2026-11-11: decided form (Rust crate + CLI), formats (zstd, gzip, ZIP), platform
   (Windows NTFS first) and crash safety from the start.
+- 2026-11-11: success criteria picked; owner cmprssd; renamed from in-place-decompressor
+  to inpdcmprssr.
