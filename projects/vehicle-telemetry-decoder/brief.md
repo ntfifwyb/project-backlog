@@ -66,6 +66,8 @@ someone else's software.
 - Building the adapter: an off-the-shelf one is bought.
 - Support for cars other than the user's own.
 - A server or cloud sync for trips.
+- A simulator or demo mode with fake data.
+- Languages other than English.
 
 ## Constraints
 
@@ -98,6 +100,9 @@ someone else's software.
 - Metric units (km/h, °C, kPa, litres).
 - Recorded trips are stored on the phone (in the browser) and exportable as CSV; no
   server.
+- Adapter: OBDLink CX (Bluetooth LE, about $80).
+- No simulator: development and checks use the real car, adapter and phone.
+- License: MIT. Language: English only.
 - Built for the user's own car only.
 
 ## Open questions *
@@ -119,16 +124,26 @@ someone else's software.
 - [x] Look and feel? → Dark dashboard.
 - [x] Units? → Metric.
 - [x] Where do trips live? → On the phone, CSV export.
+- [x] Which adapter? → OBDLink CX.
+- [x] Testing without the car? → No simulator; test on the real car only.
+- [x] License? → MIT.
+- [x] Language? → English.
 
 ## Risks and unknowns
 
 - Manufacturer-specific data and engine tuning are often proprietary or locked; what's
   possible depends heavily on the car.
 - A bad write to the engine computer can damage the engine or leave the car undrivable.
+- Unverified: that the OBDLink CX works from a Web Bluetooth browser on iOS (e.g. Bluefy).
+  Check this first, before building anything on it.
+- With no simulator, every check needs the car, the adapter and the phone, so progress
+  depends on access to the car.
 
 ## First session
 
-- 
+- (Suggestion, not decided.) Connect the iPhone to the OBDLink CX from a minimal HTTPS
+  page, send one request (e.g. engine RPM), and show the decoded value; this settles the
+  Web Bluetooth risk above.
 
 ## References
 
@@ -144,3 +159,4 @@ someone else's software.
 - 2026-11-11: round 1: iPhone, read-only first, bought adapter, user's car only.
 - 2026-11-11: round 2: web app in a Web Bluetooth browser, built-in rules, four MVP features (incl. clearing codes); car still to be named.
 - 2026-11-11: round 3: GitHub Pages, dark dashboard, metric, trips on the phone with CSV export.
+- 2026-11-11: round 4: OBDLink CX, no simulator, MIT, English. Only the car is still open.
