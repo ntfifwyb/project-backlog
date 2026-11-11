@@ -62,14 +62,16 @@ phone, which they dislike.
 - Levels as numbers plus up/down ("brightness 50", "fan speed 3", "brighter", "fan faster").
 - Bulb colour: warm/cool plus about 10 named colours ("red", "blue", "purple"...).
 - If a device doesn't answer: retry once, then the bar shows failure.
+- Command phrases live in the config file (add synonyms or languages without rebuilding).
 - One-time setup command that signs in to the user's Xiaomi account, saves the device
   tokens locally, and is never needed again (then fully offline).
 
 ### Later
 
-- Run on a dedicated device too (user said "both", PC first).
+- Run on a dedicated device too (user said "both", PC first): a Raspberry Pi, or something
+  smaller like an ESP32 (see Open questions).
 - Linux (the user's next OS).
-- Spanish and German command sets.
+- Spanish and German command sets, right after the MVP.
 
 ### Not doing
 
@@ -152,6 +154,14 @@ phone, which they dislike.
 - [x] Level phrasing? → Numbers plus up/down.
 - [x] Colour? → Warm/cool plus ~10 named colours.
 - [x] Device not answering? → Retry once, then show failure.
+- [x] When do ES/DE come? → Right after the MVP.
+- [x] Grammar editable? → Phrases in the config file.
+- [x] Proving speed? → By feel; no timing logs.
+- [ ] Later (doesn't block the MVP): which dedicated device? Raspberry Pi (runs the same
+      Rust binary and Vosk) or ESP32, which the user would prefer if it's small enough. An
+      ESP32-S3 can't run Vosk. Options: (a) ESP32-S3 as a mic satellite that detects the wake
+      word and streams audio to the PC/Pi; (b) fully on-chip with Espressif ESP-SR, whose
+      command models are believed to cover English and Chinese only (no ES/DE); to verify.
 
 ## Risks and unknowns
 
@@ -193,3 +203,4 @@ phone, which they dislike.
 - 2026-11-11: round 6: animation-only feedback, waveform bar, start with Windows, built-in token login.
 - 2026-11-11: round 7: named devices, one command per wake word, GitHub release .exe, no mute.
 - 2026-11-11: round 8: today's workaround, numeric levels, named colours, retry once.
+- 2026-11-11: round 9: ES/DE after the MVP, phrases in config, speed judged by feel; device for later open (Pi vs ESP32).
