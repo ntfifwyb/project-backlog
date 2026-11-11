@@ -30,6 +30,9 @@ elsewhere or extract to another drive.
 ## Users and context
 
 - The user, on their own machines.
+- The cmprssd game engines (`~/projects/cmprssd`): installing a game from a compressed
+  package (for example one copied off the travel disc) onto a nearly full drive, without
+  needing room for both the package and the installed game.
 
 ## Success criteria *
 
@@ -56,13 +59,18 @@ elsewhere or extract to another drive.
 
 ## Decided
 
+- **Build our own engine**, not one based on HatchZip (user's choice, 2026-11-11, made
+  knowing HatchZip exists).
+- Used by cmprssd to install a game from a compressed package or disc copy.
 - Policy check (2026-11-11, Anthropic Usage Policy effective 2026-11-12): **allowed**. It's a
   local file utility. Nothing in the policy covers it, and it doesn't use Anthropic's
   services at runtime.
 
 ## Open questions *
 
-- [ ] 
+- [x] Build on HatchZip or build our own? → Build our own.
+- [x] Where in cmprssd? → Installing a game from a compressed package or disc copy, not
+  converting the game's own install.
 
 ## Risks and unknowns
 
@@ -80,7 +88,8 @@ elsewhere or extract to another drive.
 - **Filesystems without hole punching** (FAT32, exFAT: most USB drives and SD cards) can
   only shrink a file from the end, which most compressed formats don't allow.
 - **Prior art exists** (checked 2026-11-11; see References). HatchZip already does this
-  well. Whether there is still a project to build here is open.
+  well, so a new engine mostly duplicates it. Its design (journal, flush before freeing,
+  crash tests) is a reference, and its MIT/Apache licence allows reading and reusing code.
 
 ## First session
 
@@ -108,3 +117,4 @@ elsewhere or extract to another drive.
   was explained and they asked to build a project on it.
 - 2026-11-11: prior art checked: HatchZip (Rust, MIT/Apache) already does this, except
   `.tar.zst`.
+- 2026-11-11: decided to build our own; the cmprssd use is installing from a package or disc.
