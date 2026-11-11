@@ -52,7 +52,11 @@ e.g. the Mi Home app, isn't recorded yet.)
 - Wake word "Jarvis" starts a command (hands-free; the mic listens locally).
 - Commands: bulb on/off, brightness, colour/warmth; fan on/off, speed, oscillation.
 - English commands.
-- No UI, except a small animation that pops up on screen while it's listening.
+- No UI, except a small animation that pops up on screen while it's listening: a thin
+  waveform bar at the screen edge that moves with the voice, then shows success or failure.
+- Starts with Windows (at login) and stays in the background.
+- One-time setup command that signs in to the user's Xiaomi account, saves the device
+  tokens locally, and is never needed again (then fully offline).
 
 ### Later
 
@@ -125,6 +129,10 @@ e.g. the Mi Home app, isn't recorded yet.)
 - [x] Wake word engine? → Rustpotter.
 - [x] Wake word? → "Jarvis".
 - [x] Repo? → Public, MIT.
+- [x] Command feedback? → Animation only (shows success/failure), no sound.
+- [x] Animation look? → Waveform bar at the screen edge.
+- [x] Startup? → Starts with Windows.
+- [x] Tokens? → Built-in one-time login.
 
 ## Risks and unknowns
 
@@ -163,3 +171,4 @@ e.g. the Mi Home app, isn't recorded yet.)
 - 2026-11-11: round 3: Windows then Linux, EN/ES/DE, success criteria, exclusions.
 - 2026-11-11: round 4: English first, Rust, listening animation only, CLI first session.
 - 2026-11-11: round 5: Vosk grammar, Rustpotter, wake word "Jarvis", public MIT repo.
+- 2026-11-11: round 6: animation-only feedback, waveform bar, start with Windows, built-in token login.
