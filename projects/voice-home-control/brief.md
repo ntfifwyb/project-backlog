@@ -54,8 +54,8 @@ phone, which they dislike.
 - Commands: bulb on/off, brightness, colour/warmth; fan on/off, speed, oscillation.
 - English commands.
 - No UI, except a small animation that pops up on screen while it's listening: a thin
-  waveform bar at the screen edge that moves with the voice, then shows success or failure.
-- Starts with Windows (at login) and stays in the background; always listening (no mute).
+  waveform bar along the top edge of the primary monitor that moves with the voice, then shows success or failure.
+- Starts with Windows (at login) and stays in the background; always listening (no mute), also during calls.
 - Devices are named in the config (name, room), so more bulbs and fans can be added later
   without a rewrite; today one of each.
 - One command per wake word.
@@ -68,8 +68,8 @@ phone, which they dislike.
 
 ### Later
 
-- Run on a dedicated device too (user said "both", PC first): a Raspberry Pi, or something
-  smaller like an ESP32 (see Open questions).
+- Run on a dedicated device too (user said "both", PC first): a Raspberry Pi running the
+  whole app standalone (no PC needed).
 - Linux (the user's next OS).
 - Spanish and German command sets, right after the MVP.
 
@@ -157,7 +157,10 @@ phone, which they dislike.
 - [x] When do ES/DE come? → Right after the MVP.
 - [x] Grammar editable? → Phrases in the config file.
 - [x] Proving speed? → By feel; no timing logs.
-- [ ] Later (doesn't block the MVP): which dedicated device? Raspberry Pi (runs the same
+- [x] Bar position? → Top edge of the primary monitor.
+- [x] During calls? → Keep listening.
+- [x] Later (doesn't block the MVP): which dedicated device? → Raspberry Pi standalone.
+      Considered: Raspberry Pi (runs the same
       Rust binary and Vosk) or ESP32, which the user would prefer if it's small enough. An
       ESP32-S3 can't run Vosk. Options: (a) ESP32-S3 as a mic satellite that detects the wake
       word and streams audio to the PC/Pi; (b) fully on-chip with Espressif ESP-SR, whose
@@ -204,3 +207,4 @@ phone, which they dislike.
 - 2026-11-11: round 7: named devices, one command per wake word, GitHub release .exe, no mute.
 - 2026-11-11: round 8: today's workaround, numeric levels, named colours, retry once.
 - 2026-11-11: round 9: ES/DE after the MVP, phrases in config, speed judged by feel; device for later open (Pi vs ESP32).
+- 2026-11-11: round 10: Pi standalone later, bar on top edge of primary monitor, keeps listening during calls.
