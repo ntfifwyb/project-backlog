@@ -2,7 +2,7 @@
 title: GitHub Profile README
 status: idea
 created: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-11
 owner: ntfifwyb
 repo: ntfifwyb/ntfifwyb
 tags: [portfolio, github-profile]
@@ -47,8 +47,10 @@ work today.
 - A Tools group for the Windows/desktop tools (screen-lighting-control,
   deep-uninstall-engine, local-engine-for-notes-and-search,
   networked-encrypted-storage-terminal).
-- Also included, at the user's request: relationship-evidence-toolkit,
-  diplomatic-vat-refund, cmprssd/nfsh, cmprssd/swjkja.
+- A Bureaucracy group: relationship-evidence-toolkit, diplomatic-vat-refund.
+- A group for the cmprssd organization (nfsh, swjkja), named around compressed and
+  optimized data, not games: cmprssd will be about optimizing and making smaller apps in
+  general, not only game engines.
 - A Mermaid diagram of the web (AI at the centre), followed by a short section per group
   with the actual links.
 - Private projects are named in their group with no repo link.
@@ -80,6 +82,12 @@ work today.
 - Intro: one line plus contact links: email and LinkedIn.
 - Private projects' dedicated pages are GitHub Pages sites (Later).
 - Every project the user has is shown, including the personal tools and the cmprssd repos.
+- relationship-evidence-toolkit and diplomatic-vat-refund go in a new Bureaucracy group.
+- cmprssd/nfsh and cmprssd/swjkja go in their own group for the cmprssd organization,
+  about compressed and optimized data and smaller apps (not a Games subgroup).
+- The public email address is given at build time (the first session asks for it).
+- The intro line is written at build time: the first session drafts 2 or 3 and the user
+  picks one.
 - Repo is `ntfifwyb/ntfifwyb`: GitHub only shows a profile README from a public repo named
   exactly after the account. This is why the name isn't a kebab-case full name.
 
@@ -97,9 +105,14 @@ work today.
 - [x] Leave out personal/sensitive repos? → No: include all of them.
 - [x] Which contact links? → Email and LinkedIn.
 - [x] Private project page format? → A GitHub Pages site each.
-- [ ] Exact public email address and LinkedIn URL, and the wording of the intro line.
-- [ ] Which group do relationship-evidence-toolkit, diplomatic-vat-refund, nfsh and swjkja
-      go in?
+- [x] Which group do relationship-evidence-toolkit and diplomatic-vat-refund go in? →
+      A new Bureaucracy group.
+- [x] Which group do nfsh and swjkja go in? → Their own cmprssd group, about compressed
+      and optimized data (cmprssd won't be limited to games).
+- [x] Public email address? → Given at build time.
+- [x] Intro wording? → Written at build time: 2 or 3 drafts, the user picks.
+- [ ] Exact label of the cmprssd group ("compressed and optimized data or something").
+- [ ] LinkedIn URL.
 - [ ] Final list of groups and which repos go in each (only public repos can be linked).
 
 ## Risks and unknowns
@@ -124,3 +137,4 @@ work today.
 - 2026-11-08: round 1 answers (groups around AI, no widgets, hand-edited, 10-second criterion).
 - 2026-11-08: round 2 answers (Mermaid web, private projects unlinked, "coming soon" groups, intro + contacts).
 - 2026-11-08: round 3 answers (Tools group, include all repos, email + LinkedIn, Pages sites).
+- 2026-11-11: round 4 answers (Bureaucracy group, cmprssd group, email and intro at build time).
