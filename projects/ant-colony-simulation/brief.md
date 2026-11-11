@@ -31,7 +31,10 @@ missing from existing ones.
 
 ## Success criteria *
 
-- [ ] 
+- [ ] When 12,000 ants are running on a mid-range laptop, the page holds 60 fps and its JS
+  heap stays under 50 MB.
+- [ ] Every behavior and default parameter in the simulation cites a study (in the repo and
+  in an About panel).
 
 ## Scope *
 
@@ -42,14 +45,16 @@ missing from existing ones.
 - Colony size: realistic for the species simulated (the user accepts ~10,000 as a fallback).
 - Viewer controls are settings only, exposing every research parameter (pheromone decay,
   task thresholds, and so on) as well as time speed.
-- Species: ideally the viewer picks one. If that makes the project too big, simulate only
-  the red harvester ant (*Pogonomyrmex barbatus*, mature colonies of about 10,000–12,000 workers).
+- One species: the red harvester ant (*Pogonomyrmex barbatus*, mature colonies of about
+  10,000–12,000 workers). Species data is kept separate from the engine so more can be added.
+- Every behavior and default parameter cites a study; an About panel lists the sources.
+- Realistic look.
 - Two views: the foraging surface above and the nest chambers below (queen, brood, tasks).
 - The full colony life: founding queen, growth, maturity, with births, deaths and aging.
 
 ### Later
 
-- 
+- A species picker with more species (the user wants the viewer to be able to choose).
 
 ### Not doing
 
@@ -72,6 +77,9 @@ missing from existing ones.
 - Interaction: settings only, with every parameter exposed.
 - Views: surface and nest.
 - Timeline: full colony life, founding to maturity.
+- MVP species: red harvester ant; a species picker comes later.
+- Realism is checked by citations: every behavior and default cites a study.
+- Look: realistic.
 
 ## Open questions *
 
@@ -83,6 +91,10 @@ missing from existing ones.
 - [x] What does the viewer see? → Surface + nest.
 - [x] What timeline? → Full colony life.
 - [x] How should settings work? → Every parameter exposed.
+- [x] When does species picking arrive? → Harvester first; the picker comes later.
+- [x] Performance target? → 60 fps and under 50 MB JS heap with 12,000 ants on a mid-range laptop.
+- [x] How is realism checked? → Cited sources for every behavior and default.
+- [x] What should it look like? → Realistic.
 
 ## Risks and unknowns
 
@@ -103,3 +115,4 @@ missing from existing ones.
 - 2026-11-11: created.
 - 2026-11-11: round 1: purpose, realism, scale, interaction.
 - 2026-11-11: round 2: species, views, lifecycle, settings.
+- 2026-11-11: round 3: species MVP, performance, realism check, look.
