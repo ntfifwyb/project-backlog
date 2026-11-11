@@ -43,15 +43,17 @@ someone else's software.
 
 ### Must (MVP)
 
-- 
+- Read-only: the app reads the car (fault codes, live data) and explains it; nothing is
+  written to the car.
 
 ### Later
 
-- 
+- Tuning (writing to the engine computer), under the limits in Constraints.
 
 ### Not doing
 
-- 
+- Building the adapter: an off-the-shelf one is bought.
+- Support for cars other than the user's own.
 
 ## Constraints
 
@@ -71,18 +73,23 @@ someone else's software.
 
 ## Decided
 
-- The device that connects to the car is bought, not built (unless decided otherwise
-  below).
-- The interface is on the user's phone.
+- The device that connects to the car is an off-the-shelf OBD-II adapter, bought, not built.
+- The interface is on the user's phone, an iPhone. The user would like it to be a web app
+  if possible rather than a native one (see Open questions: plain Safari can't reach the
+  adapter).
+- First version is read-only; tuning comes later.
+- Built for the user's own car only.
 
 ## Open questions *
 
 - [ ] Which car (make, model, year, engine, petrol or diesel)? Decides what data and
   tuning are possible.
-- [ ] Android or iPhone? Decides which adapters work (many cheap ones are classic
-  Bluetooth, which iPhones can't use).
-- [ ] Is tuning in the first version, or read-only first?
-- [ ] Buy an adapter or build one?
+- [x] Android or iPhone? → iPhone. The user asked whether it could just be a local web
+  page in Safari: not by itself, since iOS Safari has no Web Bluetooth and can't open the
+  raw TCP socket a Wi-Fi adapter uses.
+- [x] Is tuning in the first version, or read-only first? → Read-only first.
+- [x] Buy an adapter or build one? → Buy one.
+- [x] One car or any car? → The user's car only.
 - [ ] Where do modification suggestions come from (fixed rules, a knowledge base, an AI
   model)?
 
@@ -107,3 +114,4 @@ someone else's software.
 ## Log
 
 - 2026-11-11: created from the user's description; usage policy verdict: allowed with limits.
+- 2026-11-11: round 1: iPhone, read-only first, bought adapter, user's car only.
