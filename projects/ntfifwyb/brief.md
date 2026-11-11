@@ -1,6 +1,6 @@
 ---
 title: GitHub Profile README
-status: idea
+status: ready
 created: 2026-11-08
 updated: 2026-11-11
 owner: ntfifwyb
@@ -48,9 +48,13 @@ work today.
   deep-uninstall-engine, local-engine-for-notes-and-search,
   networked-encrypted-storage-terminal).
 - A Bureaucracy group: relationship-evidence-toolkit, diplomatic-vat-refund.
-- A group for the cmprssd organization (nfsh, swjkja), named around compressed and
-  optimized data, not games: cmprssd will be about optimizing and making smaller apps in
+- An Optimization group for the cmprssd organization (nfsh, swjkja), not a games group: cmprssd will be about optimizing and making smaller apps in
   general, not only game engines.
+- Final group list: AI at the centre; Anki, Entrepreneurship, Games, Pedagogy, Tools,
+  Bureaucracy, Optimization; Cybersecurity and Math as "coming soon". The list will grow
+  over time.
+- Each group section lists its projects by name only (linked where public), no
+  descriptions.
 - A Mermaid diagram of the web (AI at the centre), followed by a short section per group
   with the actual links.
 - Private projects are named in their group with no repo link.
@@ -83,8 +87,12 @@ work today.
 - Private projects' dedicated pages are GitHub Pages sites (Later).
 - Every project the user has is shown, including the personal tools and the cmprssd repos.
 - relationship-evidence-toolkit and diplomatic-vat-refund go in a new Bureaucracy group.
-- cmprssd/nfsh and cmprssd/swjkja go in their own group for the cmprssd organization,
-  about compressed and optimized data and smaller apps (not a Games subgroup).
+- cmprssd/nfsh and cmprssd/swjkja go in their own group, Optimization, for the cmprssd
+  organization (optimizing and making smaller apps, not only games).
+- Groups: AI centre; Anki, Entrepreneurship, Games, Pedagogy, Tools, Bureaucracy,
+  Optimization; Cybersecurity and Math "coming soon". The list will grow.
+- Project entries are names only, no one-line descriptions.
+- The LinkedIn URL is given at build time, like the email.
 - The public email address is given at build time (the first session asks for it).
 - The intro line is written at build time: the first session drafts 2 or 3 and the user
   picks one.
@@ -111,9 +119,11 @@ work today.
       and optimized data (cmprssd won't be limited to games).
 - [x] Public email address? → Given at build time.
 - [x] Intro wording? → Written at build time: 2 or 3 drafts, the user picks.
-- [ ] Exact label of the cmprssd group ("compressed and optimized data or something").
-- [ ] LinkedIn URL.
-- [ ] Final list of groups and which repos go in each (only public repos can be linked).
+- [x] Label of the cmprssd group? → Optimization.
+- [x] LinkedIn URL? → Given at build time.
+- [x] Final list of groups? → AI centre; Anki, Entrepreneurship, Games, Pedagogy, Tools,
+      Bureaucracy, Optimization; Cybersecurity and Math "coming soon". It will grow.
+- [x] How are projects listed in each group? → Names only.
 
 ## Risks and unknowns
 
@@ -125,7 +135,8 @@ work today.
 
 ## First session
 
-- 
+- Ask for the public email and LinkedIn URL; draft 2 or 3 intro lines for the user to
+  pick; check which repos are public; build the README and audit it before the first push.
 
 ## References
 
@@ -138,3 +149,5 @@ work today.
 - 2026-11-08: round 2 answers (Mermaid web, private projects unlinked, "coming soon" groups, intro + contacts).
 - 2026-11-08: round 3 answers (Tools group, include all repos, email + LinkedIn, Pages sites).
 - 2026-11-11: round 4 answers (Bureaucracy group, cmprssd group, email and intro at build time).
+- 2026-11-11: round 5 answers (Optimization group, final group list, names only, LinkedIn at build time).
+- 2026-11-11: idea → ready
