@@ -46,7 +46,7 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [ant-colony-simulation](projects/ant-colony-simulation/brief.md) | An ant colony simulation that runs as a webpage. | simulation, web |  |  | 2026-11-11 |
+| [ant-colony-simulation](projects/ant-colony-simulation/brief.md) | An ant colony simulation that runs as a webpage, made to be watched. | simulation, web |  |  | 2026-11-11 |
 
 ### Started (4)
 

@@ -15,7 +15,9 @@ priority:
 
 ## Summary *
 
-An ant colony simulation that runs as a webpage. It must be fast and use little to no RAM.
+An ant colony simulation that runs as a webpage, made to be watched. The goal is for it to
+be as realistic as possible, based on what has been studied about ants: biologically
+detailed behavior, not just simple rules. It must be fast and use little to no RAM.
 
 ## Problem *
 
@@ -25,6 +27,7 @@ missing from existing ones.
 ## Users and context
 
 - Runs in a web browser.
+- The viewer watches; they don't play. Interaction is settings only (no drawing on the map).
 
 ## Success criteria *
 
@@ -34,7 +37,10 @@ missing from existing ones.
 
 ### Must (MVP)
 
-- An ant colony simulation in a webpage.
+- An ant colony simulation in a webpage, made for watching.
+- Biologically detailed behavior, as realistic as the ant research allows.
+- Colony size: realistic for the species simulated (the user accepts ~10,000 as a fallback).
+- Viewer controls are settings only.
 
 ### Later
 
@@ -42,7 +48,8 @@ missing from existing ones.
 
 ### Not doing
 
-- 
+- A game: no goals, no win or lose conditions.
+- Painting the world (placing food or walls with the mouse).
 
 ## Constraints
 
@@ -55,10 +62,16 @@ missing from existing ones.
 ## Decided
 
 - Platform: a webpage.
+- Purpose: watching, as realistic as studied ant biology allows.
+- Realism: biologically detailed, not just simple emergent rules.
+- Interaction: settings only.
 
 ## Open questions *
 
-- [ ] 
+- [x] What is it for? → Watching, as realistic as possible with what has been studied about ants.
+- [x] How realistic? → Biologically detailed.
+- [x] How many ants? → Whatever is realistic: the average colony size. If the user doesn't like that number, ~10,000.
+- [x] What can the viewer do? → Settings only.
 
 ## Risks and unknowns
 
@@ -75,3 +88,4 @@ missing from existing ones.
 ## Log
 
 - 2026-11-11: created.
+- 2026-11-11: round 1: purpose, realism, scale, interaction.
