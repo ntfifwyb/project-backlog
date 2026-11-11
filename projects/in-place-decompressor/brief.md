@@ -105,5 +105,6 @@ elsewhere or extract to another drive.
 ## Log
 
 - 2026-11-11: created. The user asked whether in-place extraction is possible. Feasibility
-- 2026-11-11: prior art checked: HatchZip (Rust, MIT/Apache) already does this, except `.tar.zst`.
   was explained and they asked to build a project on it.
+- 2026-11-11: prior art checked: HatchZip (Rust, MIT/Apache) already does this, except
+  `.tar.zst`.
