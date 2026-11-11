@@ -37,14 +37,25 @@ someone else's software.
 
 ## Success criteria *
 
-- [ ] 
+- [ ] When the check-engine light is on, the app lists each fault code with a
+  plain-language explanation within 10 s of connecting.
+- [ ] While driving, the app shows RPM, speed, coolant temperature and engine load,
+  updating at least once per second.
+- [ ] The app can record live data for a drive and show it as charts afterwards.
+- [ ] After a repair, the app can clear stored fault codes, after the user confirms.
 
 ## Scope *
 
 ### Must (MVP)
 
-- Read-only: the app reads the car (fault codes, live data) and explains it; nothing is
-  written to the car.
+- Read-only, with one exception: the app reads the car (fault codes, live data) and
+  explains it. The only write is the standard OBD-II "clear fault codes" command, run
+  only after the user confirms.
+- Fault codes listed with plain-language explanations.
+- Live gauges: RPM, speed, coolant temperature, engine load.
+- Trip recording, shown as charts afterwards.
+- Explanations and suggestions come from rules and descriptions built into the app
+  (offline, $0).
 
 ### Later
 
@@ -77,21 +88,27 @@ someone else's software.
 - The interface is on the user's phone, an iPhone. The user would like it to be a web app
   if possible rather than a native one (see Open questions: plain Safari can't reach the
   adapter).
-- First version is read-only; tuning comes later.
+- First version is read-only (except clearing fault codes); tuning comes later.
+- The app is a web app opened in an iOS browser with Web Bluetooth (e.g. Bluefy), talking
+  to a Bluetooth LE OBD-II adapter. Developed from the user's Windows/WSL PC, no Mac.
+- Explanations and suggestions come from built-in rules, not an AI model.
 - Built for the user's own car only.
 
 ## Open questions *
 
 - [ ] Which car (make, model, year, engine, petrol or diesel)? Decides what data and
-  tuning are possible.
+  tuning are possible. The user will say later.
 - [x] Android or iPhone? → iPhone. The user asked whether it could just be a local web
   page in Safari: not by itself, since iOS Safari has no Web Bluetooth and can't open the
   raw TCP socket a Wi-Fi adapter uses.
 - [x] Is tuning in the first version, or read-only first? → Read-only first.
 - [x] Buy an adapter or build one? → Buy one.
 - [x] One car or any car? → The user's car only.
-- [ ] Where do modification suggestions come from (fixed rules, a knowledge base, an AI
-  model)?
+- [x] How does the iPhone reach the adapter? → Web app in a Web Bluetooth browser
+  (e.g. Bluefy) with a Bluetooth LE adapter.
+- [x] Where do modification suggestions come from? → Built-in rules, offline, $0.
+- [x] What must the first version do? → Codes with explanations, live gauges, trip
+  recording, clearing codes (see Success criteria).
 
 ## Risks and unknowns
 
@@ -115,3 +132,4 @@ someone else's software.
 
 - 2026-11-11: created from the user's description; usage policy verdict: allowed with limits.
 - 2026-11-11: round 1: iPhone, read-only first, bought adapter, user's car only.
+- 2026-11-11: round 2: web app in a Web Bluetooth browser, built-in rules, four MVP features (incl. clearing codes); car still to be named.
