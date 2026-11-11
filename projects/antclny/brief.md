@@ -81,8 +81,12 @@ grounded in what field research has found about how real colonies live and work.
 - MVP species: red harvester ant; a species picker comes later.
 - Realism is checked by citations: every behavior and default cites a study.
 - Look: realistic.
-- Owner: the `simultrs` GitHub org (repo `simultrs/ant-colony-simulation`).
-- Stack: whichever gives the fastest overall speed (see Open questions).
+- Owner: the `simultrs` GitHub org (repo `simultrs/antclny`).
+- Name: `antclny` (the user's choice, an abbreviation like the `cmprssd` repos, an
+  exception to the full-name rule).
+- Stack: whichever is fastest overall: the simulation core in Rust compiled to WebAssembly
+  (SIMD), rendered with WebGPU and a WebGL2 fallback.
+- Hosting: GitHub Pages (`simultrs.github.io/antclny`), deployed from this machine.
 - License: MIT.
 
 ## Open questions *
@@ -103,6 +107,10 @@ grounded in what field research has found about how real colonies live and work.
 - [x] Stack? → Whichever gives the fastest overall speed.
 - [x] Owner? → The new `simultrs` org.
 - [x] License? → MIT.
+- [x] How is the fastest stack chosen? → Rust→WASM now, without a benchmark.
+- [x] Renderer? → WebGPU with a WebGL2 fallback.
+- [x] Hosting? → GitHub Pages.
+- [x] First session? → Research + benchmark. Also: the project is called `antclny`.
 
 ## Risks and unknowns
 
@@ -112,7 +120,10 @@ grounded in what field research has found about how real colonies live and work.
 
 ## First session
 
-- 
+- A cited parameter sheet for *P. barbatus* (behaviors, task allocation, colony growth,
+  lifespans, foraging), the source for every default.
+- A benchmark: the Rust/WASM core moving 12,000 ants, measured against the success
+  criterion (60 fps, under 50 MB JS heap).
 
 ## References
 
@@ -125,3 +136,4 @@ grounded in what field research has found about how real colonies live and work.
 - 2026-11-11: round 2: species, views, lifecycle, settings.
 - 2026-11-11: round 3: species MVP, performance, realism check, look.
 - 2026-11-11: round 4: problem, stack, owner (simultrs), license.
+- 2026-11-11: round 5: stack (Rust→WASM), renderer, hosting, first session; renamed to antclny.
