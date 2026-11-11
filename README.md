@@ -47,7 +47,7 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [universal-file-converter](projects/universal-file-converter/brief.md) | A general file converter (an ffmpeg wrapper "or whatever" does the job) that converts files to other formats,… | converter, ffmpeg, downloader, desktop, web |  |  | 2026-11-11 |
+| [file-converter](projects/file-converter/brief.md) | A general file converter (an ffmpeg wrapper "or whatever" does the job) that converts files to other formats,… | converter, ffmpeg, downloader, desktop, web |  |  | 2026-11-11 |
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
 ### Started (4)

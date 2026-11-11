@@ -1,9 +1,9 @@
 ---
-title: Universal File Converter
+title: File Converter
 status: idea
 created: 2026-11-11
 updated: 2026-11-11
-owner: ntfifwyb
+owner: montinaops
 repo:
 tags: [converter, ffmpeg, downloader, desktop, web]
 stack: [tauri, rust, ffmpeg, yt-dlp]
@@ -11,7 +11,7 @@ effort:
 priority:
 ---
 
-# Universal File Converter
+# File Converter
 
 ## Summary *
 
@@ -87,6 +87,12 @@ means more of the same sites.
 - Downloads start from a small app window (paste link, video or audio-only).
 - MVP tools beyond conversion: compress, trim, merge PDFs.
 - Licence: GPL-3.0, open source (compatible with GPL ffmpeg builds and Calibre).
+- Name: `file-converter`, repo `montinaops/file-converter`.
+- Distribution: unsigned installer on GitHub Releases plus a winget package ($0; users
+  click past SmartScreen at first).
+- Look: minimal and monochrome; as small as possible, both file size and screen size.
+- The web downloader's server (host, DMCA and IP-block policy) is decided when the
+  website launches.
 - Stack: Tauri (Rust + web UI), so the UI can be reused for the website.
 
 ## Open questions *
@@ -103,9 +109,12 @@ means more of the same sites.
 - [x] Extra tools in the MVP? → Compress, trim, merge PDFs.
 - [x] Licence? → GPL-3.0.
 - [x] Desktop stack? → Tauri (Rust + web UI).
-- [ ] Final name? (Suggested: `universal-file-converter`.)
-- [ ] The web downloader needs a server (browsers can't fetch YouTube/TikTok directly):
-  who pays for and runs it, and how are DMCA notices and IP blocks handled?
+- [x] Name? → `file-converter`, under the `montinaops` org.
+- [x] The web downloader needs a server (browsers can't fetch YouTube/TikTok directly):
+  how does it run? → Decide when the website launches.
+- [x] Code signing? → Unsigned; GitHub Releases + winget.
+- [x] Look and feel? → Minimalistic, monochrome, as small as possible (file size and
+  screen size).
 
 ## Risks and unknowns
 
@@ -131,3 +140,4 @@ means more of the same sites.
 - 2026-11-11: round 1 answered (desktop first, browser-side web conversion, web downloader, public).
 - 2026-11-11: round 2 answered (two-click right-click, media+images+docs, bundled engines, Windows only).
 - 2026-11-11: round 3 answered (download window, compress/trim/merge, GPL-3.0, Tauri).
+- 2026-11-11: round 4 answered; renamed from universal-file-converter to file-converter, owner montinaops.
