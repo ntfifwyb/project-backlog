@@ -31,11 +31,15 @@ e.g. the Mi Home app, isn't recorded yet.)
 - The user, at home, controlling their own devices.
 - Devices: Xiaomi Smart LED Bulb (exact variant unknown) and Xiaomi Smart Tower Fan 2
   (a retailer lists it as model BPTS02DMU; Wi-Fi, Xiaomi Home app).
-- Runs on the user's PC first; a dedicated device is wanted later.
+- Runs on the user's PC first (Windows now; the user will switch to Linux later); a
+  dedicated device is wanted later.
+- Commands spoken in English, Spanish and German.
 
 ## Success criteria *
 
-- [ ] (not chosen yet)
+- [ ] When I say the wake word and "lights on", the bulb turns on within 1 s.
+- [ ] Idle, the app uses under 100 MB RAM and under 2% CPU (Task Manager).
+- [ ] With the internet unplugged, every MVP command still works on the LAN.
 
 ## Scope *
 
@@ -51,10 +55,14 @@ e.g. the Mi Home app, isn't recorded yet.)
 ### Later
 
 - Run on a dedicated device too (user said "both", PC first).
+- Linux (the user's next OS).
 
 ### Not doing
 
-- 
+- Non-Xiaomi devices.
+- Cloud services or an LLM in the command path.
+- A phone app.
+- Schedules or automations.
 
 ## Constraints
 
@@ -62,6 +70,7 @@ e.g. the Mi Home app, isn't recorded yet.)
 - Lightweight app: "nothing like the bloatware from Windows" (small footprint, quick to
   start, low background CPU/memory).
 - Under 1 second from the end of a spoken command to the device reacting.
+- Windows now, Linux later: the code must not lock itself to Windows.
 - Anthropic policy check (2026-11-11): **allowed**. Controlling the user's own devices by
   voice falls under no prohibited use in the [Usage Policy](https://www.anthropic.com/legal/aup);
   if an agent (Claude) acts on the devices, the policy's agentic guidance applies (human
@@ -94,6 +103,10 @@ e.g. the Mi Home app, isn't recorded yet.)
       non-bloated app.
 - [x] Trigger? → Wake word.
 - [x] MVP commands? → On/off plus levels.
+- [x] OS? → Windows for now, Linux eventually.
+- [x] Command language? → English, Spanish, German.
+- [x] Success criteria? → fast command, light idle footprint, works offline (see above).
+- [x] Not doing? → other brands, cloud, phone app, schedules/automations.
 
 ## Risks and unknowns
 
@@ -127,3 +140,4 @@ e.g. the Mi Home app, isn't recorded yet.)
 - 2026-11-11: created; Matter checked against Xiaomi devices (see Risks).
 - 2026-11-11: round 1: devices, PC first, local fixed commands, standalone and fast.
 - 2026-11-11: round 2: MIoT for both, lightweight app, under 1 s, wake word, on/off + levels.
+- 2026-11-11: round 3: Windows then Linux, EN/ES/DE, success criteria, exclusions.
