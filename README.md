@@ -35,11 +35,12 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Idea (1)
+### Idea (2)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
 | [ntfifwyb](projects/ntfifwyb/brief.md) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitH… | portfolio, github-profile |  |  | 2026-11-08 |
+| [voice-home-control](projects/voice-home-control/brief.md) | A home control assistant with voice control, for the user's own home. | smart-home, voice |  |  | 2026-11-11 |
 
 ### Started (4)
 
