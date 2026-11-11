@@ -54,7 +54,10 @@ e.g. the Mi Home app, isn't recorded yet.)
 - English commands.
 - No UI, except a small animation that pops up on screen while it's listening: a thin
   waveform bar at the screen edge that moves with the voice, then shows success or failure.
-- Starts with Windows (at login) and stays in the background.
+- Starts with Windows (at login) and stays in the background; always listening (no mute).
+- Devices are named in the config (name, room), so more bulbs and fans can be added later
+  without a rewrite; today one of each.
+- One command per wake word.
 - One-time setup command that signs in to the user's Xiaomi account, saves the device
   tokens locally, and is never needed again (then fully offline).
 
@@ -66,6 +69,8 @@ e.g. the Mi Home app, isn't recorded yet.)
 
 ### Not doing
 
+- A mute control (always listening; quit the app to stop).
+- Several commands per wake word.
 - Non-Xiaomi devices.
 - Cloud services or an LLM in the command path.
 - A phone app.
@@ -100,6 +105,7 @@ e.g. the Mi Home app, isn't recorded yet.)
 - English first; Spanish and German next.
 - Speech: Vosk with a fixed grammar of the command phrases.
 - Wake word: Rustpotter (open-source, Rust), word "Jarvis".
+- Releases: .exe built locally, attached to a tagged GitHub release.
 - Repo: public, MIT licence. Device tokens and IPs live in a local config that is never
   committed.
 
@@ -133,6 +139,10 @@ e.g. the Mi Home app, isn't recorded yet.)
 - [x] Animation look? → Waveform bar at the screen edge.
 - [x] Startup? → Starts with Windows.
 - [x] Tokens? → Built-in one-time login.
+- [x] More devices later? → Named devices in the config from the start.
+- [x] Chained commands? → One command per wake word.
+- [x] Releases? → .exe built locally, attached to a tagged GitHub release.
+- [x] Mute? → No mute.
 
 ## Risks and unknowns
 
@@ -172,3 +182,4 @@ e.g. the Mi Home app, isn't recorded yet.)
 - 2026-11-11: round 4: English first, Rust, listening animation only, CLI first session.
 - 2026-11-11: round 5: Vosk grammar, Rustpotter, wake word "Jarvis", public MIT repo.
 - 2026-11-11: round 6: animation-only feedback, waveform bar, start with Windows, built-in token login.
+- 2026-11-11: round 7: named devices, one command per wake word, GitHub release .exe, no mute.
