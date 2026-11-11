@@ -37,6 +37,9 @@ means more of the same sites.
 
 - [ ] When the user right-clicks a video in Windows Explorer and picks Convert → MP4, the
   converted file appears next to the original, with no window opening.
+- [ ] The installed app, without engines, is under 10 MB.
+- [ ] On Windows 11, the Convert entry appears in the first right-click menu, not under
+  "Show more options".
 
 ## Scope *
 
@@ -81,14 +84,20 @@ means more of the same sites.
 - The website offers the video downloader too, not only the desktop app.
 - Right-click converts in two clicks (Convert → format), output next to the original, no
   window.
-- The installer bundles the engines (ffmpeg, yt-dlp, a document engine) and keeps yt-dlp
-  updated itself.
+- The app ships and installs its engines itself (ffmpeg, yt-dlp, a document engine); the
+  user never installs them. The app stays under 10 MB: an engine downloads on first use of
+  the tool that needs it, and yt-dlp keeps itself updated.
+- The right-click submenu lists every supported target format for that file. The user
+  should never open a dedicated UI for a one-time action; bulk jobs (e.g. 100 files) are
+  what the app window is for.
+- If the output name exists, add "-converted" (video.mp4 → video-converted.mp4).
+- Target the top-level Windows 11 context menu (like 7-Zip), not only the classic one.
 - Desktop MVP is Windows only.
 - Downloads start from a small app window (paste link, video or audio-only).
 - MVP tools beyond conversion: compress, trim, merge PDFs.
 - Licence: GPL-3.0, open source (compatible with GPL ffmpeg builds and Calibre).
 - Name: `file-converter`, repo `montinaops/file-converter`.
-- Distribution: unsigned installer on GitHub Releases plus a winget package ($0; users
+- Distribution (decided before the Win11 menu answer, see Open questions): unsigned installer on GitHub Releases plus a winget package ($0; users
   click past SmartScreen at first).
 - Look: minimal and monochrome; as small as possible, both file size and screen size.
 - The web downloader's server (host, DMCA and IP-block policy) is decided when the
@@ -115,6 +124,13 @@ means more of the same sites.
 - [x] Code signing? → Unsigned; GitHub Releases + winget.
 - [x] Look and feel? → Minimalistic, monochrome, as small as possible (file size and
   screen size).
+- [x] Win11 menu? → Top-level Win11 menu.
+- [x] Submenu length? → Every supported format; bulk jobs go through the app window.
+- [x] Size goal? → App under 10 MB; engines download on first use.
+- [x] Name collision? → Add "-converted".
+- [ ] The top-level Win11 menu needs a signed sparse package, which contradicts "unsigned".
+  How is it signed? Options: Azure Trusted Signing (about $10/month), a bought
+  certificate, or ship unsigned with the classic menu until launch.
 
 ## Risks and unknowns
 
@@ -141,3 +157,4 @@ means more of the same sites.
 - 2026-11-11: round 2 answered (two-click right-click, media+images+docs, bundled engines, Windows only).
 - 2026-11-11: round 3 answered (download window, compress/trim/merge, GPL-3.0, Tauri).
 - 2026-11-11: round 4 answered; renamed from universal-file-converter to file-converter, owner montinaops.
+- 2026-11-11: round 5 answered (top-level Win11 menu, every format in submenu, <10 MB app, -converted suffix).
