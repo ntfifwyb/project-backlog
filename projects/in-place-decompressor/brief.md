@@ -79,7 +79,8 @@ elsewhere or extract to another drive.
   Formats that need random access, or solid archives (7z, RAR), are harder.
 - **Filesystems without hole punching** (FAT32, exFAT: most USB drives and SD cards) can
   only shrink a file from the end, which most compressed formats don't allow.
-- **Prior art.** Not checked yet. The project may already exist.
+- **Prior art exists** (checked 2026-11-11; see References). HatchZip already does this
+  well. Whether there is still a project to build here is open.
 
 ## First session
 
@@ -87,9 +88,22 @@ elsewhere or extract to another drive.
 
 ## References
 
-- 
+- [HatchZip](https://github.com/xevrion/hatchzip): the closest existing tool. Rust,
+  licensed MIT or Apache-2.0. A desktop app and a CLI, plus the library crate
+  `hatchzip-core` (0.1.10 on crates.io; reads every format but RAR). Created 2026-10-21,
+  about 2.8k stars, 11 releases, last push 2026-11-10. Handles ZIP, 7z (solid with limits),
+  RAR, tar, `.tar.gz` and multi-block `.tar.xz`. It frees space by cutting the end off the
+  archive everywhere, and by hole punching on Linux, Windows and macOS. Its README marks
+  NTFS and APFS hole punching as "not yet verified". It keeps a journal and resumes after a
+  crash, and its crash tests kill the process at each step. **It refuses `.tar.zst`
+  ("planned")** and tar links, devices and sparse files.
+- [ReclaimArc](https://github.com/harlixay7/ReclaimArc): Windows NTFS/ReFS only, ZIP and
+  RAR. Rust, licensed MIT or Apache-2.0, small (16 commits).
+- [Synczipr](https://www.synczipr.com/): a site that claims ZIP extraction with hole
+  punching. Its page couldn't be read, so nothing about it is verified.
 
 ## Log
 
 - 2026-11-11: created. The user asked whether in-place extraction is possible. Feasibility
+- 2026-11-11: prior art checked: HatchZip (Rust, MIT/Apache) already does this, except `.tar.zst`.
   was explained and they asked to build a project on it.
