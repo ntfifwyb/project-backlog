@@ -35,18 +35,13 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (2)
-
-| Project | Summary | Tags | Pri | Effort | Updated |
-|---|---|---|---|---|---|
-| [ntfifwyb](projects/ntfifwyb/brief.md) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitH… | portfolio, github-profile |  |  | 2026-11-11 |
-| [voice-home-control](projects/voice-home-control/brief.md) | A home control assistant with voice control, for the user's own home: a standalone app that listens for fixed… | smart-home, voice |  |  | 2026-11-11 |
-
-### Idea (1)
+### Ready (3)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
 | [antclny](projects/antclny/brief.md) | An ant colony simulation that runs as a webpage, made to be watched. | simulation, web |  |  | 2026-11-11 |
+| [ntfifwyb](projects/ntfifwyb/brief.md) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitH… | portfolio, github-profile |  |  | 2026-11-11 |
+| [voice-home-control](projects/voice-home-control/brief.md) | A home control assistant with voice control, for the user's own home: a standalone app that listens for fixed… | smart-home, voice |  |  | 2026-11-11 |
 
 ### Started (4)
 

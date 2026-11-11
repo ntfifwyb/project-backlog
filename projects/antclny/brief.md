@@ -1,6 +1,6 @@
 ---
 title: Ant Colony Simulation
-status: idea
+status: ready
 created: 2026-11-11
 updated: 2026-11-11
 owner: simultrs
@@ -40,6 +40,8 @@ grounded in what field research has found about how real colonies live and work.
   heap stays under 50 MB.
 - [ ] Every behavior and default parameter in the simulation cites a study (in the repo and
   in an About panel).
+- [ ] When two viewers open the shared colony on different machines, they see the same
+  colony state within 1 s of each other.
 
 ## Scope *
 
@@ -57,6 +59,11 @@ grounded in what field research has found about how real colonies live and work.
   offline-capable. No server.
 - Then the shared colony: the same Rust core runs natively on an always-on free-tier VM
   and streams compact snapshots over WebSocket; viewers' browsers only render.
+- The admin sets the shared colony's parameters through a server config or CLI over SSH,
+  with no web login.
+- The shared colony's clock rate is configurable; the default is real time.
+- When the shared colony dies, a new founding queen starts the next colony automatically,
+  and the page shows a short history of past colonies.
 - One species: the red harvester ant (*Pogonomyrmex barbatus*, mature colonies of about
   10,000–12,000 workers). Species data is kept separate from the engine so more can be added.
 - Every behavior and default parameter cites a study; an About panel lists the sources.
@@ -92,6 +99,9 @@ grounded in what field research has found about how real colonies live and work.
 - Interaction: viewers watch; the admin sets every parameter of the shared colony.
 - One shared, persistent colony for everyone, plus an installable individual version.
 - Desktop first; English only; no analytics.
+- Admin control: server config/CLI over SSH, no web admin page.
+- Shared clock: configurable, real time by default.
+- Colony death: a new founding starts automatically.
 - Views: surface and nest.
 - Timeline: full colony life, founding to maturity.
 - MVP species: red harvester ant; a species picker comes later.
@@ -142,9 +152,10 @@ grounded in what field research has found about how real colonies live and work.
 - [x] How do viewers get its state? → The server streams state; browsers only render.
 - [x] What is the individual version? → Local mode in the browser, installable as a PWA.
 - [x] What comes first? → Local mode, then the shared colony.
-- [ ] How does the admin change the shared colony's parameters? Options: (a) a config or CLI
-  on the server over SSH, with no web login (recommended: no auth surface); (b) an admin
-  page in the site, with login.
+- [x] How does the admin change the shared colony's parameters? → Server config/CLI over SSH.
+- [x] Shared colony clock? → Configurable by the admin; real time by default.
+- [x] When the colony dies? → A new founding auto-starts; past colonies listed.
+- [x] Shared-colony criterion? → Two viewers see the same state within 1 s.
 
 ## Risks and unknowns
 
@@ -153,6 +164,8 @@ grounded in what field research has found about how real colonies live and work.
 - The shared colony depends on a free-tier VM: the provider can reclaim idle free VMs or
   change its terms, and the VM is a machine to maintain. A paid VPS is the fallback (the
   user's decision at launch).
+- In real time a harvester colony takes years to grow, so for a long while viewers mostly see
+  a young colony. The admin can speed up the clock.
 - Species-picking multiplies the research: each species needs sourced parameters.
 
 ## First session
@@ -176,3 +189,5 @@ grounded in what field research has found about how real colonies live and work.
 - 2026-11-11: round 5: stack (Rust→WASM), renderer, hosting, first session; renamed to antclny.
 - 2026-11-11: round 6: desktop first, no analytics, English; scope changed to one shared live colony plus an installable individual version.
 - 2026-11-11: round 7: free-tier VM, server streams state, local mode as PWA, local mode first.
+- 2026-11-11: round 8: admin via CLI, configurable clock (real time default), auto refounding, sync criterion.
+- 2026-11-11: idea → ready
