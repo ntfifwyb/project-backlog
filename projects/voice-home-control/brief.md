@@ -17,8 +17,9 @@ priority:
 
 A home control assistant with voice control, for the user's own home: a standalone app
 that listens for fixed spoken commands, recognised offline, and controls their Xiaomi Smart
-LED Bulb and Xiaomi Smart Tower Fan 2. It runs on their PC first. It should be as fast as
-possible.
+LED Bulb and Xiaomi Smart Tower Fan 2 over Xiaomi's local MIoT protocol. It runs on their
+PC first, starts on a wake word, and must be lightweight and fast: "nothing like the
+bloatware from Windows".
 
 ## Problem *
 
@@ -44,6 +45,8 @@ e.g. the Mi Home app, isn't recorded yet.)
 - Voice control of the user's Xiaomi fan.
 - Runs on the user's PC.
 - Fixed command phrases, recognised by speech-to-text running locally (offline).
+- Wake word starts a command (hands-free; the mic listens locally).
+- Commands: bulb on/off, brightness, colour/warmth; fan on/off, speed, oscillation.
 
 ### Later
 
@@ -56,6 +59,9 @@ e.g. the Mi Home app, isn't recorded yet.)
 ## Constraints
 
 - Development costs $0 (workspace rule).
+- Lightweight app: "nothing like the bloatware from Windows" (small footprint, quick to
+  start, low background CPU/memory).
+- Under 1 second from the end of a spoken command to the device reacting.
 - Anthropic policy check (2026-11-11): **allowed**. Controlling the user's own devices by
   voice falls under no prohibited use in the [Usage Policy](https://www.anthropic.com/legal/aup);
   if an agent (Claude) acts on the devices, the policy's agentic guidance applies (human
@@ -68,6 +74,11 @@ e.g. the Mi Home app, isn't recorded yet.)
   device is the priority).
 - Speech: local, offline speech-to-text with fixed commands (no Claude/LLM in the loop).
 - Platform: PC first, a dedicated device later.
+- Protocol: MIoT for both devices. The user's rule: Matter only if it adds significant
+  functionality; for an on/off/brightness/colour bulb and a fan it doesn't (its gains are
+  cross-ecosystem pairing), so MIoT, one local code path.
+- Trigger: wake word.
+- MVP commands: on/off plus levels (brightness, colour/warmth, fan speed, oscillation).
 
 ## Open questions *
 
@@ -76,13 +87,13 @@ e.g. the Mi Home app, isn't recorded yet.)
 - [x] Where does it run? → Both PC and a dedicated device; PC first.
 - [x] How are commands understood? → Local, fixed commands.
 - [x] Home Assistant or standalone? → Standalone, as fast as possible.
-- [ ] Protocol? The Tower Fan 2 has no Matter, so it needs Xiaomi MIoT (local, with a device
-      token). Bulb: Matter if it is the 2025 Matter model, else MIoT. Options: MIoT for both
-      (one code path), or Matter for the bulb plus MIoT for the fan.
-- [ ] Which bulb variant? It's the Matter one if the box or Mi Home shows a Matter logo or
-      pairing code.
-- [ ] What counts as "fast"? A target latency from the end of speech to the device reacting
-      (e.g. under 1 s).
+- [x] Protocol? → MIoT for both, since Matter adds nothing significant for these devices.
+- [x] Which bulb variant? → No longer matters: MIoT covers both the Matter and older bulbs.
+      The exact MIoT model IDs get read from the devices in the first session.
+- [x] What counts as "fast"? → Under 1 s from speech to device, and above all a lightweight,
+      non-bloated app.
+- [x] Trigger? → Wake word.
+- [x] MVP commands? → On/off plus levels.
 
 ## Risks and unknowns
 
@@ -115,3 +126,4 @@ e.g. the Mi Home app, isn't recorded yet.)
 
 - 2026-11-11: created; Matter checked against Xiaomi devices (see Risks).
 - 2026-11-11: round 1: devices, PC first, local fixed commands, standalone and fast.
+- 2026-11-11: round 2: MIoT for both, lightweight app, under 1 s, wake word, on/off + levels.
