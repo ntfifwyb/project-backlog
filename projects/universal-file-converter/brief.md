@@ -6,7 +6,7 @@ updated: 2026-11-11
 owner: ntfifwyb
 repo:
 tags: [converter, ffmpeg, downloader, desktop, web]
-stack: []
+stack: [tauri, rust, ffmpeg, yt-dlp]
 effort:
 priority:
 ---
@@ -43,7 +43,9 @@ means more of the same sites.
 ### Must (MVP)
 
 - Convert video, audio, images and documents (e.g. PDF → EPUB) from day one.
-- Download videos from YouTube, Instagram Reels, TikTok and similar sites.
+- Download videos from YouTube, Instagram Reels, TikTok and similar sites, from a small
+  app window: paste a link, pick video or audio-only, saved to Downloads.
+- Extra tools: compress a video or image, trim a clip, merge PDFs.
 - A desktop app with a right-click context menu on files to convert them (like 7-Zip),
   Windows first.
 
@@ -82,6 +84,10 @@ means more of the same sites.
 - The installer bundles the engines (ffmpeg, yt-dlp, a document engine) and keeps yt-dlp
   updated itself.
 - Desktop MVP is Windows only.
+- Downloads start from a small app window (paste link, video or audio-only).
+- MVP tools beyond conversion: compress, trim, merge PDFs.
+- Licence: GPL-3.0, open source (compatible with GPL ffmpeg builds and Calibre).
+- Stack: Tauri (Rust + web UI), so the UI can be reused for the website.
 
 ## Open questions *
 
@@ -93,6 +99,10 @@ means more of the same sites.
 - [x] MVP formats? → Media, images and documents.
 - [x] Engines bundled or user-installed? → Bundled, yt-dlp self-updating.
 - [x] Platforms? → Windows only for now; macOS/Linux later.
+- [x] How does a desktop download start? → Small app window: paste a link.
+- [x] Extra tools in the MVP? → Compress, trim, merge PDFs.
+- [x] Licence? → GPL-3.0.
+- [x] Desktop stack? → Tauri (Rust + web UI).
 - [ ] Final name? (Suggested: `universal-file-converter`.)
 - [ ] The web downloader needs a server (browsers can't fetch YouTube/TikTok directly):
   who pays for and runs it, and how are DMCA notices and IP blocks handled?
@@ -120,3 +130,4 @@ means more of the same sites.
 - 2026-11-11: created.
 - 2026-11-11: round 1 answered (desktop first, browser-side web conversion, web downloader, public).
 - 2026-11-11: round 2 answered (two-click right-click, media+images+docs, bundled engines, Windows only).
+- 2026-11-11: round 3 answered (download window, compress/trim/merge, GPL-3.0, Tauri).
