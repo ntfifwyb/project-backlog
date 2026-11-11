@@ -1,6 +1,6 @@
 ---
 title: Voice Home Control
-status: idea
+status: ready
 created: 2026-11-11
 updated: 2026-11-11
 owner: ntfifwyb
@@ -208,3 +208,4 @@ phone, which they dislike.
 - 2026-11-11: round 8: today's workaround, numeric levels, named colours, retry once.
 - 2026-11-11: round 9: ES/DE after the MVP, phrases in config, speed judged by feel; device for later open (Pi vs ESP32).
 - 2026-11-11: round 10: Pi standalone later, bar on top edge of primary monitor, keeps listening during calls.
+- 2026-11-11: idea → ready
