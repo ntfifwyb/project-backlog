@@ -52,8 +52,11 @@ grounded in what field research has found about how real colonies live and work.
   until it ends naturally (however long that is).
 - Only the admin can change the shared colony's parameters. Every research parameter
   (pheromone decay, task thresholds, and so on) is exposed to them, plus time speed.
-- An individual version that people can install to run their own colony, with the
-  parameters under their control.
+- Built first: local mode, the individual version. The page runs its own colony in WASM in
+  the browser, with the parameters under the viewer's control, installable as a PWA and
+  offline-capable. No server.
+- Then the shared colony: the same Rust core runs natively on an always-on free-tier VM
+  and streams compact snapshots over WebSocket; viewers' browsers only render.
 - One species: the red harvester ant (*Pogonomyrmex barbatus*, mature colonies of about
   10,000–12,000 workers). Species data is kept separate from the engine so more can be added.
 - Every behavior and default parameter cites a study; an About panel lists the sources.
@@ -100,8 +103,11 @@ grounded in what field research has found about how real colonies live and work.
 - Stack: whichever is fastest overall: the simulation core in Rust compiled to WebAssembly
   (SIMD), rendered with WebGPU and a WebGL2 fallback.
 - Hosting: GitHub Pages (`simultrs.github.io/antclny`), deployed from this machine, for
-  the static page. A shared colony that runs all the time needs something running it too
-  (see Open questions).
+  the static page.
+- Shared-colony server: a free-tier VM (e.g. Oracle Cloud Always Free ARM) running the Rust
+  core natively, streaming state over WebSocket.
+- Individual version: local mode in the browser (WASM, PWA, offline). Built before the
+  shared colony.
 - License: MIT.
 
 ## Open questions *
@@ -132,13 +138,21 @@ grounded in what field research has found about how real colonies live and work.
   their own colony.
 - [x] Analytics? → None.
 - [x] Language? → English.
+- [x] Where does the shared colony run? → A free-tier VM.
+- [x] How do viewers get its state? → The server streams state; browsers only render.
+- [x] What is the individual version? → Local mode in the browser, installable as a PWA.
+- [x] What comes first? → Local mode, then the shared colony.
+- [ ] How does the admin change the shared colony's parameters? Options: (a) a config or CLI
+  on the server over SSH, with no web login (recommended: no auth surface); (b) an admin
+  page in the site, with login.
 
 ## Risks and unknowns
 
 - Detailed biology, a full lifecycle, two views, and maybe several species all pull against
   "fast, little RAM". Per-ant state must stay small (typed arrays) for ~10k ants.
-- A shared colony that is always running needs an always-on host, which GitHub Pages
-  can't provide, and so may cost money (the user's decision at launch).
+- The shared colony depends on a free-tier VM: the provider can reclaim idle free VMs or
+  change its terms, and the VM is a machine to maintain. A paid VPS is the fallback (the
+  user's decision at launch).
 - Species-picking multiplies the research: each species needs sourced parameters.
 
 ## First session
@@ -161,3 +175,4 @@ grounded in what field research has found about how real colonies live and work.
 - 2026-11-11: round 4: problem, stack, owner (simultrs), license.
 - 2026-11-11: round 5: stack (Rust→WASM), renderer, hosting, first session; renamed to antclny.
 - 2026-11-11: round 6: desktop first, no analytics, English; scope changed to one shared live colony plus an installable individual version.
+- 2026-11-11: round 7: free-tier VM, server streams state, local mode as PWA, local mode first.
