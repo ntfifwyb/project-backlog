@@ -15,7 +15,10 @@ priority:
 
 ## Summary *
 
-An ant colony simulation that runs as a webpage, made to be watched. The goal is for it to
+An ant colony simulation that runs as a webpage, made to be watched. There is one shared,
+live colony: everyone who opens the page sees the same colony, and it runs for as long as
+it lasts. Only the admin (the user) changes its parameters. People can also install their
+own individual version and run their own colony. The goal is for it to
 be as realistic as possible, based on what has been studied about ants: biologically
 detailed behavior, not just simple rules. It must be fast and use little to no RAM.
 
@@ -27,7 +30,9 @@ grounded in what field research has found about how real colonies live and work.
 ## Users and context
 
 - Runs in a web browser.
-- The viewer watches; they don't play. Interaction is settings only (no drawing on the map).
+- The viewer watches; they don't play. No drawing on the map.
+- Desktop first: the performance target is for laptops; phones are best effort.
+- Interface in English.
 
 ## Success criteria *
 
@@ -43,8 +48,12 @@ grounded in what field research has found about how real colonies live and work.
 - An ant colony simulation in a webpage, made for watching.
 - Biologically detailed behavior, as realistic as the ant research allows.
 - Colony size: realistic for the species simulated (the user accepts ~10,000 as a fallback).
-- Viewer controls are settings only, exposing every research parameter (pheromone decay,
-  task thresholds, and so on) as well as time speed.
+- One shared live colony: every visitor sees the same colony at the same moment. It runs
+  until it ends naturally (however long that is).
+- Only the admin can change the shared colony's parameters. Every research parameter
+  (pheromone decay, task thresholds, and so on) is exposed to them, plus time speed.
+- An individual version that people can install to run their own colony, with the
+  parameters under their control.
 - One species: the red harvester ant (*Pogonomyrmex barbatus*, mature colonies of about
   10,000–12,000 workers). Species data is kept separate from the engine so more can be added.
 - Every behavior and default parameter cites a study; an About panel lists the sources.
@@ -60,6 +69,8 @@ grounded in what field research has found about how real colonies live and work.
 
 - A game: no goals, no win or lose conditions.
 - Painting the world (placing food or walls with the mouse).
+- Analytics, tracking or cookies for visitors.
+- Other interface languages.
 
 ## Constraints
 
@@ -75,7 +86,9 @@ grounded in what field research has found about how real colonies live and work.
 - Platform: a webpage.
 - Purpose: watching, as realistic as studied ant biology allows.
 - Realism: biologically detailed, not just simple emergent rules.
-- Interaction: settings only, with every parameter exposed.
+- Interaction: viewers watch; the admin sets every parameter of the shared colony.
+- One shared, persistent colony for everyone, plus an installable individual version.
+- Desktop first; English only; no analytics.
 - Views: surface and nest.
 - Timeline: full colony life, founding to maturity.
 - MVP species: red harvester ant; a species picker comes later.
@@ -86,7 +99,9 @@ grounded in what field research has found about how real colonies live and work.
   exception to the full-name rule).
 - Stack: whichever is fastest overall: the simulation core in Rust compiled to WebAssembly
   (SIMD), rendered with WebGPU and a WebGL2 fallback.
-- Hosting: GitHub Pages (`simultrs.github.io/antclny`), deployed from this machine.
+- Hosting: GitHub Pages (`simultrs.github.io/antclny`), deployed from this machine, for
+  the static page. A shared colony that runs all the time needs something running it too
+  (see Open questions).
 - License: MIT.
 
 ## Open questions *
@@ -111,11 +126,19 @@ grounded in what field research has found about how real colonies live and work.
 - [x] Renderer? → WebGPU with a WebGL2 fallback.
 - [x] Hosting? → GitHub Pages.
 - [x] First session? → Research + benchmark. Also: the project is called `antclny`.
+- [x] Phones? → Desktop first.
+- [x] Persistence? → One shared colony that everyone sees, lasting as long as it lasts;
+  the admin (the user) sets the parameters; an installable individual version gives anyone
+  their own colony.
+- [x] Analytics? → None.
+- [x] Language? → English.
 
 ## Risks and unknowns
 
 - Detailed biology, a full lifecycle, two views, and maybe several species all pull against
   "fast, little RAM". Per-ant state must stay small (typed arrays) for ~10k ants.
+- A shared colony that is always running needs an always-on host, which GitHub Pages
+  can't provide, and so may cost money (the user's decision at launch).
 - Species-picking multiplies the research: each species needs sourced parameters.
 
 ## First session
@@ -137,3 +160,4 @@ grounded in what field research has found about how real colonies live and work.
 - 2026-11-11: round 3: species MVP, performance, realism check, look.
 - 2026-11-11: round 4: problem, stack, owner (simultrs), license.
 - 2026-11-11: round 5: stack (Rust→WASM), renderer, hosting, first session; renamed to antclny.
+- 2026-11-11: round 6: desktop first, no analytics, English; scope changed to one shared live colony plus an installable individual version.
