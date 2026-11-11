@@ -35,19 +35,21 @@ means more of the same sites.
 
 ## Success criteria *
 
-- [ ] 
+- [ ] When the user right-clicks a video in Windows Explorer and picks Convert → MP4, the
+  converted file appears next to the original, with no window opening.
 
 ## Scope *
 
 ### Must (MVP)
 
-- Convert files between formats (media via ffmpeg; documents such as PDF → EPUB).
+- Convert video, audio, images and documents (e.g. PDF → EPUB) from day one.
 - Download videos from YouTube, Instagram Reels, TikTok and similar sites.
 - A desktop app with a right-click context menu on files to convert them (like 7-Zip),
   Windows first.
 
 ### Later
 
+- macOS and Linux desktop apps.
 - The website: conversions run in the browser (files never leave the device), plus the
   video downloader.
 
@@ -75,6 +77,11 @@ means more of the same sites.
 - Public and free, not a personal-only tool.
 - Website conversions run in the browser, not on a server.
 - The website offers the video downloader too, not only the desktop app.
+- Right-click converts in two clicks (Convert → format), output next to the original, no
+  window.
+- The installer bundles the engines (ffmpeg, yt-dlp, a document engine) and keeps yt-dlp
+  updated itself.
+- Desktop MVP is Windows only.
 
 ## Open questions *
 
@@ -82,6 +89,10 @@ means more of the same sites.
 - [x] Website conversions in the browser or on a server? → In the browser.
 - [x] Downloader on the website too? → Yes, website too.
 - [x] Public or just for the user? → Public, free.
+- [x] Right-click flow? → Two clicks, output next to the original, no window.
+- [x] MVP formats? → Media, images and documents.
+- [x] Engines bundled or user-installed? → Bundled, yt-dlp self-updating.
+- [x] Platforms? → Windows only for now; macOS/Linux later.
 - [ ] Final name? (Suggested: `universal-file-converter`.)
 - [ ] The web downloader needs a server (browsers can't fetch YouTube/TikTok directly):
   who pays for and runs it, and how are DMCA notices and IP blocks handled?
@@ -108,3 +119,4 @@ means more of the same sites.
 
 - 2026-11-11: created.
 - 2026-11-11: round 1 answered (desktop first, browser-side web conversion, web downloader, public).
+- 2026-11-11: round 2 answered (two-click right-click, media+images+docs, bundled engines, Windows only).
