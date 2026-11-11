@@ -90,7 +90,13 @@ means more of the same sites.
 - The right-click submenu lists every supported target format for that file. The user
   should never open a dedicated UI for a one-time action; bulk jobs (e.g. 100 files) are
   what the app window is for.
-- If the output name exists, add "-converted" (video.mp4 → video-converted.mp4).
+- If the output name exists, add "-converted" (video.mp4 → video-converted.mp4). If that
+  exists too, overwrite it, but move the old one to the Recycle Bin first so nothing is
+  lost.
+- Right-clicking several selected files converts all of them, no window.
+- Progress and errors show in a very small standalone toast of the app's own, not a
+  Windows notification (the user has those muted).
+- No monthly fees, for signing or anything else.
 - Target the top-level Windows 11 context menu (like 7-Zip), not only the classic one.
 - Desktop MVP is Windows only.
 - Downloads start from a small app window (paste link, video or audio-only).
@@ -129,8 +135,11 @@ means more of the same sites.
 - [x] Size goal? → App under 10 MB; engines download on first use.
 - [x] Name collision? → Add "-converted".
 - [ ] The top-level Win11 menu needs a signed sparse package, which contradicts "unsigned".
-  How is it signed? Options: Azure Trusted Signing (about $10/month), a bought
-  certificate, or ship unsigned with the classic menu until launch.
+  The user wants no monthly fees (rules out Azure Trusted Signing). How is it signed?
+- [x] Multi-select? → Converts all selected files.
+- [x] Second collision? → Overwrite, but send the old file to the Recycle Bin first.
+- [x] Feedback without a window? → A very small standalone toast, not a Windows
+  notification.
 
 ## Risks and unknowns
 
@@ -158,3 +167,4 @@ means more of the same sites.
 - 2026-11-11: round 3 answered (download window, compress/trim/merge, GPL-3.0, Tauri).
 - 2026-11-11: round 4 answered; renamed from universal-file-converter to file-converter, owner montinaops.
 - 2026-11-11: round 5 answered (top-level Win11 menu, every format in submenu, <10 MB app, -converted suffix).
+- 2026-11-11: round 6 answered (no monthly fees, multi-select, recycle-bin overwrite, own toast).
