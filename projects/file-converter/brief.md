@@ -180,5 +180,4 @@ means more of the same sites.
 - 2026-11-11: round 5 answered (top-level Win11 menu, every format in submenu, <10 MB app, -converted suffix).
 - 2026-11-11: round 6 answered (no monthly fees, multi-select, recycle-bin overwrite, own toast).
 - 2026-11-11: round 7 answered (classic menu first, first session, static web host, English only).
-- 2026-11-11: marked ready.
 - 2026-11-11: idea → ready
