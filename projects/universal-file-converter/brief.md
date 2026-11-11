@@ -29,7 +29,9 @@ means more of the same sites.
 
 ## Users and context
 
-- The user, on their own machine (Windows, via right-click on a file) and in a browser.
+- The public, for free: anyone who would otherwise use an ad-filled converter site. The
+  user is the first user.
+- Desktop (Windows first, right-click on a file) and a browser.
 
 ## Success criteria *
 
@@ -41,12 +43,13 @@ means more of the same sites.
 
 - Convert files between formats (media via ffmpeg; documents such as PDF → EPUB).
 - Download videos from YouTube, Instagram Reels, TikTok and similar sites.
-- A website.
-- A desktop app with a right-click context menu on files to convert them (like 7-Zip).
+- A desktop app with a right-click context menu on files to convert them (like 7-Zip),
+  Windows first.
 
 ### Later
 
-- 
+- The website: conversions run in the browser (files never leave the device), plus the
+  video downloader.
 
 ### Not doing
 
@@ -68,11 +71,20 @@ means more of the same sites.
 
 ## Decided
 
-- 
+- Desktop app first; the website comes after.
+- Public and free, not a personal-only tool.
+- Website conversions run in the browser, not on a server.
+- The website offers the video downloader too, not only the desktop app.
 
 ## Open questions *
 
+- [x] MVP: desktop or website first? → Desktop first (right-click menu); website later.
+- [x] Website conversions in the browser or on a server? → In the browser.
+- [x] Downloader on the website too? → Yes, website too.
+- [x] Public or just for the user? → Public, free.
 - [ ] Final name? (Suggested: `universal-file-converter`.)
+- [ ] The web downloader needs a server (browsers can't fetch YouTube/TikTok directly):
+  who pays for and runs it, and how are DMCA notices and IP blocks handled?
 
 ## Risks and unknowns
 
@@ -80,6 +92,8 @@ means more of the same sites.
   (e.g. Calibre, Pandoc, LibreOffice), with its own size and licence.
 - A website that converts on a server costs money and handles other people's files; one
   that converts in the browser (ffmpeg.wasm) is limited by browser memory.
+- A web downloader is a public server fetching videos for strangers: hosting cost, DMCA
+  notices, and platforms blocking its IPs. Desktop downloads avoid all three.
 - Downloader sites change often and break extractors; a maintained dependency is needed.
 
 ## First session
@@ -93,3 +107,4 @@ means more of the same sites.
 ## Log
 
 - 2026-11-11: created.
+- 2026-11-11: round 1 answered (desktop first, browser-side web conversion, web downloader, public).
