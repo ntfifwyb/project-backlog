@@ -6,7 +6,7 @@ updated: 2026-11-11
 owner: ntfifwyb
 repo:
 tags: [smart-home, voice]
-stack: [rust, miot, offline-stt]
+stack: [rust, miot, vosk, rustpotter]
 effort:
 priority:
 ---
@@ -49,7 +49,7 @@ e.g. the Mi Home app, isn't recorded yet.)
 - Voice control of the user's Xiaomi fan.
 - Runs on the user's PC.
 - Fixed command phrases, recognised by speech-to-text running locally (offline).
-- Wake word starts a command (hands-free; the mic listens locally).
+- Wake word "Jarvis" starts a command (hands-free; the mic listens locally).
 - Commands: bulb on/off, brightness, colour/warmth; fan on/off, speed, oscillation.
 - English commands.
 - No UI, except a small animation that pops up on screen while it's listening.
@@ -94,6 +94,10 @@ e.g. the Mi Home app, isn't recorded yet.)
 - Written in Rust (small single binary, Windows and Linux).
 - No UI; only a small listening animation pops up on screen.
 - English first; Spanish and German next.
+- Speech: Vosk with a fixed grammar of the command phrases.
+- Wake word: Rustpotter (open-source, Rust), word "Jarvis".
+- Repo: public, MIT licence. Device tokens and IPs live in a local config that is never
+  committed.
 
 ## Open questions *
 
@@ -117,6 +121,10 @@ e.g. the Mi Home app, isn't recorded yet.)
 - [x] Implementation language? → Rust.
 - [x] UI? → None, but a small animation pops up while it's listening.
 - [x] First session? → Fan + bulb via CLI.
+- [x] Speech recogniser? → Vosk with a fixed grammar.
+- [x] Wake word engine? → Rustpotter.
+- [x] Wake word? → "Jarvis".
+- [x] Repo? → Public, MIT.
 
 ## Risks and unknowns
 
@@ -154,3 +162,4 @@ e.g. the Mi Home app, isn't recorded yet.)
 - 2026-11-11: round 2: MIoT for both, lightweight app, under 1 s, wake word, on/off + levels.
 - 2026-11-11: round 3: Windows then Linux, EN/ES/DE, success criteria, exclusions.
 - 2026-11-11: round 4: English first, Rust, listening animation only, CLI first session.
+- 2026-11-11: round 5: Vosk grammar, Rustpotter, wake word "Jarvis", public MIT repo.
