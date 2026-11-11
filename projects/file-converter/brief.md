@@ -1,6 +1,6 @@
 ---
 title: File Converter
-status: idea
+status: ready
 created: 2026-11-11
 updated: 2026-11-11
 owner: montinaops
@@ -38,8 +38,6 @@ means more of the same sites.
 - [ ] When the user right-clicks a video in Windows Explorer and picks Convert → MP4, the
   converted file appears next to the original, with no window opening.
 - [ ] The installed app, without engines, is under 10 MB.
-- [ ] On Windows 11, the Convert entry appears in the first right-click menu, not under
-  "Show more options".
 
 ## Scope *
 
@@ -55,6 +53,10 @@ means more of the same sites.
 ### Later
 
 - macOS and Linux desktop apps.
+- Top-level Windows 11 menu entry (not under "Show more options"), once signed: apply to
+  SignPath Foundation (free open-source signing) at launch. It needs builds made on a
+  public CI such as GitHub Actions, an exception to the local-CI rule to settle then.
+- Other UI languages.
 - The website: conversions run in the browser (files never leave the device), plus the
   video downloader.
 
@@ -97,13 +99,17 @@ means more of the same sites.
 - Progress and errors show in a very small standalone toast of the app's own, not a
   Windows notification (the user has those muted).
 - No monthly fees, for signing or anything else.
-- Target the top-level Windows 11 context menu (like 7-Zip), not only the classic one.
+- The MVP uses the classic context menu (unsigned, $0); on Windows 11 it sits under "Show
+  more options" until the app is signed (see Later).
+- UI in English only.
+- The website, when built, is hosted on a free static host (GitHub Pages or Cloudflare
+  Pages).
 - Desktop MVP is Windows only.
 - Downloads start from a small app window (paste link, video or audio-only).
 - MVP tools beyond conversion: compress, trim, merge PDFs.
 - Licence: GPL-3.0, open source (compatible with GPL ffmpeg builds and Calibre).
 - Name: `file-converter`, repo `montinaops/file-converter`.
-- Distribution (decided before the Win11 menu answer, see Open questions): unsigned installer on GitHub Releases plus a winget package ($0; users
+- Distribution: unsigned installer on GitHub Releases plus a winget package ($0; users
   click past SmartScreen at first).
 - Look: minimal and monochrome; as small as possible, both file size and screen size.
 - The web downloader's server (host, DMCA and IP-block policy) is decided when the
@@ -134,8 +140,12 @@ means more of the same sites.
 - [x] Submenu length? → Every supported format; bulk jobs go through the app window.
 - [x] Size goal? → App under 10 MB; engines download on first use.
 - [x] Name collision? → Add "-converted".
-- [ ] The top-level Win11 menu needs a signed sparse package, which contradicts "unsigned".
-  The user wants no monthly fees (rules out Azure Trusted Signing). How is it signed?
+- [x] The top-level Win11 menu needs a signed sparse package, which contradicts "unsigned",
+  and the user wants no monthly fees. How? → Classic menu first; free SignPath
+  Foundation signing for the top-level menu at launch.
+- [x] First session? → Right-click video → MP4.
+- [x] Website host? → Free static host.
+- [x] Languages? → English only.
 - [x] Multi-select? → Converts all selected files.
 - [x] Second collision? → Overwrite, but send the old file to the Recycle Bin first.
 - [x] Feedback without a window? → A very small standalone toast, not a Windows
@@ -153,7 +163,8 @@ means more of the same sites.
 
 ## First session
 
-- 
+- A Tauri app that installs a classic context-menu entry and converts one video to MP4
+  via ffmpeg, output next to the original, with the small toast: the core flow end to end.
 
 ## References
 
@@ -168,3 +179,6 @@ means more of the same sites.
 - 2026-11-11: round 4 answered; renamed from universal-file-converter to file-converter, owner montinaops.
 - 2026-11-11: round 5 answered (top-level Win11 menu, every format in submenu, <10 MB app, -converted suffix).
 - 2026-11-11: round 6 answered (no monthly fees, multi-select, recycle-bin overwrite, own toast).
+- 2026-11-11: round 7 answered (classic menu first, first session, static web host, English only).
+- 2026-11-11: marked ready.
+- 2026-11-11: idea → ready
