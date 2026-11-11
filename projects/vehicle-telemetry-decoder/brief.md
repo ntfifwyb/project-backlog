@@ -65,6 +65,7 @@ someone else's software.
 
 - Building the adapter: an off-the-shelf one is bought.
 - Support for cars other than the user's own.
+- A server or cloud sync for trips.
 
 ## Constraints
 
@@ -92,6 +93,11 @@ someone else's software.
 - The app is a web app opened in an iOS browser with Web Bluetooth (e.g. Bluefy), talking
   to a Bluetooth LE OBD-II adapter. Developed from the user's Windows/WSL PC, no Mac.
 - Explanations and suggestions come from built-in rules, not an AI model.
+- Hosted on GitHub Pages (free HTTPS, needed for Web Bluetooth), so the repo is public.
+- Look: dark dashboard, big high-contrast gauges readable at a glance in the car.
+- Metric units (km/h, °C, kPa, litres).
+- Recorded trips are stored on the phone (in the browser) and exportable as CSV; no
+  server.
 - Built for the user's own car only.
 
 ## Open questions *
@@ -109,6 +115,10 @@ someone else's software.
 - [x] Where do modification suggestions come from? → Built-in rules, offline, $0.
 - [x] What must the first version do? → Codes with explanations, live gauges, trip
   recording, clearing codes (see Success criteria).
+- [x] Hosting? → GitHub Pages (public repo).
+- [x] Look and feel? → Dark dashboard.
+- [x] Units? → Metric.
+- [x] Where do trips live? → On the phone, CSV export.
 
 ## Risks and unknowns
 
@@ -133,3 +143,4 @@ someone else's software.
 - 2026-11-11: created from the user's description; usage policy verdict: allowed with limits.
 - 2026-11-11: round 1: iPhone, read-only first, bought adapter, user's car only.
 - 2026-11-11: round 2: web app in a Web Bluetooth browser, built-in rules, four MVP features (incl. clearing codes); car still to be named.
+- 2026-11-11: round 3: GitHub Pages, dark dashboard, metric, trips on the phone with CSV export.
