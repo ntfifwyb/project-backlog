@@ -1,6 +1,6 @@
 ---
 title: inpdcmprssr (in-place decompressor)
-status: idea
+status: ready
 created: 2026-11-11
 updated: 2026-11-11
 owner: cmprssd
@@ -66,11 +66,17 @@ elsewhere or extract to another drive.
 
 ### Not doing
 
-- 
+- No GUI or desktop app: a library and a CLI only.
+- No compression: it only extracts. Building packages stays in the engines' own tooling.
+- No RAR or 7z, now or later.
+- No encrypted archives: password-protected ZIPs are refused.
 
 ## Constraints
 
 - Development costs $0 (workspace rule).
+- Licence: MIT or Apache-2.0.
+- Of the cmprssd org rules, only the shared tooling applies (Rust, `local-ci`). No progress
+  page and no disc build. The repo's `CLAUDE.md` states this override.
 
 ## Decided
 
@@ -78,7 +84,7 @@ elsewhere or extract to another drive.
   knowing HatchZip exists).
 - Name and owner: `cmprssd/inpdcmprssr`. Abbreviated, like the other cmprssd repos (the
   workspace naming rule's cmprssd exception).
-- Form: a Rust crate plus a CLI, in its own repo.
+- Form: a Rust crate plus a CLI, in its own repo. Licensed MIT or Apache-2.0.
 - First version: zstd, gzip and ZIP; Windows NTFS first; crash-safe with resume.
 - Used by cmprssd to install a game from a compressed package or disc copy.
 - Policy check (2026-11-11, Anthropic Usage Policy effective 2026-11-12): **allowed**. It's a
@@ -97,9 +103,10 @@ elsewhere or extract to another drive.
 - [x] Owner and name? → `cmprssd/inpdcmprssr`.
 - [x] Archive and output on different drives? → Extract normally without freeing, and
   say so.
-- [ ] cmprssd's org rules (`~/projects/cmprssd/CLAUDE.md`) assume each repo is a game
-  engine, with a progress page and a disc build. Which apply to a library? Options: none
-  except shared tooling, or a progress page too.
+- [x] cmprssd's org rules assume each repo is a game engine. Which apply to this library?
+  → Only the shared tooling. No progress page and no disc build.
+- [x] Licence? → MIT or Apache-2.0.
+- [x] Not doing? → No GUI, no compression, no RAR or 7z, no encrypted archives.
 
 ## Risks and unknowns
 
@@ -122,7 +129,8 @@ elsewhere or extract to another drive.
 
 ## First session
 
-- 
+- Extract one `.zst` on NTFS with hole punching, plus a test that shows the archive's
+  allocated size dropping as extraction goes.
 
 ## References
 
@@ -151,3 +159,5 @@ elsewhere or extract to another drive.
   (Windows NTFS first) and crash safety from the start.
 - 2026-11-11: success criteria picked; owner cmprssd; renamed from in-place-decompressor
   to inpdcmprssr.
+- 2026-11-11: org rules, licence, not-doing list and first session decided.
+- 2026-11-11: idea → ready
