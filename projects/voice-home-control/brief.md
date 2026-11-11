@@ -23,8 +23,9 @@ bloatware from Windows".
 
 ## Problem *
 
-The user wants to control their Xiaomi bulb and fan by voice. (How they control them today,
-e.g. the Mi Home app, isn't recorded yet.)
+The user wants to control their Xiaomi bulb and fan by voice. Today they use both the
+Xiaomi Home app on their phone and Google/Alexa voice control, and depend heavily on the
+phone, which they dislike.
 
 ## Users and context
 
@@ -58,6 +59,9 @@ e.g. the Mi Home app, isn't recorded yet.)
 - Devices are named in the config (name, room), so more bulbs and fans can be added later
   without a rewrite; today one of each.
 - One command per wake word.
+- Levels as numbers plus up/down ("brightness 50", "fan speed 3", "brighter", "fan faster").
+- Bulb colour: warm/cool plus about 10 named colours ("red", "blue", "purple"...).
+- If a device doesn't answer: retry once, then the bar shows failure.
 - One-time setup command that signs in to the user's Xiaomi account, saves the device
   tokens locally, and is never needed again (then fully offline).
 
@@ -143,6 +147,11 @@ e.g. the Mi Home app, isn't recorded yet.)
 - [x] Chained commands? → One command per wake word.
 - [x] Releases? → .exe built locally, attached to a tagged GitHub release.
 - [x] Mute? → No mute.
+- [x] How are they controlled today? → Xiaomi Home app and Google/Alexa; heavy phone
+      dependence, which the user dislikes.
+- [x] Level phrasing? → Numbers plus up/down.
+- [x] Colour? → Warm/cool plus ~10 named colours.
+- [x] Device not answering? → Retry once, then show failure.
 
 ## Risks and unknowns
 
@@ -183,3 +192,4 @@ e.g. the Mi Home app, isn't recorded yet.)
 - 2026-11-11: round 5: Vosk grammar, Rustpotter, wake word "Jarvis", public MIT repo.
 - 2026-11-11: round 6: animation-only feedback, waveform bar, start with Windows, built-in token login.
 - 2026-11-11: round 7: named devices, one command per wake word, GitHub release .exe, no mute.
+- 2026-11-11: round 8: today's workaround, numeric levels, named colours, retry once.
