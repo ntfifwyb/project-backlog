@@ -3,7 +3,7 @@ title: Ant Colony Simulation
 status: idea
 created: 2026-11-11
 updated: 2026-11-11
-owner: ntfifwyb
+owner: simultrs
 repo:
 tags: [simulation, web]
 stack: []
@@ -21,8 +21,8 @@ detailed behavior, not just simple rules. It must be fast and use little to no R
 
 ## Problem *
 
-To be filled in: what the simulation is for (watching, learning, playing) and what's
-missing from existing ones.
+Existing web ant simulations are not realistic: they are toy pheromone-trail demos, not
+grounded in what field research has found about how real colonies live and work.
 
 ## Users and context
 
@@ -64,6 +64,7 @@ missing from existing ones.
 ## Constraints
 
 - Fast, with little to no RAM use.
+- License: MIT.
 - Development costs $0 (workspace rule).
 - Policy check (Anthropic Usage Policy, read 2026-11-11): **allowed**. A client-side
   simulation with no personal data falls under no restricted use. If it ever calls the
@@ -80,6 +81,9 @@ missing from existing ones.
 - MVP species: red harvester ant; a species picker comes later.
 - Realism is checked by citations: every behavior and default cites a study.
 - Look: realistic.
+- Owner: the `simultrs` GitHub org (repo `simultrs/ant-colony-simulation`).
+- Stack: whichever gives the fastest overall speed (see Open questions).
+- License: MIT.
 
 ## Open questions *
 
@@ -95,6 +99,10 @@ missing from existing ones.
 - [x] Performance target? → 60 fps and under 50 MB JS heap with 12,000 ants on a mid-range laptop.
 - [x] How is realism checked? → Cited sources for every behavior and default.
 - [x] What should it look like? → Realistic.
+- [x] What's missing today? → Existing web ant sims aren't realistic.
+- [x] Stack? → Whichever gives the fastest overall speed.
+- [x] Owner? → The new `simultrs` org.
+- [x] License? → MIT.
 
 ## Risks and unknowns
 
@@ -116,3 +124,4 @@ missing from existing ones.
 - 2026-11-11: round 1: purpose, realism, scale, interaction.
 - 2026-11-11: round 2: species, views, lifecycle, settings.
 - 2026-11-11: round 3: species MVP, performance, realism check, look.
+- 2026-11-11: round 4: problem, stack, owner (simultrs), license.
