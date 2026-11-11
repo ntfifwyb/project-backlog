@@ -6,7 +6,7 @@ updated: 2026-11-11
 owner: ntfifwyb
 repo:
 tags: [cli, filesystem, compression]
-stack: []
+stack: [rust]
 effort:
 priority:
 ---
@@ -44,10 +44,15 @@ elsewhere or extract to another drive.
 
 - Extract a compressed file while freeing the archive's already-processed bytes, so peak
   disk use stays close to the output size instead of archive + output.
+- A Rust library crate that the cmprssd engines depend on, plus a small CLI for any archive.
+- Formats: zstd (`.tar.zst`, `.zst`), gzip (`.tar.gz`, `.gz`) and ZIP.
+- Windows NTFS first, freeing space with sparse-file hole punching (`FSCTL_SET_ZERO_DATA`).
+- Crash-safe from the start: a journal, output flushed before every free, resume after an
+  interrupted run, and tests that kill the process at each step.
 
 ### Later
 
-- 
+- Linux (ext4 and others) after Windows.
 
 ### Not doing
 
@@ -61,6 +66,8 @@ elsewhere or extract to another drive.
 
 - **Build our own engine**, not one based on HatchZip (user's choice, 2026-11-11, made
   knowing HatchZip exists).
+- Form: a Rust crate plus a CLI, in its own repo.
+- First version: zstd, gzip and ZIP; Windows NTFS first; crash-safe with resume.
 - Used by cmprssd to install a game from a compressed package or disc copy.
 - Policy check (2026-11-11, Anthropic Usage Policy effective 2026-11-12): **allowed**. It's a
   local file utility. Nothing in the policy covers it, and it doesn't use Anthropic's
@@ -71,6 +78,10 @@ elsewhere or extract to another drive.
 - [x] Build on HatchZip or build our own? → Build our own.
 - [x] Where in cmprssd? → Installing a game from a compressed package or disc copy, not
   converting the game's own install.
+- [x] Form? → A Rust crate plus a CLI (not a module inside cmprssd only).
+- [x] First formats? → zstd, gzip and ZIP (not zstd only).
+- [x] First platform? → Windows NTFS, then Linux.
+- [x] Crash safety in the first version? → Yes: journal, resume, kill tests.
 
 ## Risks and unknowns
 
@@ -118,3 +129,5 @@ elsewhere or extract to another drive.
 - 2026-11-11: prior art checked: HatchZip (Rust, MIT/Apache) already does this, except
   `.tar.zst`.
 - 2026-11-11: decided to build our own; the cmprssd use is installing from a package or disc.
+- 2026-11-11: decided form (Rust crate + CLI), formats (zstd, gzip, ZIP), platform
+  (Windows NTFS first) and crash safety from the start.
