@@ -6,7 +6,7 @@ updated: 2026-11-11
 owner: ntfifwyb
 repo:
 tags: [smart-home, voice]
-stack: [miot, offline-stt]
+stack: [rust, miot, offline-stt]
 effort:
 priority:
 ---
@@ -33,7 +33,7 @@ e.g. the Mi Home app, isn't recorded yet.)
   (a retailer lists it as model BPTS02DMU; Wi-Fi, Xiaomi Home app).
 - Runs on the user's PC first (Windows now; the user will switch to Linux later); a
   dedicated device is wanted later.
-- Commands spoken in English, Spanish and German.
+- Commands spoken in English, Spanish and German (English first).
 
 ## Success criteria *
 
@@ -51,11 +51,14 @@ e.g. the Mi Home app, isn't recorded yet.)
 - Fixed command phrases, recognised by speech-to-text running locally (offline).
 - Wake word starts a command (hands-free; the mic listens locally).
 - Commands: bulb on/off, brightness, colour/warmth; fan on/off, speed, oscillation.
+- English commands.
+- No UI, except a small animation that pops up on screen while it's listening.
 
 ### Later
 
 - Run on a dedicated device too (user said "both", PC first).
 - Linux (the user's next OS).
+- Spanish and German command sets.
 
 ### Not doing
 
@@ -88,6 +91,9 @@ e.g. the Mi Home app, isn't recorded yet.)
   cross-ecosystem pairing), so MIoT, one local code path.
 - Trigger: wake word.
 - MVP commands: on/off plus levels (brightness, colour/warmth, fan speed, oscillation).
+- Written in Rust (small single binary, Windows and Linux).
+- No UI; only a small listening animation pops up on screen.
+- English first; Spanish and German next.
 
 ## Open questions *
 
@@ -107,6 +113,10 @@ e.g. the Mi Home app, isn't recorded yet.)
 - [x] Command language? → English, Spanish, German.
 - [x] Success criteria? → fast command, light idle footprint, works offline (see above).
 - [x] Not doing? → other brands, cloud, phone app, schedules/automations.
+- [x] All three languages in the MVP? → English first, ES/DE next.
+- [x] Implementation language? → Rust.
+- [x] UI? → None, but a small animation pops up while it's listening.
+- [x] First session? → Fan + bulb via CLI.
 
 ## Risks and unknowns
 
@@ -123,7 +133,9 @@ e.g. the Mi Home app, isn't recorded yet.)
 
 ## First session
 
-- 
+- Get both devices' MIoT tokens and model IDs (from the user's Xiaomi account), then switch
+  the fan and bulb on/off and set levels from a Rust command-line tool on the LAN. No voice
+  yet.
 
 ## References
 
@@ -141,3 +153,4 @@ e.g. the Mi Home app, isn't recorded yet.)
 - 2026-11-11: round 1: devices, PC first, local fixed commands, standalone and fast.
 - 2026-11-11: round 2: MIoT for both, lightweight app, under 1 s, wake word, on/off + levels.
 - 2026-11-11: round 3: Windows then Linux, EN/ES/DE, success criteria, exclusions.
+- 2026-11-11: round 4: English first, Rust, listening animation only, CLI first session.
