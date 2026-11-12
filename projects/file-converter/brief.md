@@ -3,7 +3,7 @@ title: File Converter
 status: ready
 created: 2026-11-11
 updated: 2026-11-11
-owner: montinaops
+owner: verticillum
 repo:
 tags: [converter, ffmpeg, downloader, desktop, web]
 stack: [tauri, rust, ffmpeg, yt-dlp]
@@ -108,7 +108,7 @@ means more of the same sites.
 - Downloads start from a small app window (paste link, video or audio-only).
 - MVP tools beyond conversion: compress, trim, merge PDFs.
 - Licence: GPL-3.0, open source (compatible with GPL ffmpeg builds and Calibre).
-- Name: `file-converter`, repo `montinaops/file-converter`.
+- Name: `file-converter`, repo `verticillum/file-converter`.
 - Distribution: unsigned installer on GitHub Releases plus a winget package ($0; users
   click past SmartScreen at first).
 - Look: minimal and monochrome; as small as possible, both file size and screen size.
@@ -130,7 +130,7 @@ means more of the same sites.
 - [x] Extra tools in the MVP? → Compress, trim, merge PDFs.
 - [x] Licence? → GPL-3.0.
 - [x] Desktop stack? → Tauri (Rust + web UI).
-- [x] Name? → `file-converter`, under the `montinaops` org.
+- [x] Name? → `file-converter`, under the `verticillum` org.
 - [x] The web downloader needs a server (browsers can't fetch YouTube/TikTok directly):
   how does it run? → Decide when the website launches.
 - [x] Code signing? → Unsigned; GitHub Releases + winget.

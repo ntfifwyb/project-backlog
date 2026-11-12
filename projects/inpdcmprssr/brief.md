@@ -30,7 +30,7 @@ elsewhere or extract to another drive.
 ## Users and context
 
 - The user, on their own machines.
-- The cmprssd game engines (`~/projects/cmprssd`): installing a game from a compressed
+- The cmprssd game engines (`~/organizations/cmprssd`): installing a game from a compressed
   package (for example one copied off the travel disc) onto a nearly full drive, without
   needing room for both the package and the installed game.
 

@@ -119,7 +119,7 @@ Personal for now: just the user. Used as an Anki deck (desktop and phone via Ank
 - [x] Success criterion? → Daily habit: reviewed on the phone daily for a week without
   friction.
 - [x] Which GitHub owner? → The new Anki organization, `prsnlanki`
-  (`prsnlanki/good-or-bad`, cloned to `~/projects/prsnlanki/good-or-bad`).
+  (`prsnlanki/good-or-bad`, cloned to `~/organizations/prsnlanki/good-or-bad`).
 
 ## Risks and unknowns
 
