@@ -1,7 +1,7 @@
 # project-backlog
 
 Briefs for projects that don't exist yet. Nothing here is built or run: this repo is the
-input to new projects, not their home. The workspace rules (`~/projects/CLAUDE.md`) apply.
+input to new projects, not their home. The workspace rules (`~/organizations/CLAUDE.md`) apply.
 
 ## Rules
 
