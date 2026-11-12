@@ -21,7 +21,8 @@ continue/pause and reset.
 
 ## Problem *
 
-<!-- Not stated yet: what's wrong with the stopwatches the user has today. -->
+Existing stopwatches are cluttered: laps, decimals, window chrome and extras get in the way.
+The user wants only the time and two buttons.
 
 ## Users and context
 
@@ -40,10 +41,12 @@ continue/pause and reset.
 - One more button: reset.
 - No window bar: no minimize, maximize or close buttons.
 - Draggable from everywhere on its UI.
-- Small and monochrome.
+- Small and monochrome: white on true black (`#000`), terminal-like.
+- Buttons are words ("Continue" / "Pause", "Reset"): plain white text, no borders, no background color.
 - Right-click opens a tiny menu with Quit (the only way to close it besides the OS).
 - Always on top of other windows.
 - Remembers elapsed time across restarts: reopening shows the time from when it was closed, paused, ready to continue.
+- Remembers window position across restarts.
 
 ### Later
 
@@ -66,6 +69,8 @@ continue/pause and reset.
 - Quit via a right-click menu.
 - Always on top.
 - Elapsed time is saved on close and restored, paused, on launch.
+- Window position is remembered.
+- Look: white on true black, terminal-like; buttons are plain white words with no border or background.
 - Policy check (Anthropic Usage Policy, effective 2026-11-12, read 2026-11-12): **allowed**.
   A local timing app with no data collection touches nothing the policy restricts.
 
@@ -75,6 +80,10 @@ continue/pause and reset.
 - [x] How to quit with no close button? → Right-click menu with Quit.
 - [x] Stay on top of other windows? → Always on top.
 - [x] Time after closing and reopening? → Remembered, shown paused.
+- [x] Why build it? → Existing stopwatches are cluttered.
+- [x] Buttons as icons or words? → Words.
+- [x] Colors? → White on black. True black; buttons have no borders or background color, just white text. Terminal-like.
+- [x] Remember window position? → Yes.
 
 ## Risks and unknowns
 
@@ -94,3 +103,4 @@ continue/pause and reset.
 
 - 2026-11-12: created.
 - 2026-11-12: round 1 answers (platform, quit, on top, persistence).
+- 2026-11-12: round 2 answers (problem, buttons, colors, position).
