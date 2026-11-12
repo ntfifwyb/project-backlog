@@ -37,16 +37,19 @@ The user wants only the time and two buttons.
 ### Must (MVP)
 
 - Time shown as `00:00:00` (hours:minutes:seconds), no decimals or fractions of a second.
-- A continue button, which turns into a pause button while running.
+  Past 99:59:59 the hours keep growing (`100:00:00`).
+- A first button that reads "Start" at 00:00:00, "Continue" after a pause, and "Pause" while running.
 - One more button: reset.
 - No window bar: no minimize, maximize or close buttons.
 - Draggable from everywhere on its UI.
 - Small and monochrome: white on true black (`#000`), terminal-like.
-- Buttons are words ("Continue" / "Pause", "Reset"): plain white text, no borders, no background color.
+- Buttons are words ("Start" / "Continue" / "Pause", "Reset"): plain white text, no borders, no background color.
 - Right-click opens a tiny menu with Quit (the only way to close it besides the OS).
 - Always on top of other windows.
 - Remembers elapsed time across restarts: reopening shows the time from when it was closed, paused, ready to continue.
 - Remembers window position across restarts.
+- Keys while focused: Space toggles start/continue/pause, R resets.
+- One bundled monospace font, so it looks the same on Windows and Linux.
 
 ### Later
 
@@ -70,6 +73,10 @@ The user wants only the time and two buttons.
 - Always on top.
 - Elapsed time is saved on close and restored, paused, on launch.
 - Window position is remembered.
+- First button label: Start at zero, Continue after pause, Pause while running.
+- Keyboard: Space and R.
+- Font: one bundled monospace font.
+- Hours keep growing past 99.
 - Look: white on true black, terminal-like; buttons are plain white words with no border or background.
 - Policy check (Anthropic Usage Policy, effective 2026-11-12, read 2026-11-12): **allowed**.
   A local timing app with no data collection touches nothing the policy restricts.
@@ -84,6 +91,10 @@ The user wants only the time and two buttons.
 - [x] Buttons as icons or words? → Words.
 - [x] Colors? → White on black. True black; buttons have no borders or background color, just white text. Terminal-like.
 - [x] Remember window position? → Yes.
+- [x] First button label at 00:00:00? → "Start" at zero.
+- [x] Keyboard keys? → Space and R.
+- [x] Font? → Bundled monospace.
+- [x] Past 99:59:59? → Hours keep growing.
 
 ## Risks and unknowns
 
@@ -104,3 +115,4 @@ The user wants only the time and two buttons.
 - 2026-11-12: created.
 - 2026-11-12: round 1 answers (platform, quit, on top, persistence).
 - 2026-11-12: round 2 answers (problem, buttons, colors, position).
+- 2026-11-12: round 3 answers (first label, keys, font, overflow).
