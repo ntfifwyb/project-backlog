@@ -15,7 +15,7 @@ priority:
 
 ## Summary *
 
-A "classifier" app where the human is the classifier. The app shows one image at a time
+A "classifier" where the human is the classifier, made as an Anki deck. Each card shows one image
 (donuts, a salad, a hobby, an activity) and the person labels it **GOOD** or **BAD**.
 Context does not matter: donuts are BAD, salad is GOOD, full stop. The point is for people
 to learn what they're putting into their bodies, and the same idea applies beyond food, to
