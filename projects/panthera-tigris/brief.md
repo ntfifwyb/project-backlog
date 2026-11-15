@@ -28,7 +28,7 @@ interactive course rather than an encyclopedia page.
 ## Users and context
 
 - Desktop browser, English, static site (org rules).
-- Target learner and prior knowledge: open.
+- Learner: a curious adult with no biology background. Every term is taught, but the depth goes all the way down.
 
 ## Success criteria *
 
@@ -41,7 +41,10 @@ interactive course rather than an encyclopedia page.
 - Multi-lesson course, in depth: everything known about the tiger.
 - A research phase done by Claude before the site is built, with its findings and sources
   kept in the repo.
-- Interactive quizzes, more than plain question-and-answer.
+- Interactive quizzes, more than plain question-and-answer: a short check closes every
+  lesson and a bigger mixed quiz closes the course. They are hands-on tasks (drag ranges
+  onto a map, match stripe patterns to individual tigers, order the steps of a hunt, set a
+  slider to estimate a number), answered first and then revealed and explained. No score.
 
 ### Later
 
@@ -70,13 +73,15 @@ interactive course rather than an encyclopedia page.
 - Format: multi-lesson course, in depth.
 - Claude does extensive research before building the website.
 - Quizzes are interactive, not just questions and answers.
+- Learner: curious adult, no biology background assumed.
+- Quizzes: one at the end of each lesson plus a final one; hands-on tasks; no score (org rule kept).
 
 ## Open questions *
 
-- [ ] Who is the learner (age, prior knowledge)?
-- [ ] Quizzes at the end of each lesson, one at the end of the course, or both?
-- [ ] What "interactive quiz" means here (e.g. place ranges on a map, match stripe
-      patterns, order a hunt sequence, estimate numbers before the reveal).
+- [x] Who is the learner? → A curious adult, no biology background assumed.
+- [x] Where do quizzes go? → At the end of each lesson, plus a final quiz.
+- [x] What kind of interactive quiz? → Hands-on tasks (map, stripe matching, ordering, estimate sliders).
+- [x] Scores? → No, the org's no-score rule stands. Answers are revealed and explained.
 - [ ] Topic list and lesson order.
 - [ ] Success criteria.
 
@@ -99,3 +104,4 @@ interactive course rather than an encyclopedia page.
 ## Log
 
 - 2026-11-15: created from the user's description.
+- 2026-11-15: round 1: learner, quiz placement, quiz style, no scoring.
