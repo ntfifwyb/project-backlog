@@ -46,10 +46,11 @@ Rebuilt by `backlog index`; don't edit by hand.
 | [ntfifwyb](projects/ntfifwyb/brief.md) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitH… | portfolio, github-profile |  |  | 2026-11-11 |
 | [stopwatch](projects/stopwatch/brief.md) | An extremely minimalistic stopwatch app: a small, monochrome window with no window bar, draggable from anywhe… | desktop, utility |  |  | 2026-11-12 |
 
-### Idea (1)
+### Idea (2)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
+| [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
 ### Started (5)
