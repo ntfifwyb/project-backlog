@@ -1,6 +1,6 @@
 ---
 title: Panthera tigris
-status: idea
+status: ready
 created: 2026-11-15
 updated: 2026-11-15
 owner: instructional-pages
@@ -47,6 +47,16 @@ interactive course rather than an encyclopedia page.
 - Topics: all the science (taxonomy, evolution, body, senses, hunting, behaviour, life cycle,
   subspecies, range, ecology, conservation) and the culture (tigers in history, myth, art,
   and the trade in tiger parts).
+- Lesson order: by topic, from the body outward (what a tiger is → body and senses →
+  hunting and behaviour → life cycle → subspecies and range → ecology → humans, culture,
+  conservation). One named tiger is the running example in every lesson and ages as the
+  course goes on.
+- Every lesson ends in a live-model sandbox (e.g. change the light to compare tiger and
+  prey vision, move the tiger to see its territory, change prey numbers and watch a
+  population respond).
+- Visuals: self-made SVG/Canvas diagrams do the teaching (skeleton, eye, range map,
+  stripes), plus a few openly licensed photos, bundled and credited.
+- Length: no cap. The dossier decides how many lessons there are.
 - Interactive quizzes, more than plain question-and-answer: a short check closes every
   lesson and a bigger mixed quiz closes the course. They are hands-on tasks (drag ranges
   onto a map, match stripe patterns to individual tigers, order the steps of a hunt, set a
@@ -54,7 +64,7 @@ interactive course rather than an encyclopedia page.
 
 ### Later
 
-- 
+- Nothing named yet.
 
 ### Not doing
 
@@ -83,6 +93,9 @@ interactive course rather than an encyclopedia page.
 - Quizzes: one at the end of each lesson plus a final one; hands-on tasks; no score (org rule kept).
 - Breadth: science and culture.
 - Research: a cited dossier in `docs/research/`, reviewed by the user before the outline.
+- Order: by topic, with one tiger as the running example. Sandboxes are live models.
+  Visuals are drawn diagrams with a few photos. No length cap.
+- Stack, look, hosting: the instructional-pages defaults.
 
 ## Open questions *
 
@@ -93,9 +106,11 @@ interactive course rather than an encyclopedia page.
 - [x] Breadth? → Science and culture.
 - [x] What does the research produce? → A cited dossier per topic in `docs/research/`, user-reviewed before the outline.
 - [x] Success criteria? → All facts sourced; a finisher can do the final quiz unaided.
-- [ ] Lesson order? User said "both" to (a) topical, body out to world, and (b) following one
-      tiger's life. How to combine them is still open (see next round).
-- [ ] Exact lesson list: settled in `docs/LESSONS.md` after the dossier (org rule: outline approved first).
+- [x] Lesson order? → Both: topical lessons with one tiger running through them as the example.
+- [x] Visuals? → Drawn diagrams plus a few openly licensed photos.
+- [x] Sandbox? → A live model in every lesson.
+- [x] Length? → As long as it takes. No cap.
+- [x] Exact lesson list? → Written in `docs/LESSONS.md` after the dossier and approved by the user before building (org rule).
 
 ## Risks and unknowns
 
@@ -106,7 +121,8 @@ interactive course rather than an encyclopedia page.
 
 ## First session
 
-- 
+- Create the repo and start the research dossier (`docs/research/`): pick the topic files
+  and the sources to trust, and finish the first topics with citations, for the user to review.
 
 ## References
 
@@ -118,3 +134,5 @@ interactive course rather than an encyclopedia page.
 - 2026-11-15: created from the user's description.
 - 2026-11-15: round 1: learner, quiz placement, quiz style, no scoring.
 - 2026-11-15: round 2: breadth, research dossier, success criteria; lesson order is "both".
+- 2026-11-15: round 3: combined lesson order, visuals, sandboxes, no length cap. Ready.
+- 2026-11-15: idea → ready

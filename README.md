@@ -35,7 +35,7 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (6)
+### Ready (7)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
@@ -44,13 +44,13 @@ Rebuilt by `backlog index`; don't edit by hand.
 | [good-or-bad](projects/good-or-bad/brief.md) | A "classifier" where the human is the classifier, made as an Anki deck. | education, health, habits |  |  | 2026-11-12 |
 | [inpdcmprssr](projects/inpdcmprssr/brief.md) | A tool that extracts a compressed file and deletes the parts of it it has already read as it goes, so extract… | cli, filesystem, compression |  |  | 2026-11-11 |
 | [ntfifwyb](projects/ntfifwyb/brief.md) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitH… | portfolio, github-profile |  |  | 2026-11-11 |
+| [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
 | [stopwatch](projects/stopwatch/brief.md) | An extremely minimalistic stopwatch app: a small, monochrome window with no window bar, draggable from anywhe… | desktop, utility |  |  | 2026-11-12 |
 
-### Idea (2)
+### Idea (1)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
 ### Started (5)
