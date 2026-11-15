@@ -32,15 +32,21 @@ interactive course rather than an encyclopedia page.
 
 ## Success criteria *
 
-- [ ] (open: see Open questions)
+- [ ] Every factual claim on the site links to a source in the research dossier.
+- [ ] A curious adult with no biology background who finishes the lessons can do the final
+      quiz's tasks without help.
 
 ## Scope *
 
 ### Must (MVP)
 
 - Multi-lesson course, in depth: everything known about the tiger.
-- A research phase done by Claude before the site is built, with its findings and sources
-  kept in the repo.
+- A research phase done by Claude before the site is built: a cited dossier in
+  `docs/research/`, one file per topic, every claim tied to a source (IUCN, peer-reviewed
+  papers), disagreements between sources noted. The user reviews it before the lesson outline.
+- Topics: all the science (taxonomy, evolution, body, senses, hunting, behaviour, life cycle,
+  subspecies, range, ecology, conservation) and the culture (tigers in history, myth, art,
+  and the trade in tiger parts).
 - Interactive quizzes, more than plain question-and-answer: a short check closes every
   lesson and a bigger mixed quiz closes the course. They are hands-on tasks (drag ranges
   onto a map, match stripe patterns to individual tigers, order the steps of a hunt, set a
@@ -75,6 +81,8 @@ interactive course rather than an encyclopedia page.
 - Quizzes are interactive, not just questions and answers.
 - Learner: curious adult, no biology background assumed.
 - Quizzes: one at the end of each lesson plus a final one; hands-on tasks; no score (org rule kept).
+- Breadth: science and culture.
+- Research: a cited dossier in `docs/research/`, reviewed by the user before the outline.
 
 ## Open questions *
 
@@ -82,8 +90,12 @@ interactive course rather than an encyclopedia page.
 - [x] Where do quizzes go? → At the end of each lesson, plus a final quiz.
 - [x] What kind of interactive quiz? → Hands-on tasks (map, stripe matching, ordering, estimate sliders).
 - [x] Scores? → No, the org's no-score rule stands. Answers are revealed and explained.
-- [ ] Topic list and lesson order.
-- [ ] Success criteria.
+- [x] Breadth? → Science and culture.
+- [x] What does the research produce? → A cited dossier per topic in `docs/research/`, user-reviewed before the outline.
+- [x] Success criteria? → All facts sourced; a finisher can do the final quiz unaided.
+- [ ] Lesson order? User said "both" to (a) topical, body out to world, and (b) following one
+      tiger's life. How to combine them is still open (see next round).
+- [ ] Exact lesson list: settled in `docs/LESSONS.md` after the dossier (org rule: outline approved first).
 
 ## Risks and unknowns
 
@@ -105,3 +117,4 @@ interactive course rather than an encyclopedia page.
 
 - 2026-11-15: created from the user's description.
 - 2026-11-15: round 1: learner, quiz placement, quiz style, no scoring.
+- 2026-11-15: round 2: breadth, research dossier, success criteria; lesson order is "both".
