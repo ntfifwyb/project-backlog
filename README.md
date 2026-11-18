@@ -35,11 +35,12 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (7)
+### Ready (8)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
 | [antclny](projects/antclny/brief.md) | An ant colony simulation that runs as a webpage, made to be watched. | simulation, web |  |  | 2026-11-11 |
+| [development-statistics](projects/development-statistics/brief.md) | A terminal command, in the style of `autopilot` and `nightq` in claude-toolkit, that shows a comprehensive li… | cli, claude, github, stats |  |  | 2026-11-18 |
 | [file-converter](projects/file-converter/brief.md) | A general file converter (an ffmpeg wrapper "or whatever" does the job) that converts files to other formats,… | converter, ffmpeg, downloader, desktop, web |  |  | 2026-11-11 |
 | [good-or-bad](projects/good-or-bad/brief.md) | A "classifier" where the human is the classifier, made as an Anki deck. | education, health, habits |  |  | 2026-11-12 |
 | [inpdcmprssr](projects/inpdcmprssr/brief.md) | A tool that extracts a compressed file and deletes the parts of it it has already read as it goes, so extract… | cli, filesystem, compression |  |  | 2026-11-11 |
@@ -47,11 +48,10 @@ Rebuilt by `backlog index`; don't edit by hand.
 | [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
 | [stopwatch](projects/stopwatch/brief.md) | An extremely minimalistic stopwatch app: a small, monochrome window with no window bar, draggable from anywhe… | desktop, utility |  |  | 2026-11-12 |
 
-### Idea (2)
+### Idea (1)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [development-statistics](projects/development-statistics/brief.md) | A terminal command, in the style of `autopilot` and `nightq` in claude-toolkit, that shows a comprehensive li… | cli, claude, github, stats |  |  | 2026-11-18 |
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
 ### Started (5)

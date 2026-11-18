@@ -1,6 +1,6 @@
 ---
 title: Development Statistics
-status: idea
+status: ready
 created: 2026-11-18
 updated: 2026-11-18
 owner: ntfifwyb
@@ -65,7 +65,8 @@ The user alone, on this machine (WSL), from any folder in a terminal.
 
 ### Not doing
 
-- 
+- No web page or dashboard: terminal only.
+- Never logs in to or scrapes claude.ai; no data leaves the machine (GitHub reads via `gh` excepted).
 
 ## Constraints
 
@@ -81,6 +82,9 @@ The user alone, on this machine (WSL), from any folder in a terminal.
   claude-toolkit/bin).
 - Python, standard library only (like `nightq` and `statusline`); curses for the screen.
 - GitHub stats come through the `gh` CLI and its existing login; the tool stores no token.
+- Command name: `devstats`.
+- API prices: a per-model table in the repo, updated by hand; fully offline.
+- Private repo (it reads machine-specific paths); public only after an audit.
 - Display: a live screen like `nightq`, not a one-shot printed report.
 
 ## Policy
@@ -106,6 +110,10 @@ separate question (not read).
 - [x] PDF export when? → Later.
 - [x] Stack? → Python stdlib.
 - [x] GitHub access? → Through `gh`.
+- [x] Command name? → `devstats`.
+- [x] Price source? → Table in the repo.
+- [x] Visibility? → Private.
+- [x] Not doing? → No web page, no claude.ai, no data leaving the machine.
 
 ## Risks and unknowns
 
@@ -113,7 +121,9 @@ separate question (not read).
 
 ## First session
 
-- 
+- `devstats` opens a live screen with Claude Code totals (tokens, API-equivalent $, cache
+  hit rate, turns past 150k) from all local transcripts, via the incremental cache, and
+  the session-cost check against `statusline` passes.
 
 ## References
 
@@ -127,3 +137,5 @@ separate question (not read).
 - 2026-11-18: round 1: own repo, live screen, Claude Code first, API-equivalent cost.
 - 2026-11-18: round 2: all extra sources (later), totals only, efficiency stats, incremental cache, PDF export.
 - 2026-11-18: round 3: success criteria, PDF later, Python stdlib, GitHub via gh.
+- 2026-11-18: round 4: `devstats`, price table in repo, private, not-doing list. Ready.
+- 2026-11-18: idea → ready
