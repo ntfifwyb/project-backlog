@@ -38,15 +38,25 @@ The user alone, on this machine (WSL), from any folder in a terminal.
 ### Must (MVP)
 
 - One terminal command with a live screen, like `nightq`'s (redrawn, keys switch views).
-- Claude Code stats first: tokens and cost.
+- Claude Code stats first: tokens and cost, as totals only on one screen (no per
+  project/model/day breakdowns yet).
+- Token-efficiency stats: cache hit rate, and turns past the 150k context budget (count
+  and cost).
+- Reads transcripts through an incremental cache: only new lines are parsed each time.
 - Cost is shown only as the API-equivalent $ (what the tokens would cost at API prices).
   The subscription is implied; don't show its price or a comparison.
 
 ### Later
 
 - GitHub stats, right after Claude Code.
-- More sources beyond these two: the user doesn't want it limited to Claude and GitHub
-  (candidates under Open questions).
+- Breakdowns of Claude stats by project, model and day.
+- More sources (the user doesn't want it limited to Claude and GitHub), all chosen:
+  - local git across `~/organizations`: commits, lines added/removed, active repos;
+  - the user's own tools: `local-ci` runs (pass/fail, duration), `nightq` and `autopilot`
+    jobs, `machine-guard` events;
+  - backlog and handoffs: briefs by status, projects started, open handoffs per repo;
+  - time active in Claude sessions per day/project, from transcript timestamps.
+- An option to export the stats to PDF (user's side note; when it lands is open).
 
 ### Not doing
 
@@ -81,9 +91,11 @@ separate question (not read).
 - [x] MVP sources? → Claude Code first, then GitHub; not limited to those two.
 - [x] Printed report or live screen? → Live screen like `nightq`.
 - [x] Headline cost? → API-equivalent $ only; subscription implied, not shown.
-- [ ] Which other sources? Candidates: local git across `~/organizations` (commits, lines
-  changed), `local-ci` runs (pass/fail, duration), `nightq` and `autopilot` jobs,
-  backlog briefs by status, time spent in Claude sessions.
+- [x] Which other sources? → All four: local git, own tools (local-ci, nightq, autopilot,
+  machine-guard), backlog and handoffs, time in sessions.
+- [x] Claude breakdowns on the first screen? → Totals only.
+- [x] Token-efficiency stats? → Yes: cache hit rate, turns past 150k.
+- [x] Read data how? → Incremental cache. Also: an option to export to PDF.
 
 ## Risks and unknowns
 
@@ -103,3 +115,4 @@ separate question (not read).
 
 - 2026-11-18: created.
 - 2026-11-18: round 1: own repo, live screen, Claude Code first, API-equivalent cost.
+- 2026-11-18: round 2: all extra sources (later), totals only, efficiency stats, incremental cache, PDF export.
