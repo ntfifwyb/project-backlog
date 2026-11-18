@@ -6,7 +6,7 @@ updated: 2026-11-18
 owner: ntfifwyb
 repo:
 tags: [cli, claude, github, stats]
-stack: []
+stack: [python]
 effort:
 priority:
 ---
@@ -31,7 +31,12 @@ The user alone, on this machine (WSL), from any folder in a terminal.
 
 ## Success criteria *
 
-- [ ] 
+- [ ] For a finished Claude Code session, its API-equivalent $ matches what `statusline`
+  showed for it within 1%.
+- [ ] After the first run, the screen appears in under 1 s with the full transcript history.
+- [ ] Typing the command in any folder opens the screen; `q` leaves it.
+- [ ] A missing source (no `gh` login, no `nightq`) is hidden, never shown as zero, and
+  never crashes the screen.
 
 ## Scope *
 
@@ -56,7 +61,7 @@ The user alone, on this machine (WSL), from any folder in a terminal.
     jobs, `machine-guard` events;
   - backlog and handoffs: briefs by status, projects started, open handoffs per repo;
   - time active in Claude sessions per day/project, from transcript timestamps.
-- An option to export the stats to PDF (user's side note; when it lands is open).
+- An option to export the stats to PDF, after the Claude screen works.
 
 ### Not doing
 
@@ -74,6 +79,8 @@ The user alone, on this machine (WSL), from any folder in a terminal.
 - It's a terminal command, like `autopilot` and `nightq`.
 - Its own repo, `ntfifwyb/development-statistics`, installed onto PATH (not a tool in
   claude-toolkit/bin).
+- Python, standard library only (like `nightq` and `statusline`); curses for the screen.
+- GitHub stats come through the `gh` CLI and its existing login; the tool stores no token.
 - Display: a live screen like `nightq`, not a one-shot printed report.
 
 ## Policy
@@ -96,6 +103,9 @@ separate question (not read).
 - [x] Claude breakdowns on the first screen? → Totals only.
 - [x] Token-efficiency stats? → Yes: cache hit rate, turns past 150k.
 - [x] Read data how? → Incremental cache. Also: an option to export to PDF.
+- [x] PDF export when? → Later.
+- [x] Stack? → Python stdlib.
+- [x] GitHub access? → Through `gh`.
 
 ## Risks and unknowns
 
@@ -116,3 +126,4 @@ separate question (not read).
 - 2026-11-18: created.
 - 2026-11-18: round 1: own repo, live screen, Claude Code first, API-equivalent cost.
 - 2026-11-18: round 2: all extra sources (later), totals only, efficiency stats, incremental cache, PDF export.
+- 2026-11-18: round 3: success criteria, PDF later, Python stdlib, GitHub via gh.
