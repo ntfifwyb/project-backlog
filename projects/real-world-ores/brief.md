@@ -1,6 +1,6 @@
 ---
 title: Real World Ores
-status: idea
+status: ready
 created: 2026-11-19
 updated: 2026-11-19
 owner: ntfifwyb
@@ -41,15 +41,18 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 ### Must (MVP)
 
 - Every listed mineral (IMA list, ~6,000) as an ore block in the game.
-- Each ore drops an item when mined.
-- Ores that are smelted in real life smelt into their product; others don't smelt.
+- Each ore drops a raw mineral item ("raw <mineral>", like vanilla raw iron) when mined.
+- Hovering an ore item shows its real formula, Mohs hardness and where it forms.
+- Raw minerals that are smelted in real life smelt into their main product (the element
+  it's mined for, e.g. chalcopyrite → copper); others don't smelt.
 - World generation follows realistic geology: ores appear where they form in reality
   (veins, host rock, depth, biome), roughly.
 - Rarity is truly realistic: real abundance, so very rare minerals may need a large world.
 - Minerals from meteorites, the Moon or other non-Earth settings generate by analogy in
   meteorite structures or the Nether/End.
 - Mining difficulty from real Mohs hardness, plus an upgradable drill whose tiers are needed
-  for harder ores (the only tech item in the first release).
+  for harder ores (the only tech item in the first release). The drill burns fuel (coal
+  and other fuel items).
 
 ### Later
 
@@ -82,6 +85,8 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 - Hardness: Mohs-based, with an upgradable drill in the MVP.
 - Rarity: truly realistic; findability means "generates somewhere", not "in every world".
 - Off-Earth minerals: mapped to meteorite structures and other dimensions.
+- Drill power: fuel. Drop: raw mineral item. Smelting: main product only. Tooltips with
+  formula, hardness and setting.
 
 ## Open questions *
 
@@ -99,6 +104,10 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 - [x] How rare are very rare minerals? → Truly realistic; success criterion changed to
   "generates somewhere in a large enough world".
 - [x] Where do non-Earth minerals generate? → Mapped to meteorite structures and dimensions.
+- [x] How is the drill powered? → Fuel.
+- [x] Smelting a multi-element mineral gives? → Main product only.
+- [x] Real facts in game? → Tooltip: formula, Mohs hardness, where it forms.
+- [x] What does a mined ore drop? → Raw mineral item.
 
 ## Risks and unknowns
 
@@ -129,3 +138,5 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 - 2026-11-19: round 1: platform, mineral list, gameplay, generation.
 - 2026-11-19: round 2: textures, data source, success criterion, release.
 - 2026-11-19: round 3: hardness and drill, rarity, off-Earth minerals, first session.
+- 2026-11-19: round 4: drill power, smelting output, tooltips, drops.
+- 2026-11-19: idea → ready

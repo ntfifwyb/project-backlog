@@ -35,7 +35,7 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (8)
+### Ready (9)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
@@ -46,13 +46,13 @@ Rebuilt by `backlog index`; don't edit by hand.
 | [inpdcmprssr](projects/inpdcmprssr/brief.md) | A tool that extracts a compressed file and deletes the parts of it it has already read as it goes, so extract… | cli, filesystem, compression |  |  | 2026-11-11 |
 | [ntfifwyb](projects/ntfifwyb/brief.md) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitH… | portfolio, github-profile |  |  | 2026-11-11 |
 | [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
+| [real-world-ores](projects/real-world-ores/brief.md) | A Minecraft mod whose goal is to add every ore from real life: every listed mineral (the IMA list, roughly 6,… | minecraft, mod, game |  |  | 2026-11-19 |
 | [stopwatch](projects/stopwatch/brief.md) | An extremely minimalistic stopwatch app: a small, monochrome window with no window bar, draggable from anywhe… | desktop, utility |  |  | 2026-11-12 |
 
-### Idea (2)
+### Idea (1)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [real-world-ores](projects/real-world-ores/brief.md) | A Minecraft mod whose goal is to add every ore from real life: every listed mineral (the IMA list, roughly 6,… | minecraft, mod, game |  |  | 2026-11-19 |
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
 ### Started (5)
