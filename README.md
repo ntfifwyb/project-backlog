@@ -35,7 +35,7 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (9)
+### Ready (10)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
@@ -44,6 +44,7 @@ Rebuilt by `backlog index`; don't edit by hand.
 | [file-converter](projects/file-converter/brief.md) | A general file converter (an ffmpeg wrapper "or whatever" does the job) that converts files to other formats,… | converter, ffmpeg, downloader, desktop, web |  |  | 2026-11-11 |
 | [good-or-bad](projects/good-or-bad/brief.md) | A "classifier" where the human is the classifier, made as an Anki deck. | education, health, habits |  |  | 2026-11-12 |
 | [inpdcmprssr](projects/inpdcmprssr/brief.md) | A tool that extracts a compressed file and deletes the parts of it it has already read as it goes, so extract… | cli, filesystem, compression |  |  | 2026-11-11 |
+| [mathematics](projects/mathematics/brief.md) | A mathematics Anki deck, `Mathematics` in Anki, built like the user's other prsnlanki decks (deutsch, english… | anki, education, mathematics |  |  | 2026-11-19 |
 | [ntfifwyb](projects/ntfifwyb/brief.md) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitH… | portfolio, github-profile |  |  | 2026-11-11 |
 | [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
 | [real-world-ores](projects/real-world-ores/brief.md) | A Minecraft mod whose goal is to add every ore from real life: every listed mineral (the IMA list, roughly 6,… | minecraft, mod, game |  |  | 2026-11-19 |
