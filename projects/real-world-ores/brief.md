@@ -30,8 +30,11 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 
 ## Success criteria *
 
-- [ ] When a new world is generated, every IMA-listed mineral can be found in its real host
-  setting (rock type, depth, biome).
+- [ ] Every IMA-listed mineral has a generation rule and generates somewhere in a large
+  enough world, in its real host setting (rock type, depth, biome, or dimension), provable
+  by a world scan or locate command.
+- [ ] Each mineral's break difficulty follows its real Mohs hardness, and the hardest ones
+  can only be mined with an upgraded drill.
 
 ## Scope *
 
@@ -42,6 +45,11 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 - Ores that are smelted in real life smelt into their product; others don't smelt.
 - World generation follows realistic geology: ores appear where they form in reality
   (veins, host rock, depth, biome), roughly.
+- Rarity is truly realistic: real abundance, so very rare minerals may need a large world.
+- Minerals from meteorites, the Moon or other non-Earth settings generate by analogy in
+  meteorite structures or the Nether/End.
+- Mining difficulty from real Mohs hardness, plus an upgradable drill whose tiers are needed
+  for harder ores (the only tech item in the first release).
 
 ### Later
 
@@ -49,7 +57,7 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 
 ### Not doing
 
-- A tech tree (alloys, tools, armor, machines) in the first release.
+- A tech tree (alloys, tools, armor, machines) in the first release, beyond the drill.
 
 ## Constraints
 
@@ -71,6 +79,9 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
   original template; no hand drawing.
 - Mineral data: Mindat plus the IMA list.
 - Release: private for now (built and played locally); publishing decided later.
+- Hardness: Mohs-based, with an upgradable drill in the MVP.
+- Rarity: truly realistic; findability means "generates somewhere", not "in every world".
+- Off-Earth minerals: mapped to meteorite structures and other dimensions.
 
 ## Open questions *
 
@@ -83,6 +94,11 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 - [x] How are textures made? → Generated from mineral data.
 - [x] Where does mineral data come from? → Mindat + IMA list.
 - [x] How is the mod published? → Private for now.
+- [x] How does mining difficulty work? → Mohs hardness, plus an upgradable drill for harder
+  ores, in the MVP.
+- [x] How rare are very rare minerals? → Truly realistic; success criterion changed to
+  "generates somewhere in a large enough world".
+- [x] Where do non-Earth minerals generate? → Mapped to meteorite structures and dimensions.
 
 ## Risks and unknowns
 
@@ -96,7 +112,9 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 
 ## First session
 
-- 
+- The data pipeline: a script that builds the mineral dataset (IMA list, color, luster,
+  Mohs hardness, host setting, whether smelted) from Mindat + IMA, and generates a few of
+  the ore blocks in-game from it.
 
 ## References
 
@@ -110,3 +128,4 @@ diamond, emerald, quartz, ancient debris); real-world ores are far more numerous
 - 2026-11-19: created.
 - 2026-11-19: round 1: platform, mineral list, gameplay, generation.
 - 2026-11-19: round 2: textures, data source, success criterion, release.
+- 2026-11-19: round 3: hardness and drill, rarity, off-Earth minerals, first session.
