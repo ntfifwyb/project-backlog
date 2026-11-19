@@ -52,7 +52,7 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [real-world-ores](projects/real-world-ores/brief.md) | A Minecraft mod whose goal is to add every ore from real life. | minecraft, mod, game |  |  | 2026-11-19 |
+| [real-world-ores](projects/real-world-ores/brief.md) | A Minecraft mod whose goal is to add every ore from real life: every listed mineral (the IMA list, roughly 6,… | minecraft, mod, game |  |  | 2026-11-19 |
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
 ### Started (5)
