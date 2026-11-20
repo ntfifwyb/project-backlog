@@ -33,7 +33,7 @@ feeds the joke.
 
 ## Success criteria *
 
-- [ ] 
+- [ ] When one player starts the gamemode on a listen server, they can play every MVP minigame, get paid, and climb the promotions ladder by themselves. Multiplayer comes after.
 
 ## Scope *
 
@@ -44,10 +44,13 @@ feeds the joke.
   pointless spreadsheets, aligning slide decks, shredding, faxing.
 - Promotions ladder, e.g. Intern → Analyst → Associate → VP → Partner, with perks such as
   better offices and business cards.
+- A custom office map: cubicles, corner offices, a conference room, with offices that fit the ladder's perks.
+- Status purchases: suits, watches, business cards, restaurant reservations. Pure flex.
+- Office politics: players compete for promotion (e.g. taking credit for others' tasks, sabotage, a limited Partner seat).
 
 ### Later
 
-- 
+- Multiplayer polish beyond the solo-playable MVP.
 
 ### Not doing
 
@@ -73,6 +76,10 @@ feeds the joke.
 - Tasks are small absurd minigames that pay out.
 - Progression is a promotions ladder with perks.
 - Dialogue comes from the players over voice chat.
+- Solo playable first: the MVP is done when one player can play everything alone.
+- Custom office map, not existing workshop maps.
+- Money buys status items as well as counting toward promotion.
+- Competitive office politics between players.
 - Name: Van Buren, Van Buren & Van Buren; repo `van-buren-van-buren-and-van-buren`.
 
 ## Open questions *
@@ -80,6 +87,10 @@ feeds the joke.
 - [x] Name? → Van Buren, Van Buren & Van Buren (the same family name three times as a nepotism joke). Rejected: Hargrove & Whitcombe, Vantage Synergy Partners, Sterling Ashford & Crane, Blackwood Meridian Group, Pemberton Hale LLP, Apex Strategic Solutions, and Whitfield (the user liked the triple-name style, just not that surname).
 - [x] How do tasks work? → Small absurd minigames (spreadsheets, slide decks, shredding, faxing) that pay out.
 - [x] Hierarchy? → Promotions ladder (Intern → … → Partner) with perks.
+- [x] When is the MVP done? → Solo playable first: one player can play every minigame and climb the ladder.
+- [x] Map? → Custom office map.
+- [x] Economy? → Status purchases (suits, watches, cards, reservations).
+- [x] Rivalry? → Yes: office politics, players compete for promotion.
 - [x] Base? → Standalone gamemode derived from `base`, not DarkRP.
 
 ## Risks and unknowns
@@ -98,3 +109,4 @@ feeds the joke.
 
 - 2026-11-20: created. Policy check: allowed with limits. Round 1: tasks, hierarchy, base.
 - 2026-11-20: named Van Buren, Van Buren & Van Buren (renamed from office-roleplay-gamemode).
+- 2026-11-20: round 2: solo-first MVP, custom map, status shop, office politics.
