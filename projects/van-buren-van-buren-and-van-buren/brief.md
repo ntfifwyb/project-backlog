@@ -1,5 +1,5 @@
 ---
-title: Office Roleplay Gamemode (working name)
+title: Van Buren, Van Buren & Van Buren
 status: idea
 created: 2026-11-20
 updated: 2026-11-20
@@ -11,7 +11,7 @@ effort:
 priority:
 ---
 
-# Office Roleplay Gamemode (working name)
+# Van Buren, Van Buren & Van Buren
 
 ## Summary *
 
@@ -19,7 +19,7 @@ A Garry's Mod gamemode for office roleplay. Players work in a corporate firm and
 each other over voice chat in an *American Psycho*-style register: vain, status-obsessed,
 over-polished business talk. The players make the dialogue up themselves; the mod doesn't
 script it. The work is deliberately pointless, like the bullshit tasks of a consulting
-agency. The mod is named after a stereotypical business or law firm (name not chosen yet).
+agency. The mod is named after the firm: Van Buren, Van Buren & Van Buren, the same family name three times as a nepotism joke.
 
 ## Problem *
 
@@ -73,12 +73,11 @@ feeds the joke.
 - Tasks are small absurd minigames that pay out.
 - Progression is a promotions ladder with perks.
 - Dialogue comes from the players over voice chat.
+- Name: Van Buren, Van Buren & Van Buren; repo `van-buren-van-buren-and-van-buren`.
 
 ## Open questions *
 
-- [ ] Name? It should be a stereotypical business or law firm. Rejected: Hargrove &
-  Whitcombe, Vantage Synergy Partners, Sterling Ashford & Crane, Blackwood Meridian Group,
-  Pemberton Hale LLP, Apex Strategic Solutions. The folder gets renamed to the chosen name.
+- [x] Name? → Van Buren, Van Buren & Van Buren (the same family name three times as a nepotism joke). Rejected: Hargrove & Whitcombe, Vantage Synergy Partners, Sterling Ashford & Crane, Blackwood Meridian Group, Pemberton Hale LLP, Apex Strategic Solutions, and Whitfield (the user liked the triple-name style, just not that surname).
 - [x] How do tasks work? → Small absurd minigames (spreadsheets, slide decks, shredding, faxing) that pay out.
 - [x] Hierarchy? → Promotions ladder (Intern → … → Partner) with perks.
 - [x] Base? → Standalone gamemode derived from `base`, not DarkRP.
@@ -98,3 +97,4 @@ feeds the joke.
 ## Log
 
 - 2026-11-20: created. Policy check: allowed with limits. Round 1: tasks, hierarchy, base.
+- 2026-11-20: named Van Buren, Van Buren & Van Buren (renamed from office-roleplay-gamemode).

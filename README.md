@@ -53,7 +53,7 @@ Rebuilt by `backlog index`; don't edit by hand.
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
-| [office-roleplay-gamemode](projects/office-roleplay-gamemode/brief.md) | A Garry's Mod gamemode for office roleplay. | game, mod, garrys-mod, roleplay, multiplayer |  |  | 2026-11-20 |
+| [van-buren-van-buren-and-van-buren](projects/van-buren-van-buren-and-van-buren/brief.md) | A Garry's Mod gamemode for office roleplay. | game, mod, garrys-mod, roleplay, multiplayer |  |  | 2026-11-20 |
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
 ### Started (6)
