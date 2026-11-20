@@ -40,9 +40,11 @@ feeds the joke.
 ### Must (MVP)
 
 - Standalone gamemode derived from Garry's Mod's `base` gamemode (not DarkRP).
-- Bullshit tasks as small absurd minigames, each short and paying out: e.g. filling in
-  pointless spreadsheets, aligning slide decks, shredding, faxing.
-- Promotions ladder, e.g. Intern → Analyst → Associate → VP → Partner, with perks such as
+- Four bullshit-task minigames, each short and paying out: a pointless spreadsheet, aligning
+  a slide deck, shredding, faxing.
+- 1980s Wall Street look: beige computers, CRTs, power suits, pastel business cards.
+- Promotions ladder, with rank-ups from 'billable hours' earned by tasks plus a review: a
+  threshold, then a superior's sign-off in multiplayer (automatic in solo play). E.g. Intern → Analyst → Associate → VP → Partner, with perks such as
   better offices and business cards.
 - A custom office map: cubicles, corner offices, a conference room, with offices that fit the ladder's perks.
 - Status purchases: suits, watches, business cards, restaurant reservations. Pure flex.
@@ -51,11 +53,14 @@ feeds the joke.
 ### Later
 
 - Multiplayer polish beyond the solo-playable MVP.
+- Steam Workshop release.
+- More minigames.
 
 ### Not doing
 
 - Scripted or AI-generated dialogue: the players speak over voice chat.
 - DarkRP as the base.
+- Steam Workshop for now: GitHub only until it's polished.
 
 ## Constraints
 
@@ -80,6 +85,10 @@ feeds the joke.
 - Custom office map, not existing workshop maps.
 - Money buys status items as well as counting toward promotion.
 - Competitive office politics between players.
+- MVP minigames: spreadsheet, slide deck, shredder, fax.
+- Look: 1980s Wall Street.
+- Promotion: billable hours from tasks plus a review (a superior's sign-off in multiplayer, automatic solo).
+- Published on GitHub only for now.
 - Name: Van Buren, Van Buren & Van Buren; repo `van-buren-van-buren-and-van-buren`.
 
 ## Open questions *
@@ -91,6 +100,10 @@ feeds the joke.
 - [x] Map? → Custom office map.
 - [x] Economy? → Status purchases (suits, watches, cards, reservations).
 - [x] Rivalry? → Yes: office politics, players compete for promotion.
+- [x] MVP minigames? → Four: spreadsheet, slide deck, shredder, fax.
+- [x] Look? → 1980s Wall Street.
+- [x] Promotion? → Billable hours from tasks plus a review (sign-off in multiplayer, automatic solo).
+- [x] Release? → GitHub only for now.
 - [x] Base? → Standalone gamemode derived from `base`, not DarkRP.
 
 ## Risks and unknowns
@@ -110,3 +123,4 @@ feeds the joke.
 - 2026-11-20: created. Policy check: allowed with limits. Round 1: tasks, hierarchy, base.
 - 2026-11-20: named Van Buren, Van Buren & Van Buren (renamed from office-roleplay-gamemode).
 - 2026-11-20: round 2: solo-first MVP, custom map, status shop, office politics.
+- 2026-11-20: round 3: four minigames, 1980s look, billable-hours promotion, GitHub only.
