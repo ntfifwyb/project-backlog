@@ -35,7 +35,7 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (10)
+### Ready (9)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
@@ -48,7 +48,6 @@ Rebuilt by `backlog index`; don't edit by hand.
 | [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
 | [real-world-ores](projects/real-world-ores/brief.md) | A Minecraft mod whose goal is to add every ore from real life: every listed mineral (the IMA list, roughly 6,… | minecraft, mod, game |  |  | 2026-11-19 |
 | [stopwatch](projects/stopwatch/brief.md) | An extremely minimalistic stopwatch app: a small, monochrome window with no window bar, draggable from anywhe… | desktop, utility |  |  | 2026-11-12 |
-| [van-buren-van-buren-and-van-buren](projects/van-buren-van-buren-and-van-buren/brief.md) | A Garry's Mod gamemode for office roleplay. | game, mod, garrys-mod, roleplay, multiplayer |  |  | 2026-11-20 |
 
 ### Idea (1)
 
@@ -56,7 +55,7 @@ Rebuilt by `backlog index`; don't edit by hand.
 |---|---|---|---|---|---|
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
-### Started (6)
+### Started (7)
 
 | Project | Repo | Summary | Started |
 |---|---|---|---|
@@ -65,5 +64,6 @@ Rebuilt by `backlog index`; don't edit by hand.
 | [mathematics](started/mathematics.md) | [prsnlanki/mathematics](https://github.com/prsnlanki/mathematics) | A mathematics Anki deck, `Mathematics` in Anki, built like the user's other prsnlanki decks (deutsch, english, espanol, esperanto): one repo, one subdeck folder per kind of card, packaged into one `.apkg`. | 2026-11-19 |
 | [nfsh](started/nfsh.md) | [cmprssd/nfsh](https://github.com/cmprssd/nfsh) | nfsh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019), in the same spirit as `cmprssd/swjkja`: the same game, but a smaller footprint on disk, much faster, and more reliable. | 2026-10-30 |
 | [quantum-zeno-effect](started/quantum-zeno-effect.md) | [instructional-pages/quantum-zeno-effect](https://github.com/instructional-pages/quantum-zeno-effect) | A GitHub Pages site where you learn about the quantum Zeno effect. | 2026-10-30 |
+| [van-buren-van-buren-and-van-buren](started/van-buren-van-buren-and-van-buren.md) | [permylastemailstudios/van-buren-van-buren-and-van-buren](https://github.com/permylastemailstudios/van-buren-van-buren-and-van-buren) | A Garry's Mod gamemode for office roleplay. | 2026-11-20 |
 | [voice-home-control](started/voice-home-control.md) | [ntfifwyb/voice-home-control](https://github.com/ntfifwyb/voice-home-control) | A home control assistant with voice control, for the user's own home: a standalone app that listens for fixed spoken commands, recognised offline, and controls their Xiaomi Smart LED Bulb and Xiaomi Smart Tower Fan 2 over Xiaomi's local MIoT protocol. | 2026-11-14 |
 <!-- backlog:index:end -->
