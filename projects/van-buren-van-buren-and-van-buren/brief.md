@@ -1,6 +1,6 @@
 ---
 title: Van Buren, Van Buren & Van Buren
-status: idea
+status: ready
 created: 2026-11-20
 updated: 2026-11-20
 owner: ntfifwyb
@@ -48,12 +48,14 @@ feeds the joke.
   better offices and business cards.
 - A custom office map: cubicles, corner offices, a conference room, with offices that fit the ladder's perks.
 - Status purchases: suits, watches, business cards, restaurant reservations. Pure flex.
-- Office politics: players compete for promotion (e.g. taking credit for others' tasks, sabotage, a limited Partner seat).
+- Custom 1980s assets: our own models and textures (CRTs, fax machines, shredders, etc.).
 
 ### Later
 
 - Multiplayer polish beyond the solo-playable MVP.
 - Steam Workshop release.
+- Office politics, once solo play works: players compete for promotion (e.g. taking credit
+  for others' tasks, sabotage, a limited Partner seat).
 - More minigames.
 
 ### Not doing
@@ -84,7 +86,9 @@ feeds the joke.
 - Solo playable first: the MVP is done when one player can play everything alone.
 - Custom office map, not existing workshop maps.
 - Money buys status items as well as counting toward promotion.
-- Competitive office politics between players.
+- Competitive office politics between players, built after the solo MVP.
+- Custom 1980s models and textures, not stock GMod/HL2 props.
+- Code licence: MIT.
 - MVP minigames: spreadsheet, slide deck, shredder, fax.
 - Look: 1980s Wall Street.
 - Promotion: billable hours from tasks plus a review (a superior's sign-off in multiplayer, automatic solo).
@@ -104,15 +108,23 @@ feeds the joke.
 - [x] Look? → 1980s Wall Street.
 - [x] Promotion? → Billable hours from tasks plus a review (sign-off in multiplayer, automatic solo).
 - [x] Release? → GitHub only for now.
+- [x] Assets? → Custom 1980s models and textures.
+- [x] Licence? → MIT.
+- [x] First session? → Map blockout first.
+- [x] Office politics in the MVP? → No, after the solo MVP.
 - [x] Base? → Standalone gamemode derived from `base`, not DarkRP.
 
 ## Risks and unknowns
 
-- 
+- Custom models, textures and a custom map are the slowest part. Grey-box first and put the
+  assets in once the loop works.
+- Map and model tools (Hammer, a 3D modeller) and Garry's Mod run on Windows, but this
+  machine works in WSL. Testing means opening windows on the user's desktop: ask first.
 
 ## First session
 
-- 
+- A grey-box blockout of the office floor in Hammer: cubicles, corner offices, conference
+  room, and spots for the four minigame stations. It loads in Garry's Mod. No gameplay code yet.
 
 ## References
 
@@ -124,3 +136,5 @@ feeds the joke.
 - 2026-11-20: named Van Buren, Van Buren & Van Buren (renamed from office-roleplay-gamemode).
 - 2026-11-20: round 2: solo-first MVP, custom map, status shop, office politics.
 - 2026-11-20: round 3: four minigames, 1980s look, billable-hours promotion, GitHub only.
+- 2026-11-20: round 4: custom assets, MIT, map blockout first, politics after the MVP.
+- 2026-11-20: idea → ready
