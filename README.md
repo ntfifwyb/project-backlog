@@ -35,12 +35,11 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (8)
+### Ready (7)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
 | [antclny](projects/antclny/brief.md) | An ant colony simulation that runs as a webpage, made to be watched. | simulation, web |  |  | 2026-11-11 |
-| [development-statistics](projects/development-statistics/brief.md) | A terminal command, in the style of `autopilot` and `nightq` in claude-toolkit, that shows a comprehensive li… | cli, claude, github, stats |  |  | 2026-11-18 |
 | [file-converter](projects/file-converter/brief.md) | A general file converter (an ffmpeg wrapper "or whatever" does the job) that converts files to other formats,… | converter, ffmpeg, downloader, desktop, web |  |  | 2026-11-11 |
 | [good-or-bad](projects/good-or-bad/brief.md) | A "classifier" where the human is the classifier, made as an Anki deck. | education, health, habits |  |  | 2026-11-12 |
 | [inpdcmprssr](projects/inpdcmprssr/brief.md) | A tool that extracts a compressed file and deletes the parts of it it has already read as it goes, so extract… | cli, filesystem, compression |  |  | 2026-11-11 |
@@ -54,10 +53,11 @@ Rebuilt by `backlog index`; don't edit by hand.
 |---|---|---|---|---|---|
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
-### Started (8)
+### Started (9)
 
 | Project | Repo | Summary | Started |
 |---|---|---|---|
+| [development-statistics](started/development-statistics.md) | [verticillum/development-statistics](https://github.com/verticillum/development-statistics) | A terminal command, in the style of `autopilot` and `nightq` in claude-toolkit, that shows a comprehensive list of the user's stats on Claude, GitHub, or development in general: cost usage (even on a subscription, where there is no bill), tokens, and so on. | 2026-11-26 |
 | [diplomatic-vat-refund](started/diplomatic-vat-refund.md) | [ntfifwyb/diplomatic-vat-refund](https://github.com/ntfifwyb/diplomatic-vat-refund) | Automate as much as possible of the VAT reimbursement process for diplomatic entities in Germany (missions and their members, who reclaim VAT from the Bundeszentralamt für Steuern, BZSt). | 2026-11-05 |
 | [higher-dimensions](started/higher-dimensions.md) | [instructional-pages/higher-dimensions](https://github.com/instructional-pages/higher-dimensions) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | 2026-10-27 |
 | [mathematics](started/mathematics.md) | [prsnlanki/mathematics](https://github.com/prsnlanki/mathematics) | A mathematics Anki deck, `Mathematics` in Anki, built like the user's other prsnlanki decks (deutsch, english, espanol, esperanto): one repo, one subdeck folder per kind of card, packaged into one `.apkg`. | 2026-11-19 |
