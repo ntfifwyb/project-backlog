@@ -35,14 +35,13 @@ _template/   brief.md (the template) and EXAMPLE.md (a finished brief)
 Rebuilt by `backlog index`; don't edit by hand.
 
 <!-- backlog:index:start -->
-### Ready (7)
+### Ready (6)
 
 | Project | Summary | Tags | Pri | Effort | Updated |
 |---|---|---|---|---|---|
 | [antclny](projects/antclny/brief.md) | An ant colony simulation that runs as a webpage, made to be watched. | simulation, web |  |  | 2026-11-11 |
 | [file-converter](projects/file-converter/brief.md) | A general file converter (an ffmpeg wrapper "or whatever" does the job) that converts files to other formats,… | converter, ffmpeg, downloader, desktop, web |  |  | 2026-11-11 |
 | [good-or-bad](projects/good-or-bad/brief.md) | A "classifier" where the human is the classifier, made as an Anki deck. | education, health, habits |  |  | 2026-11-12 |
-| [inpdcmprssr](projects/inpdcmprssr/brief.md) | A tool that extracts a compressed file and deletes the parts of it it has already read as it goes, so extract… | cli, filesystem, compression |  |  | 2026-11-11 |
 | [panthera-tigris](projects/panthera-tigris/brief.md) | A multi-lesson, in-depth browser course about the tiger (*Panthera tigris*): "everything possible known about… | course, biology, animals |  |  | 2026-11-15 |
 | [real-world-ores](projects/real-world-ores/brief.md) | A Minecraft mod whose goal is to add every ore from real life: every listed mineral (the IMA list, roughly 6,… | minecraft, mod, game |  |  | 2026-11-19 |
 | [stopwatch](projects/stopwatch/brief.md) | An extremely minimalistic stopwatch app: a small, monochrome window with no window bar, draggable from anywhe… | desktop, utility |  |  | 2026-11-12 |
@@ -53,13 +52,14 @@ Rebuilt by `backlog index`; don't edit by hand.
 |---|---|---|---|---|---|
 | [vehicle-telemetry-decoder](projects/vehicle-telemetry-decoder/brief.md) | A tool the user will actually use on their own car: a device plugged into the car sends its raw data to an ap… | automotive, obd-ii, mobile |  |  | 2026-11-11 |
 
-### Started (9)
+### Started (10)
 
 | Project | Repo | Summary | Started |
 |---|---|---|---|
 | [development-statistics](started/development-statistics.md) | [verticillum/development-statistics](https://github.com/verticillum/development-statistics) | A terminal command, in the style of `autopilot` and `nightq` in claude-toolkit, that shows a comprehensive list of the user's stats on Claude, GitHub, or development in general: cost usage (even on a subscription, where there is no bill), tokens, and so on. | 2026-11-26 |
 | [diplomatic-vat-refund](started/diplomatic-vat-refund.md) | [ntfifwyb/diplomatic-vat-refund](https://github.com/ntfifwyb/diplomatic-vat-refund) | Automate as much as possible of the VAT reimbursement process for diplomatic entities in Germany (missions and their members, who reclaim VAT from the Bundeszentralamt für Steuern, BZSt). | 2026-11-05 |
 | [higher-dimensions](started/higher-dimensions.md) | [instructional-pages/higher-dimensions](https://github.com/instructional-pages/higher-dimensions) | A public, browser-based course for properly learning how dimensions work: 4D first, then 5D, 6D and beyond. | 2026-10-27 |
+| [inpdcmprssr](started/inpdcmprssr.md) | [cmprssd/inpdcmprssr](https://github.com/cmprssd/inpdcmprssr) | A tool that extracts a compressed file and deletes the parts of it it has already read as it goes, so extracting doesn't need disk space for both the archive and its output. | 2026-11-26 |
 | [mathematics](started/mathematics.md) | [prsnlanki/mathematics](https://github.com/prsnlanki/mathematics) | A mathematics Anki deck, `Mathematics` in Anki, built like the user's other prsnlanki decks (deutsch, english, espanol, esperanto): one repo, one subdeck folder per kind of card, packaged into one `.apkg`. | 2026-11-19 |
 | [nfsh](started/nfsh.md) | [cmprssd/nfsh](https://github.com/cmprssd/nfsh) | nfsh is a heavily optimized version of **Need for Speed: Heat** (Ghost Games / EA, 2019), in the same spirit as `cmprssd/swjkja`: the same game, but a smaller footprint on disk, much faster, and more reliable. | 2026-10-30 |
 | [ntfifwyb](started/ntfifwyb.md) | [ntfifwyb/ntfifwyb](https://github.com/ntfifwyb/ntfifwyb) | A minimalist portfolio shown on the user's GitHub profile page (https://github.com/ntfifwyb), built as a GitHub profile README. | 2026-11-25 |
